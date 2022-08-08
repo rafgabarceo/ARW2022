@@ -1,0 +1,14 @@
+{
+    "org-name": "CHEMSOC",
+    "org-long-name": "Chemistry Society",
+    "logo": "chemsoc-logo.webp",
+    "description": "Committed to creating bonds and forming solutions, DLSU Chemistry Society (CHEMSOC) is the home organization of the DLSU Chemistry Department. As a professional organization for Chemistry majors and enthusiasts since 1976, we have helped encourage academic excellence, enable holistic development, and instill camaraderie in the organization through its programs. CHEMSOC aims to boost the appreciation of students for the chemical sciences by aiding students in fulfilling their aspirations in the field of Chemistry through personal, academic, and career development. With these, we prepare Lasallian Chemists as leaders for their communities and country in synthesizing solutions to scientific and societal problems.",
+    "mission": "Our mission is to provide programs and services that will holistically develop our members to become service-driven, research-oriented, and responsible Lasallian chemists and citizens of the nation.",
+    "vision": "With our vision to strive for academic excellence, research intensiveness, sustainable development, environmental impacts, and service orientation, we promise you nothing but development and progress.",
+    "fb-link": "https://www.facebook.com/dlsuchemsoc",
+
+
+    "physical-booth": true,
+    "physical-booth-times": "9:00 PM - 3:00 PM",
+    "online-booth-times": "8:00 PM - 5:00 PM"
+}

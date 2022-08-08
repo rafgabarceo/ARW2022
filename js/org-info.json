@@ -1,0 +1,70 @@
+{
+    "clusters": {
+        "aso": {
+            "cluster-name": "ASO",
+            "cluster-long-name": "Alliance of Science Organizations",
+            "organizations": [{
+                    "org-name": "CHEMSOC",
+                    "physical-booth": true,
+                    "physical-booth-times": "9:00 PM - 3:00 PM",
+                    "online-booth-times": "8:00 PM - 5:00 PM",
+                    "logo": "chemsoc-logo.webp",
+                    "page": "org.php?chemsoc"
+                },
+                {
+                    "org-name": "MC",
+                    "physical-booth": true,
+                    "physical-booth-times": "10:00 PM - 3:00 PM",
+                    "online-booth-times": "9:00 PM - 5:00 PM",
+                    "logo": "mc-logo.webp",
+                    "page": "https://arw-2021-web-development.github.io/mc"
+                },
+                {
+                    "org-name": "PHYSOC",
+                    "physical-booth": false,
+                    "physical-booth-times": "",
+                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "logo": "physoc-logo.webp",
+                    "page": "org.php?physoc"
+                },
+                {
+                    "org-name": "SV",
+                    "physical-booth": true,
+                    "physical-booth-times": "9:00 PM - 6:00 PM",
+                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "logo": "sv-logo.webp",
+                    "page": "https://arw-2021-web-development.github.io/sv"
+                }
+            ]
+        },
+        "aspire": {
+            "cluster-name": "ASPIRE",
+            "cluster-long-name": "College of Education and Special Interest and Socio-Civic Organizations",
+            "organizations": [{
+                    "org-name": "AIESEC",
+                    "physical-booth": true,
+                    "physical-booth-times": "9:00 PM - 3:00 PM",
+                    "online-booth-times": "8:00 PM - 5:00 PM",
+                    "logo": "aiesec-logo.webp",
+                    "page": "https://arw-2021-web-development.github.io/aiesec"
+                },
+                {
+                    "org-name": "AJA",
+                    "physical-booth": true,
+                    "physical-booth-times": "10:00 PM - 3:00 PM",
+                    "online-booth-times": "9:00 PM - 5:00 PM",
+                    "logo": "aja-logo.webp",
+                    "page": "https://arw-2021-web-development.github.io/aja"
+                },
+                {
+                    "org-name": "ArCG",
+                    "physical-booth": false,
+                    "physical-booth-times": "",
+                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "logo": "arcg-logo.webp",
+                    "page": "https://arw-2021-web-development.github.io/arcg"
+                }
+            ]
+        }
+    }
+}

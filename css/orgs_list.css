@@ -1,0 +1,343 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.cluster-abrv {
+    font-size: 64;
+    font-weight: 700px;
+}
+
+.cluster-long-name {
+    font-family: 'EB Garamond', serif;
+    font-size: 32;
+    font-weight: 400px;
+}
+
+div.arw-card-deck {
+    padding-top: 24px;
+    left: 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* margin-left: 32px;
+    margin-right: 32px; */
+}
+
+:root {
+    --card-height: 350px;
+    --card-width: 250px;
+}
+
+ul.arw-cards {
+    top: 0px;
+    margin-left: -6.9%;
+    height: calc(350px + 32px);
+    list-style-type: none;
+    cursor: pointer;
+}
+
+ul.arw-cards li.arw-card {
+    margin-left: 6%;
+    /* background: #FFF; */
+    height: var(--card-height);
+    width: var(--card-width);
+    position: absolute;
+    left: 0px;
+    transition: all 1s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+    pointer-events: none;
+    perspective: 1000px;
+}
+
+ul.arw-cards li.arw-card img {
+    max-width: 80%;
+    padding-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+ul.arw-cards li.arw-card div.content {
+    padding: 5px 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 12;
+    font-weight: 400px;
+}
+
+ul.arw-cards li.arw-card div.content h1 {
+    font-size: 20;
+    font-weight: 500px;
+    text-align: center;
+}
+
+
+/* Card Flipping */
+
+.arw-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.arw-card:hover .arw-card-inner {
+    transform: rotateY(180deg);
+}
+
+.arw-card-front,
+.arw-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.arw-card-front {
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 1px 2px 2px 0 #aaa;
+    color: black;
+}
+
+.arw-card-back {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    box-shadow: 1px 2px 2px 0 #aaa;
+    transform: rotateY(180deg);
+}
+
+.arw-card-back div.content {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400px;
+    margin-top: 50%;
+}
+
+.arw-card-back div.content h2 {
+    font-size: 18;
+}
+
+
+/* Stacked Card Initial State */
+
+ul.arw-cards li.arw-card.arw-card-18 {
+    z-index: 18;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.45s;
+}
+
+ul.arw-cards li.arw-card.arw-card-17 {
+    z-index: 17;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.425s;
+}
+
+ul.arw-cards li.arw-card.arw-card-16 {
+    z-index: 16;
+    transform: rotateZ(5deg);
+    transition-delay: 0.4s;
+}
+
+ul.arw-cards li.arw-card.arw-card-15 {
+    z-index: 15;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.375s;
+}
+
+ul.arw-cards li.arw-card.arw-card-14 {
+    z-index: 14;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.35s;
+}
+
+ul.arw-cards li.arw-card.arw-card-13 {
+    z-index: 13;
+    transform: rotateZ(5deg);
+    transition-delay: 0.325s;
+}
+
+ul.arw-cards li.arw-card.arw-card-12 {
+    z-index: 12;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.3s;
+}
+
+ul.arw-cards li.arw-card.arw-card-11 {
+    z-index: 11;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.275s;
+}
+
+ul.arw-cards li.arw-card.arw-card-10 {
+    z-index: 10;
+    transform: rotateZ(5deg);
+    transition-delay: 0.25s;
+}
+
+ul.arw-cards li.arw-card.arw-card-9 {
+    z-index: 9;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.225s;
+}
+
+ul.arw-cards li.arw-card.arw-card-8 {
+    z-index: 8;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.2s;
+}
+
+ul.arw-cards li.arw-card.arw-card-7 {
+    z-index: 7;
+    transform: rotateZ(5deg);
+    transition-delay: 0.175s;
+}
+
+ul.arw-cards li.arw-card.arw-card-6 {
+    z-index: 6;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.15s;
+}
+
+ul.arw-cards li.arw-card.arw-card-5 {
+    z-index: 5;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.125s;
+}
+
+ul.arw-cards li.arw-card.arw-card-4 {
+    z-index: 4;
+    transform: rotateZ(5deg);
+    transition-delay: 0.1s;
+}
+
+ul.arw-cards li.arw-card.arw-card-3 {
+    z-index: 3;
+    transform: rotateZ(-2deg);
+    transition-delay: 0.075s;
+}
+
+ul.arw-cards li.arw-card.arw-card-2 {
+    z-index: 2;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.05s;
+}
+
+ul.arw-cards li.arw-card.arw-card-1 {
+    z-index: 1;
+    transform: rotateZ(5deg);
+    transition-delay: 0.025s;
+    pointer-events: none;
+}
+
+
+/* Card Transitions */
+
+ul.arw-cards.transition li.arw-card {
+    transform: rotateZ(0deg);
+    transition-delay: 50ms;
+    position: relative;
+    pointer-events: all;
+}
+
+ul.arw-cards.transition {
+    pointer-events: none;
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-18 {
+    left: calc(17 * calc(var(--card-width) + 16px));
+    top: calc(17 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-17 {
+    left: calc(16 * calc(var(--card-width) + 16px));
+    top: calc(16 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-16 {
+    left: calc(15 * calc(var(--card-width) + 16px));
+    top: calc(15 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-15 {
+    left: calc(14 * calc(var(--card-width) + 16px));
+    top: calc(14 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-14 {
+    left: calc(13 * calc(var(--card-width) + 16px));
+    top: calc(13 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-13 {
+    left: calc(12 * calc(var(--card-width) + 16px));
+    top: calc(12 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-12 {
+    left: calc(11* calc(var(--card-width) + 16px));
+    top: calc(11 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-11 {
+    left: calc(10 * calc(var(--card-width) + 16px));
+    top: calc(10 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-10 {
+    left: calc(9 * calc(var(--card-width) + 16px));
+    top: calc(9 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-9 {
+    left: calc(8 * calc(var(--card-width) + 16px));
+    top: calc(8 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-8 {
+    left: calc(7 * calc(var(--card-width) + 16px));
+    top: calc(7 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-7 {
+    left: calc(6 * calc(var(--card-width) + 16px));
+    top: calc(6 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-6 {
+    left: calc(5 * calc(var(--card-width) + 16px));
+    top: calc(5 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-5 {
+    left: calc(4 * calc(var(--card-width) + 16px));
+    top: calc(4 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-4 {
+    left: calc(3 * calc(var(--card-width) + 16px));
+    top: calc(3 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-3 {
+    left: calc(2* calc(var(--card-width) + 16px));
+    top: calc(2 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-2 {
+    left: calc(1 * calc(var(--card-width) + 16px));
+    top: calc(1 * calc(var(--card-height) * -1));
+}
+
+ul.arw-cards.transition li.arw-card.arw-card-1 {
+    top: 0;
+    left: 0;
+}
