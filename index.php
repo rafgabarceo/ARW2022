@@ -15,29 +15,6 @@
 
     <style>body{font-family: "Berkshire Swash";};</style>
 
-    <?php
-        //  $org_list_json = file_get_contents('js/orgs-list.json');
-        //  $decoded_org_list_json = json_decode($org_list_json, true);
-        //  $template = file_get_contents('orgs/_template.php');
-
-        //  foreach($decoded_org_list_json["organizations"] as $org) {
-        //     $org_json = file_get_contents('js/org-info/'. $org .'.json');
-        //     $decoded_org_json = json_decode($org_json, true);
-
-        //     $org_page = str_replace("{{org-name}}", $decoded_org_json["org-name"], $template);
-        //     $org_page = str_replace("{{org-long-name}}", $decoded_org_json["org-long-name"], $org_page);
-        //     $org_page = str_replace("{{logo}}", $decoded_org_json["logo"], $org_page);
-        //     $org_page = str_replace("{{description}}", $decoded_org_json["description"], $org_page);
-        //     $org_page = str_replace("{{mission}}", $decoded_org_json["mission"], $org_page);
-        //     $org_page = str_replace("{{vision}}", $decoded_org_json["vision"], $org_page);
-        //     $org_page = str_replace("{{fb-link}}", $decoded_org_json["fb-link"], $org_page);
-        //     $org_page = str_replace("{{physical-booth-times}}", $decoded_org_json["physical-booth-times"], $org_page);
-        //     $org_page = str_replace("{{online-booth-times}}", $decoded_org_json["online-booth-times"], $org_page);
-            
-        //     file_put_contents('orgs/' . $org . '.php', $org_page);
-        //  }
-    ?>
-
 </head>
 
 <body>
