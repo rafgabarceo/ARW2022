@@ -4,14 +4,14 @@
 <html lang="en">
 <head>
     <title>ARWonderland</title>
-    <?php require_once('head.php')?>
+    <?php require_once('php/head.php')?>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/clouds.css">
 </head>
 <body>
     
 
-    <?php require_once('nav_bar.php') ?>
+    <?php require_once('php/nav_bar.php') ?>
         
     <!-- First DiV -->
     <div class="center-cropped" style = "background-image: url('./assets/arw_cover_bg/cover_bg_noclouds.png'); height: 100vh; z-index: 1">
