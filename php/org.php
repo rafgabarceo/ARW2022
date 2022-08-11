@@ -8,7 +8,7 @@
         $org_info = json_decode($org_json, true);
     ?>
     <title><?php echo $org_info['org-name']?></title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
