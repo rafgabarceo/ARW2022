@@ -4,6 +4,8 @@
     <?php
         $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $pageID = parse_url($url, PHP_URL_QUERY);
+
+        // Will have to replace this with a function returning a .json. Communication must be from back-end API.
         $org_json = file_get_contents('js/org-info/'. $pageID .'.json');
         $org_info = json_decode($org_json, true);
     ?>
