@@ -17,7 +17,7 @@
     <?php require_once('nav_bar.php') ?>
         
     <div style="margin-top: 10%;">
-        <img src= "/assets/org_images/<?php echo $org_info['logo']?>" style="max-width: 200px"/>
+        <img src= "../assets/org_images/<?php echo $org_info['logo']?>" style="max-width: 200px"/>
         <h3>
             <?php echo $org_info['org-name']?><br>
             <?php echo $org_info['org-long-name']?><br>

@@ -8,8 +8,8 @@
 
     <?php require_once('head.php')?>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/orgs_list.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/orgs_list.css">
 
     <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -38,7 +38,7 @@
     <!-- COVER PHOTO -->
     <div class="left-cropped" style="background: pink; z-index: -1">
         <?php
-        $org_info_json = file_get_contents('js/org-info.json');
+        $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
         $clusters = $decoded_json["clusters"];
 
@@ -67,7 +67,7 @@
                                 <li class="arw-card arw-card-' . $i + 2 . '">
                                     <div class="arw-card-inner">
                                         <div class="arw-card-front">
-                                            <img src="./assets/org_images/' . $cluster["organizations"][$i]["logo"] . '" />
+                                            <img src="../assets/org_images/' . $cluster["organizations"][$i]["logo"] . '" />
                                             <div class="content">
                                                 <h1>' . $cluster["organizations"][$i]["org-name"] . '</h1>
                                             </div>
@@ -107,7 +107,7 @@
 
 
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
