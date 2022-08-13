@@ -1,63 +1,60 @@
-<?php
-    echo '
-    <div id="logo-div">
-    <img src="../assets/logo_elements/logo-A.png" id="arw_a" class="arw_card">
-    <img src="../assets/logo_elements/logo-R.png" id="arw_r" class="arw_card">
-    <img src="../assets/logo_elements/logo-W.png" id="arw_w" class="arw_card">
-    <img src="../assets/logo_elements/logo-2022.png" id="arw_2022" class="arw_card">
-    </div>
 
-    <nav class="navbar navbar-expand-sm navbar-dark shadow p-3 fixed-top"
-        style="background-color: #d82d27; z-index: 25;">
-        <div class="container">
+<div id="logo-div">
+<img src="../assets/logo_elements/logo-A.png" id="arw_a" class="arw_card">
+<img src="../assets/logo_elements/logo-R.png" id="arw_r" class="arw_card">
+<img src="../assets/logo_elements/logo-W.png" id="arw_w" class="arw_card">
+<img src="../assets/logo_elements/logo-2022.png" id="arw_2022" class="arw_card">
+</div>
 
-            <!-- BUTTONS -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"
-                style="opacity: 0">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-sm navbar-dark shadow p-3 fixed-top"
+    style="background-color: #d82d27; z-index: 25;">
+    <div class="container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- BUTTONS -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"
+            style="opacity: 0">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav position-relative start-50 translate-middle-x">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item active">
-                        <a href="../php/home.php">
-                        <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                            style="min-width: 128px; margin-right: 32px" href="#">Home</button>
-                        </a>
-                    </li>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav position-relative start-50 translate-middle-x">
 
-                    <li class="nav-item">
-                        <a href="../php/organizations.php">
-                        <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                            style="min-width: 128px; margin-right: 32px" href="#">Organizations</button>
-                        </a>
-                    </li>
+                <li class="nav-item active">
+                    <a href="../php/home.php">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">Home</button>
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                            style="min-width: 128px; margin-right: 32px" href="#">Events</button>
-                    </li>
+                <li class="nav-item">
+                    <a href="../php/organizations.php">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">Organizations</button>
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                            style="min-width: 128px; margin-right: 32px" href="#">FAQs</button>
-                    </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">Events</button>
+                </li>
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                            style="min-width: 128px; margin-right: 32px" href="#">About Us</button>
-                    </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">FAQs</button>
+                </li>
 
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">About Us</button>
+                </li>
+
+            </ul>
         </div>
-    </nav>
-'
-?>
+    </div>
+</nav>

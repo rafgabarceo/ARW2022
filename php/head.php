@@ -1,5 +1,3 @@
-<?php
-echo '
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="wWx`idth=device-width, initial-scale=1.0">
@@ -21,8 +19,4 @@ echo '
     body {
         font-family: "Berkshire Swash";
     };
-</style>'
-
-
-
-?>
+</style>
