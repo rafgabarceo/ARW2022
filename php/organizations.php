@@ -6,7 +6,7 @@
 <head>
     <title>Organizations</title>
 
-    <?php require_once('head.php')?>
+    <?php require_once('head_2.php')?>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/orgs_list.css">
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <?php require_once('nav_bar.php') ?>
+    <?php require_once('nav_bar_2.php') ?>
 
     <!-- COVER PHOTO -->
     <div class="center-cropped" style="background: white; height: 100vh; z-index: -1">

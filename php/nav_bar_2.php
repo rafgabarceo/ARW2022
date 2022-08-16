@@ -1,9 +1,9 @@
 
 <div id="logo-div">
-<img src="./assets/logo_elements/logo-A.png" id="arw_a" class="arw_card">
-<img src="./assets/logo_elements/logo-R.png" id="arw_r" class="arw_card">
-<img src="./assets/logo_elements/logo-W.png" id="arw_w" class="arw_card">
-<img src="./assets/logo_elements/logo-2022.png" id="arw_2022" class="arw_card">
+<img src="../assets/logo_elements/logo-A.png" id="arw_a" class="arw_card">
+<img src="../assets/logo_elements/logo-R.png" id="arw_r" class="arw_card">
+<img src="../assets/logo_elements/logo-W.png" id="arw_w" class="arw_card">
+<img src="../assets/logo_elements/logo-2022.png" id="arw_2022" class="arw_card">
 </div>
 
 <nav class="navbar navbar-expand-sm navbar-dark shadow p-3 fixed-top"
@@ -26,7 +26,7 @@
             <ul class="navbar-nav position-relative start-50 translate-middle-x">
 
                 <li class="nav-item active">
-                    <a href="./index.php">
+                    <a href="../index.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">Home</button>
                     </a>
