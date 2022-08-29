@@ -28,12 +28,14 @@
         <!-- logo & description -->
         <div class="row gx-5 gy-5 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
+            <!-- logo & abbreviated name -->
             <div class="col-lg-4">
                 <img src= "../assets/org_images/<?php echo $org_info['logo']?>" class="logo"/>
                 <h2 class="mt-4">
                     <?php echo $org_info['org-name']?>
                 </h2>
             </div>
+            <!-- description & buttons -->
             <div class="col-lg-8">
                 <div class="description-box">
                     <h3>
@@ -48,6 +50,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- buttons -->
                 <div class="row pt-4 gy-4 justify-content-center">
                     <div class="col-md-5">
                         <a href=<?php echo $org_info['fb-link']?>>
@@ -68,14 +71,9 @@
         </div>
     </section>
     
-    <p>
-        Description: <br><br>
-        Mission: <?php echo $org_info['mission']?><br><br>
-        Vission: <?php echo $org_info['vision']?>
-    </p>
-    <!-- 2nd Section: Org Video (optional) -->
+    <!-- 2nd Section: Optional Org Video -->
     <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
-    <?php if (isset($org_info['video'])) { ?>
+    <?php if (isset($org_info['video'])) { // start if ?>
         <section>
             <!-- Insert html here -->
             Hi there!
@@ -84,7 +82,8 @@
 
     <!-- 3rd Section: Main Pub, Mission, Vision -->
     <section>
-        
+        Mission: <?php echo $org_info['mission']?><br><br>
+        Vission: <?php echo $org_info['vision']?>
     </section>
 
     <!-- 4th Section: Flagship Events (slideshow) -->
@@ -97,7 +96,7 @@
 
     </section>
 
-    <!-- Footer -->
+    <!-- ARW Footer -->
     <!-- To be inserted when it's available -->
 
     <!-- Must include for nav-bar-collapse on mobile -->
