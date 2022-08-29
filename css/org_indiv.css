@@ -1,0 +1,91 @@
+:root {
+	--pastle-pink: #FFBFE2;
+	--pink: #FF85C7;
+	--dark-pink: #FF008A;
+
+	/* primary colors */
+	--scarlet: #d82b27;
+	--basil: #22763c;
+	--lapis: #253e94;
+	--brown: #755923;
+
+	/* subcolors */
+	--violet: #5e61a2;
+	--lime: #b7d433;
+	--honey: #f9a238;
+	--light-pink: #f8abb1;
+}
+
+/* For laptop/desktops (Bootstrap lg breakpoint) */
+@media only screen and (min-width: 992px) {
+	.section-1 {
+		height: 100vh;
+		padding: 7em 6em 7em 6em; /* top (or 25vh) right bottom left */
+	}
+	.section-1 .logo {
+		max-width: 90%;
+	}
+	.description-box {
+		height: 50vh;
+	}
+}
+
+/* For smaller devices */
+@media only screen and (max-width: 991px) {
+	.section-1 {
+		padding: 6em 4em 4em 4em; /* top (or 25vh) right bottom left */
+	}
+	.section-1 .logo {
+		max-width: 50%;
+	}
+	.description-box {
+		height: 80vh;
+	}
+}
+
+.section-1 button {
+	min-width: 70%;
+}
+
+.section-1 {
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	z-index: 1;
+	color: black;
+	display: flex;
+}
+
+.description-box {
+	background-color: rgba(94, 97, 162, 0.85);
+	border-radius: 2rem;
+	color: white;
+	/* height: 20em; */
+	padding: 2rem 1.5rem 3rem 2rem;
+	display: flex;
+  flex-direction: column;
+	overflow: hidden;
+}
+
+.text-scrollable-justified {
+	text-align: justify;
+	overflow: auto;
+	padding-right: 0.5rem;
+}
+
+/* body::-webkit-scrollbar-thumb {
+	background-color: red;
+	border-radius: 20px;
+	background-clip: content-box;
+} */
+.text-scrollable-justified::-webkit-scrollbar {
+	width: 8px;
+}
+.text-scrollable-justified::-webkit-scrollbar-track {
+	background: transparent;
+}
+.text-scrollable-justified::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.233);
+	border-radius: 5px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.932); */
+}

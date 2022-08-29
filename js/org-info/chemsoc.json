@@ -6,9 +6,12 @@
     "mission": "Our mission is to provide programs and services that will holistically develop our members to become service-driven, research-oriented, and responsible Lasallian chemists and citizens of the nation.",
     "vision": "With our vision to strive for academic excellence, research intensiveness, sustainable development, environmental impacts, and service orientation, we promise you nothing but development and progress.",
     "fb-link": "https://www.facebook.com/dlsuchemsoc",
-
+    "reg-link": "https://google.com",
 
     "physical-booth": true,
     "physical-booth-times": "9:00 PM - 3:00 PM",
     "online-booth-times": "8:00 PM - 5:00 PM"
+    
+    , "video": null
+
 }
