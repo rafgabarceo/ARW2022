@@ -39,9 +39,33 @@
     </div>
 
     <!-- Second Div -->
-    <div class="center-cropped" style = "background-color: #ff85c7; height: 100vh; box-shadow: 0px -5px 25px; overflow: hidden;">
+    <div class="center-cropped" style = "background-color: #f8abb1; height: 100vh; box-shadow: 0px -5px 25px; overflow: hidden;">
         <!-- Desktop ver -->
-        <div class="slideshow-home mx-auto d-none d-lg-block">
+        <div class="slideshow-home mx-auto w-75 d-none d-lg-block" id = "desktop-slideshow">
+            <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/arw_elements/Backdrop.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/arw_elements/Backdrop (3).png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/arw_elements/Backdrop (4).png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+        <!-- Mobile ver -->
+        <div class="slideshow-home mx-auto d-lg-none" id="mobile-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel" style = "position: relative;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
