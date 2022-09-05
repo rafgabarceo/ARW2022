@@ -24,7 +24,7 @@
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
     <!-- Replace background image URL to backend call when available. 
     For example: "...url(<?php echo $org_info['bg']?>)" -->
-    <section class="section-1 text-center" style="background-image: url('../assets/arw_cover_bg/cover_bg_noclouds.png');">
+    <section class="section-1 text-center " style="background-image: url('../assets/arw_cover_bg/cover_bg_noclouds.png');">
         <!-- logo & description -->
         <div class="row gx-5 gy-4 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
