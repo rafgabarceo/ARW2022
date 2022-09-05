@@ -16,6 +16,38 @@
 	--light-pink: #f8abb1;
 }
 
+
+/****** DEVICE SPECIFIC STYLES ******/
+/* For smaller devices (phones) */
+@media only screen and (max-width: 767.98px) {
+	.section-1 {
+		/* change to smaller padding */
+		padding: 4.5em 0.1em 2em 0.1em; /* top right bottom left */
+	}
+	.section-1 .logo {
+		max-width: 160px;
+	}
+	.description-box {
+		height: 25em;
+		padding: 1.5rem 0.8rem 2rem 1.4rem;
+	}
+}
+
+/* For tablets (Bootstrap md breakpoint) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.section-1 {
+		padding: 6em 4em 4em 4em; /* top right bottom left */
+	}
+	.section-1 .logo {
+		width: 190px;
+		height: 190px;
+	}
+	.description-box {
+		height: 20em;
+		padding: 2rem 1.5rem 3rem 2.1rem;
+	}
+}
+
 /* For laptop/desktops (Bootstrap lg breakpoint) */
 @media only screen and (min-width: 992px) {
 	.section-1 {
@@ -23,26 +55,16 @@
 		padding: 7em 6em 7em 6em; /* top (or 25vh) right bottom left */
 	}
 	.section-1 .logo {
-		max-width: 90%;
+		max-width: 256px;
 	}
 	.description-box {
 		height: 50vh;
+		padding: 2rem 1.5rem 3rem 2.1rem;
 	}
 }
 
-/* For smaller devices */
-@media only screen and (max-width: 991px) {
-	.section-1 {
-		padding: 6em 4em 4em 4em; /* top (or 25vh) right bottom left */
-	}
-	.section-1 .logo {
-		max-width: 50%;
-	}
-	.description-box {
-		height: 80vh;
-	}
-}
 
+/****** OTHER STYLES ******/
 .section-1 button {
 	min-width: 70%;
 }
@@ -60,8 +82,6 @@
 	background-color: rgba(94, 97, 162, 0.85);
 	border-radius: 2rem;
 	color: white;
-	/* height: 20em; */
-	padding: 2rem 1.5rem 3rem 2rem;
 	display: flex;
   flex-direction: column;
 	overflow: hidden;
@@ -70,7 +90,7 @@
 .text-scrollable-justified {
 	text-align: justify;
 	overflow: auto;
-	padding-right: 0.5rem;
+	padding-right: 0.4rem;
 }
 
 /* body::-webkit-scrollbar-thumb {
@@ -79,7 +99,7 @@
 	background-clip: content-box;
 } */
 .text-scrollable-justified::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 .text-scrollable-justified::-webkit-scrollbar-track {
 	background: transparent;
