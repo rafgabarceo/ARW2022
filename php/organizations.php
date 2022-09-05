@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/orgs_list.css">
+    <link rel="stylesheet" href="../css/organization.css">
 
     <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -30,8 +31,24 @@
         <!-- Mobile ver -->
 
         <!-- Both -->
-
     </div>
+        
+    <section>
+        <div class="card">
+            <div class="card-body page-title">
+                CSO Accredited
+                Organizations
+            </div>   
+        </div>
+    </section>
+
+    <section class="palegreen">
+        <div class="card cso-logo">
+            <div class="card-body">
+                CSO LOGO
+            </div>   
+        </div>
+    </section>
 
     </div>
 
