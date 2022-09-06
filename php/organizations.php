@@ -43,11 +43,16 @@
     </section>
 
     <section class="palegreen">
-        <div class="card cso-logo">
-            <div class="card-body">
-                CSO LOGO
-            </div>   
-        </div>
+        <div class="d-flex flex-column">
+            <div class="cso-title-div">
+                <p class="cso-text">Council of Student Organizations</p>
+            </div>
+            <div class="cso-logo align-self-center">
+            </div>
+            <div class="align-self-center">
+                <button type="button" class="btn btn-primary btn-lg rounded-pill cso-button">Button</button>
+            </div>
+        </div>   
     </section>
 
     </div>
