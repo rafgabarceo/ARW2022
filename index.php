@@ -65,6 +65,7 @@
             </div>
         </div> 
         <!-- Mobile ver -->
+        <!-- Test -->
         <div class="slideshow-home mx-auto d-lg-none" id="mobile-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel" style = "position: relative;">
                 <div class="carousel-inner">
