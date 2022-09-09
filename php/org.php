@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/org_indiv.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 </head>
 
-<body>
+<!-- onload="getOrgBgBrightness('../assets/arw_cover_bg/cover_bg_noclouds.png')" -->
+<body >
     <?php require_once('nav_bar_2.php') ?>
         
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
@@ -31,9 +33,30 @@
             <!-- logo & abbreviated name -->
             <div class="col-lg-4">
                 <img src= "../assets/org_images/<?php echo $org_info['logo']?>" class="logo"/>
-                <h2 class="mt-4">
-                    <?php echo $org_info['org-name']?>
-                </h2>
+
+                <!-- abbreviated org name (banner asset + org-name) -->
+                <div class="mt-4">
+                    <!-- will insert banner asset & edit css for it when available -->
+                    <img src="" alt="">
+                    <!-- will add svg for curved text -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30" width="100%" height="100%">   
+                            <filter id="Bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="0.2" result="blur"/>
+                                <feSpecularLighting in="blur" surfaceScale="10" specularConstant="3.5" specularExponent="10" result="specOut" lighting-color="#ffffff">
+                                <fePointLight x="-5000" y="-10000" z="0000"/>
+                                </feSpecularLighting>
+                                <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
+                                <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+                            </filter>
+                        <text x="5" y="18" class="bevel" filter="url(#Bevel)">
+                            <?php echo $org_info['org-name']?>
+                        </text>
+                        </svg>
+                    </div>
+                </div>
+
+
             </div>
             <!-- description & buttons -->
             <div class="col-lg-8">
@@ -88,7 +111,8 @@
 
     <!-- 4th Section: Flagship Events (slideshow) -->
     <section>
-        
+        <!-- bootstrap carousel -->
+        <!-- loop thru each image -->
     </section>
 
     <!-- 5th Section: Prices Pub, Buttons, Tagline -->
@@ -101,5 +125,7 @@
 
     <!-- Must include for nav-bar-collapse on mobile -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script src="../js/org_indiv.js"></script>
 </body>
 </html>

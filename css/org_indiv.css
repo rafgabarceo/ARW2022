@@ -48,7 +48,7 @@
 	}
 }
 
-/* For laptop/desktops (Bootstrap lg breakpoint) */
+/* For laptop/desktops, large and small (Bootstrap lg breakpoint) */
 @media only screen and (min-width: 992px) {
 	.section-1 {
 		height: 100vh;
@@ -78,6 +78,14 @@
 }
 
 /****** OTHER STYLES ******/
+.bevel {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
+	fill: #4fa389;
+	font-weight: bold;
+	font-size: 18;	
+	text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
 .section-1 button {
 	min-width: 70%;
 }
