@@ -18,31 +18,49 @@ declare(strict_types=1);
  */
 class fetchARWAPI {
 
-	/**
-	 * Returns a description string. 
-	 * 
-	 * @param string $orgname
-	 * @return string
-	 * 
-	 */
-	function getOrgDesc(string $orgname)
+	private string $name;
+	private string $long_name;
+	private string $desc;
+	private string $mission;
+	private string $vision;
+	private string $logo_path;
+	private string $pub_path;
+	private string $fb_url;
+	private string $video_url;
+	private string $form_url;
+	private bool $has_video;
+	private string $color_hex;
+	private $slides;
+
+
+	function __construct(string $org_name, string $hostname, string $username, string $password, string $database, int $port)
 	{
+		$conn = new mysqli($hostname, $username, $password, $database, $port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+		$name = $org_name;
+
+		// Insert SQL fetch code
+	}
+
+	function getOrgName() {
 		return 0;
 	}
 
-	/**
-	 * 
-	 * This is a wrapper function to get all functional assets of the organization.
-	 * 
-	 * 
-	 * 
-	 */
-	function getOrgAssets(string $orgname)
-	{
+	function getOrgLongName() {
 		return 0;
 	}
 
-	function getOrgLogo(string $orgname)
+	function getOrgDesc() {
+		return 0;
+	}
+
+	function getOrgMission() {
+
+	}
+
+	function getOrgLogo()
 	{
 		return 0;
 	}
@@ -62,7 +80,4 @@ class fetchARWAPI {
 	}
 
 }
-
-
-
 ?>
