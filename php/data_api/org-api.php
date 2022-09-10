@@ -57,11 +57,39 @@ class fetchARWAPI {
 	}
 
 	function getOrgMission() {
+		return 0;
+	}
 
+	function getOrgVision() {
+		return 0;
 	}
 
 	function getOrgLogo()
 	{
+		return 0;
+	}
+
+	function getOrgPub() {
+		return 0;
+	}
+
+	function getOrgFB() {
+		return 0;
+	}
+
+	function getOrgVideo() {
+		return 0;
+	}
+
+	function getOrgForm() {
+		return 0;
+	}
+
+	function getOrgColor() {
+		return 0;
+	}
+
+	function getOrgSlides() {
 		return 0;
 	}
 
