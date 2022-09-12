@@ -39,7 +39,7 @@
     </div>
 
     <!-- Second Div -->
-    <div class="center-cropped" style = "background-color: #f8abb1; height: 100vh; box-shadow: 0px -5px 25px; overflow: hidden;">
+    <div class="center-cropped" style = "background-color: #f8abb1; height: calc(100vh - 80px); box-shadow: 0px -5px 25px; overflow: hidden;">
         <!-- Desktop ver -->
         <div class="slideshow-home mx-auto w-75 d-none d-lg-block" id = "desktop-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel">
