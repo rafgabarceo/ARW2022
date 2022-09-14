@@ -27,6 +27,9 @@
 	.section-1 .logo {
 		max-width: 160px;
 	}
+	.section-1 .org-name-container {
+		width: 40%;
+	}
 	.description-box {
 		height: 25em;
 		padding: 1.5rem 0.8rem 2rem 1.4rem;
@@ -34,6 +37,11 @@
 }
 
 /* For tablets (Bootstrap md breakpoint) */
+@media only screen and (max-width: 700px) {
+	.section-1 .org-name-container {
+		width: 18rem;
+	}
+}
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 	.section-1 {
 		padding: 6em 4em 4em 4em; /* top right bottom left */
@@ -41,6 +49,9 @@
 	.section-1 .logo {
 		width: 190px;
 		height: 190px;
+	}
+	.section-1 .org-name-container {
+		width: 45%;
 	}
 	.description-box {
 		height: 20em;
@@ -55,7 +66,7 @@
 		padding: 11em 6em 7em 6em; /* top (or 25vh) right bottom left */
 	}
 	.section-1 .logo {
-		max-width: 256px;
+		max-width: 220px;
 	}
 	.section-1 div div {
 		margin-top: 0;
@@ -72,12 +83,59 @@
 		max-width: 1400px;
 		max-height: 768px;
 	}
+	.section-1 .org-name-container {
+		width: 30rem;
+	}
 	.description-box {
-		height: 60%;
+		height: 70%;
 	}
 }
 
 /****** OTHER STYLES ******/
+.section-1 .org-name-container {
+	margin: auto;
+}
+.centered-axis-x {
+	/* From https://stackoverflow.com/a/23384995 */
+	/* must be accompanied by position: relative | absolute */
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.org-name {
+	top: 17px;
+	left: 50%;
+	transform: translateX(-75%); /* half of the SVG's width attribute value */
+}
+
+svg{
+	/* border: 3px solid red; */
+}
+svg text {
+	/* Center text in SVG (https://stackoverflow.com/a/31522006)*/
+	text-anchor: middle;
+	dominant-baseline: mathematical;	
+}
+svg .curved-text {
+	letter-spacing: 2px;
+	
+}
+.bevel3 {
+	font-size: 80;
+	color: #d7dee1;
+  /*-webkit-text-fill-color: #cccccc; /* Will override color (regardless of order) */
+	/* text-shadow: 3px 4px 10px #def, 0 0 0 #000, 1px 4px 6px #def; */
+	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+  /* -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white; */
+}
+.bevel2 {  /* larger font */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
+	fill: #4fa389;
+	font-weight: bold;
+	font-size: 60;	
+	text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+}
 .bevel {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
 	fill: #4fa389;
@@ -85,6 +143,7 @@
 	font-size: 18;	
 	text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 .section-1 button {
 	min-width: 70%;

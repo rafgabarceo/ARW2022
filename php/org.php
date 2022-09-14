@@ -35,12 +35,15 @@
                 <img src= "../assets/org_images/<?php echo $org_info['logo']?>" class="logo"/>
 
                 <!-- abbreviated org name (banner asset + org-name) -->
-                <div class="mt-4">
-                    <!-- will insert banner asset & edit css for it when available -->
-                    <img src="" alt="">
-                    <!-- will add svg for curved text -->
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30" width="100%" height="100%">   
+                <div class="mt-4 position-relative org-name-container">
+                    <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
+                    <img src="../assets/ribbonbanner.svg" class="position-relative centered-axis-x" width="100%">
+                    <div class="position-absolute org-name">
+                        <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG
+                        Curved Text from https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 20 400 140" width="150%" height="100%">   
+                            <!-- TODO: edit text curve path to fit actual banner when available -->
+                            <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />    
                             <filter id="Bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
                                 <feGaussianBlur in="SourceAlpha" stdDeviation="0.2" result="blur"/>
                                 <feSpecularLighting in="blur" surfaceScale="10" specularConstant="3.5" specularExponent="10" result="specOut" lighting-color="#ffffff">
@@ -49,17 +52,18 @@
                                 <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
                                 <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
                             </filter>
-                        <text x="5" y="18" class="bevel" filter="url(#Bevel)">
-                            <?php echo $org_info['org-name']?>
-                        </text>
+                            <text x="0" y="0" class="bevel2 curved-text" filter="url(#Bevel)">
+                                <textPath xlink:href="#curve" startOffset="50%">
+                                    <?php echo $org_info['org-name']?>
+                                </textPath>
+                            </text>
                         </svg>
                     </div>
+                    
                 </div>
-
-
             </div>
             <!-- description & buttons -->
-            <div class="col-lg-8">
+            <div class="col-lg-8 description-parent">
                 <div class="description-box">
                     <h3>
                         <?php echo $org_info['org-long-name']?>
