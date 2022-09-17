@@ -1,0 +1,172 @@
+:root {
+	--pastle-pink: #FFBFE2;
+	--pink: #FF85C7;
+	--dark-pink: #FF008A;
+
+	/* primary colors */
+	--scarlet: #d82b27;
+	--basil: #22763c;
+	--lapis: #253e94;
+	--brown: #755923;
+
+	/* subcolors */
+	--violet: #5e61a2;
+	--lime: #b7d433;
+	--honey: #f9a238;
+	--light-pink: #f8abb1;
+}
+
+
+/****** DEVICE SPECIFIC STYLES ******/
+/* For smaller devices (phones) */
+@media only screen and (max-width: 767.98px) {
+	#section-1 {
+		padding: 4.5em 0.1em 2em 0.1em; /* top right bottom left */
+	}
+	#section-1 .logo {
+		max-width: 160px;
+	}
+	#section-1 .org-name-container {
+		width: 15rem;
+	}
+	.description-box {
+		height: 25em;
+		padding: 1.5rem 0.8rem 2rem 1.4rem;
+	}
+}
+
+/* For tablets (Bootstrap md breakpoint) */
+@media only screen and (min-width: 700px) {
+	#section-1 .org-name-container {
+		width: 18rem;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	#section-1 {
+		padding: 6em 4em 4em 4em; /* top right bottom left */
+	}
+	#section-1 .logo {
+		width: 190px;
+		height: 190px;
+	}
+	.description-box {
+		height: 20em;
+		padding: 2rem 1.5rem 3rem 2.1rem;
+	}
+}
+
+/* For laptop/desktops, large and small (Bootstrap lg breakpoint) */
+@media only screen and (min-width: 992px) {
+	#section-1 {
+		height: 100vh;
+		padding: 11em 6em 7em 6em; /* top (or 25vh) right bottom left */
+	}
+	#section-1 .logo {
+		max-width: 220px;
+	}
+	#section-1 div div {
+		margin-top: 0;
+	}
+	.description-box {
+		height: 50vh;
+		padding: 2rem 1.5rem 3rem 2.1rem;
+	}
+}
+
+/* For larger desktop screens */
+@media only screen and (min-width: 1200px) {
+	#section-1 div {
+		max-width: 1400px;
+		max-height: 768px;
+	}
+	#section-1 .org-name-container {
+		width: 20rem;
+	}
+	.description-box {
+		height: 70%;
+	}
+}
+
+/****** OTHER STYLES ******/
+.centered-axis-x {
+	/* From https://stackoverflow.com/a/23384995 */
+	/* must be accompanied by position: relative | absolute */
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.dom-color-filter {
+	filter: brightness(0) saturate(100%);
+}
+
+.text-scrollable-justified {
+	text-align: justify;
+	overflow: auto;
+	padding-right: 0.4rem;
+}
+.text-scrollable-justified p {
+	margin-bottom: 0;
+}
+.text-scrollable-justified::-webkit-scrollbar {
+	width: 6px;
+}
+.text-scrollable-justified::-webkit-scrollbar-track {
+	background: transparent;
+}
+.text-scrollable-justified::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.233);
+	border-radius: 5px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.932); */
+}
+
+svg{
+	/* border: 3px solid red; */
+}
+svg text {
+	/* Center text in SVG (https://stackoverflow.com/a/31522006)*/
+	text-anchor: middle;
+	dominant-baseline: mathematical;	
+}
+svg .curved-text {
+	letter-spacing: 2px;
+}
+.bevel {  /* larger font */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
+	fill: #4fa389;
+	font-weight: bold;
+	font-size: 60;
+	/* text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2); */
+}
+#section-1 .org-name-container {
+	margin: auto;
+}
+.org-name {
+	top: 17px;
+	left: 50%;
+	transform: translateX(-75%); /* half of the SVG's width attribute value */
+}
+
+#section-1 {
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	z-index: 1;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#section-1 button {
+	min-width: 70%;
+}
+.description-box {
+	background-color: rgba(94, 97, 162, 0.85);
+	border-radius: 2rem;
+	color: white;
+	display: flex;
+  flex-direction: column;
+	overflow: hidden;
+	justify-content: center;
+}
+
