@@ -6,8 +6,8 @@ html, body {
 #_clouds {
     width: 100%;
     
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     
 }
 
