@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/orgs_list.css">
+    <link rel="stylesheet" href="../css/organization.css">
 
     <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -30,8 +31,29 @@
         <!-- Mobile ver -->
 
         <!-- Both -->
-
     </div>
+        
+    <section>
+        <div class="card">
+            <div class="card-body page-title">
+                CSO Accredited
+                Organizations
+            </div>   
+        </div>
+    </section>
+
+    <section class="palegreen">
+        <div class="d-flex flex-column">
+            <div class="cso-title-div">
+                <p class="cso-text">Council of Student Organizations</p>
+            </div>
+            <div class="cso-logo align-self-center">
+            </div>
+            <div class="align-self-center">
+                <button type="button" class="btn btn-primary btn-lg rounded-pill cso-button">Button</button>
+            </div>
+        </div>   
+    </section>
 
     </div>
 
