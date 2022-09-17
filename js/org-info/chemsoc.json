@@ -8,6 +8,8 @@
     "fb-link": "https://www.facebook.com/dlsuchemsoc",
     "reg-link": "https://google.com",
 
+    "bg": "../assets/arw_cover_bg/cover_bg_noclouds.png",
+
     "physical-booth": true,
     "physical-booth-times": "9:00 PM - 3:00 PM",
     "online-booth-times": "8:00 PM - 5:00 PM"

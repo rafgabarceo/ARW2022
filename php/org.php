@@ -17,16 +17,17 @@
     <link rel="stylesheet" href="../css/org_indiv.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="../js/colorToFiler.js"></script>
+    <script src="../js/org_indiv.js"></script>
 </head>
 
-<!-- onload="getOrgBgBrightness('../assets/arw_cover_bg/cover_bg_noclouds.png')" -->
 <body >
     <?php require_once('nav_bar_2.php') ?>
-        
+
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
-    <!-- Replace background image URL to backend call when available. 
-    For example: "...url(<?php echo $org_info['bg']?>)" -->
-    <section class="section-1 text-center " style="background-image: url('../assets/arw_cover_bg/cover_bg_noclouds.png');">
+    <section class="text-center" id="section-1" style="background-image: url(<?php echo $org_info['bg']?>);">
+        <!-- hidden image for getting dom-color purposes -->
+        <img src="<?php echo $org_info['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()">
         <!-- logo & description -->
         <div class="row gx-5 gy-4 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
@@ -37,7 +38,7 @@
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative org-name-container">
                     <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
-                    <img src="../assets/ribbonbanner.svg" class="position-relative centered-axis-x" width="100%">
+                    <img src="../assets/ribbonbanner.svg" class="position-relative centered-axis-x dom-color-filter" width="100%">
                     <div class="position-absolute org-name">
                         <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG
                         Curved Text from https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
@@ -52,7 +53,7 @@
                                 <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
                                 <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
                             </filter>
-                            <text x="0" y="0" class="bevel2 curved-text" filter="url(#Bevel)">
+                            <text x="0" y="0" class="bevel curved-text comp-color-text-fill" filter="url(#Bevel)">
                                 <textPath xlink:href="#curve" startOffset="50%">
                                     <?php echo $org_info['org-name']?>
                                 </textPath>
@@ -64,7 +65,7 @@
             </div>
             <!-- description & buttons -->
             <div class="col-lg-8 description-parent">
-                <div class="description-box">
+                <div class="description-box dom-color-bg">
                     <h3>
                         <?php echo $org_info['org-long-name']?>
                     </h3>
@@ -111,6 +112,7 @@
     <section>
         Mission: <?php echo $org_info['mission']?><br><br>
         Vission: <?php echo $org_info['vision']?>
+        <?php echo "background-image: url('{$org_info['bg']}');" ?>
     </section>
 
     <!-- 4th Section: Flagship Events (slideshow) -->
@@ -130,6 +132,6 @@
     <!-- Must include for nav-bar-collapse on mobile -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <script src="../js/org_indiv.js"></script>
+    
 </body>
 </html>
