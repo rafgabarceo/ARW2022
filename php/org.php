@@ -102,9 +102,15 @@
     <!-- 2nd Section: Optional Org Video -->
     <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
     <?php if (isset($org_info['video'])) { // start if ?>
-        <section>
-            <!-- Insert html here -->
-            Hi there!
+        <section class="text-center" id="section-2">
+            <div>
+                <h1 class="dom-color-text mb-4">
+                    Organizational Video
+                </h1>
+                <div>
+                    <iframe width="80%" height="90%" src=<?php echo $org_info['video']?>></iframe>
+                </div>
+            </div>
         </section>
     <?php } // end if ?>
 
