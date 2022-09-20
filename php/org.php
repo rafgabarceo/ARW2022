@@ -9,6 +9,11 @@
         // Will have to replace file_get_contents() with a function returning a .json. Communication must be from back-end API.
         $org_json = file_get_contents('../js/org-info/'. $pageID .'.json');
         $org_info = json_decode($org_json, true);
+
+        // Set org bg to the default one when none is given
+        if (!isset($org_info['bg']) || empty($org_info['bg'])) { 
+            $org_info['bg'] = "../assets/arw_cover_bg/cover_bg_noclouds.png";
+        }
     ?>
     
     <title><?php echo $org_info['org-name']?></title>
@@ -21,7 +26,7 @@
     <script src="../js/org_indiv.js"></script>
 </head>
 
-<body >
+<body>
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
@@ -99,38 +104,41 @@
         </div>
     </section>
     
-    <!-- 2nd Section: Optional Org Video -->
-    <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
-    <?php if (isset($org_info['video'])) { // start if ?>
-        <section class="text-center" id="section-2">
-            <div>
-                <h1 class="dom-color-text mb-4">
-                    Organizational Video
-                </h1>
+    <!-- After section 1: tea party bg for other sections -->
+    <div id="tea-party-bg">
+        <!-- 2nd Section: Optional Org Video -->
+        <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
+        <?php if (isset($org_info['video']) || !empty($org_info['video'])) { // start if ?>
+            <section class="text-center" id="section-2">
                 <div>
-                    <iframe width="80%" height="90%" src=<?php echo $org_info['video']?>></iframe>
+                    <h1 class="mb-4">
+                        Organizational Video
+                    </h1>
+                    <div>
+                        <iframe width="80%" height="90%" src=<?php echo $org_info['video']?>></iframe>
+                    </div>
                 </div>
-            </div>
+            </section>
+        <?php } // end if ?>
+    
+        <!-- 3rd Section: Main Pub, Mission, Vision -->
+        <section>
+            Mission: <?php echo $org_info['mission']?><br><br>
+            Vission: <?php echo $org_info['vision']?>
+            <?php echo "background-image: url('{$org_info['bg']}');" ?>
         </section>
-    <?php } // end if ?>
-
-    <!-- 3rd Section: Main Pub, Mission, Vision -->
-    <section>
-        Mission: <?php echo $org_info['mission']?><br><br>
-        Vission: <?php echo $org_info['vision']?>
-        <?php echo "background-image: url('{$org_info['bg']}');" ?>
-    </section>
-
-    <!-- 4th Section: Flagship Events (slideshow) -->
-    <section>
-        <!-- bootstrap carousel -->
-        <!-- loop thru each image -->
-    </section>
-
-    <!-- 5th Section: Prices Pub, Buttons, Tagline -->
-    <section>
-
-    </section>
+    
+        <!-- 4th Section: Flagship Events (slideshow) -->
+        <section>
+            <!-- bootstrap carousel -->
+            <!-- loop thru each image -->
+        </section>
+    
+        <!-- 5th Section: Prices Pub, Buttons, Tagline -->
+        <section>
+    
+        </section>
+    </div>
 
     <!-- ARW Footer -->
     <!-- To be inserted when it's available -->

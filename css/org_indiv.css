@@ -16,12 +16,24 @@
 	--light-pink: #f8abb1;
 }
 
+body {
+	background-image: none;
+}
+
+#tea-party-bg {
+	background-image: url(../assets/org_indiv_page/indiv_org_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-position-x: center;
+	background-position-y: center; */
+}
+
 
 /****** DEVICE SPECIFIC STYLES ******/
 /* For smaller devices (phones) */
 @media only screen and (max-width: 767.98px) {
 	#section-1 {
-		padding: 4.5em 0.1em 2em 0.1em; /* top right bottom left */
+		padding: 4.5em 0.1em 3em 0.1em; /* top right bottom left */
 	}
 	#section-1 .logo {
 		max-width: 160px;
@@ -34,7 +46,7 @@
 		padding: 1.5rem 0.8rem 2rem 1.4rem;
 	}
 	#section-2 {
-		margin: 1.5em;
+		padding: 2em 1em 2em 1em;
 	}
 	#section-2 div {
 		width: 90%;
@@ -49,7 +61,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 	#section-1 {
-		padding: 6em 4em 3em 4em; /* top right bottom left */
+		padding: 7em 4em 4em 4em; /* top right bottom left */
 	}
 	#section-1 .logo {
 		width: 190px;
@@ -60,7 +72,7 @@
 		padding: 2rem 1.5rem 3rem 2.1rem;
 	}
 	#section-2 {
-		margin: 2em;
+		padding: 2.5em 1em 2.5em 1em;
 	}
 	#section-2 div {
 		width: 70%;
@@ -208,6 +220,7 @@ svg .curved-text {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	color: black;
 }
 #section-2 div div {
   position: relative;
