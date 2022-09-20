@@ -33,6 +33,12 @@
 		height: 25em;
 		padding: 1.5rem 0.8rem 2rem 1.4rem;
 	}
+	#section-2 {
+		margin: 1.5em;
+	}
+	#section-2 div {
+		width: 90%;
+	}
 }
 
 /* For tablets (Bootstrap md breakpoint) */
@@ -43,7 +49,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 	#section-1 {
-		padding: 6em 4em 4em 4em; /* top right bottom left */
+		padding: 6em 4em 3em 4em; /* top right bottom left */
 	}
 	#section-1 .logo {
 		width: 190px;
@@ -52,6 +58,12 @@
 	.description-box {
 		height: 20em;
 		padding: 2rem 1.5rem 3rem 2.1rem;
+	}
+	#section-2 {
+		margin: 2em;
+	}
+	#section-2 div {
+		width: 70%;
 	}
 }
 
@@ -71,6 +83,18 @@
 		height: 50vh;
 		padding: 2rem 1.5rem 3rem 2.1rem;
 	}
+	#section-1 .org-name-container {
+		transform: translateX(-50%);
+		left: 50%;
+	}
+	#section-2 {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	#section-2 div {
+		width: 60%;
+		max-width:  1200px;
+	}
 }
 
 /* For larger desktop screens */
@@ -84,6 +108,14 @@
 	}
 	.description-box {
 		height: 70%;
+	}
+}
+/* TODO: Will have to update the min-width value once banner is given
+	This is to accomodate for when banner is larger than thw row's width and off-centered */
+@media only screen and (min-width: 1300px) {
+	#section-1 .org-name-container {
+		transform: none;
+		left: 0;
 	}
 }
 
@@ -170,3 +202,25 @@ svg .curved-text {
 	justify-content: center;
 }
 
+#section-2 div {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#section-2 div div {
+  position: relative;
+	display: block;
+  width: 100%;
+  padding-bottom: 56.25%; 
+}
+#section-2 div div iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+	bottom: 0;
+	right: 0;
+  width: 100%;
+	height: 100%;
+}
