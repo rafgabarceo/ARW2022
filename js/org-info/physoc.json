@@ -1,14 +1,20 @@
 {
     "org-name": "PHYSOC",
     "org-long-name": "Physics Society",
-    "logo": "physoc-logo.webp",
+    "logo": "../assets/org_images/physoc-logo.webp",
     "description": "The DLSU Physics Society is an organization for Physics majors and other students interested in Physics and its application to other fields. The society upholds the primary goal of instilling appreciation and a deeper understanding of Physics to their members and to the university. The organization nurtures relations and endeavors with each other through Physics. The society is created to assist Physics students and lives up to its commitment of serving side by side with the Physics Department.",
     "mission": "The Physics Society is a haven for Physics enthusiasts. Here, the members can discuss Physics topics that are interesting to them and engage in a fruitful dialogue. Physics talks are also implemented in this organization where professors share useful and imaginative insights on having a job and career in Physics. We also conduct activities like campus tours to different science institutions in the Philippines.",
     "vision": "With these activities, we hope to promote the common interest and individual development of Physics majors and other students interested in this field, and we shall support the goals and objectives of this organization and advance the study and awareness of Physics in all its aspects among students and the general public.",
     "fb-link": "https://www.facebook.com/PhySocDLSU",
     
     "reg-link": "https://google.com",
-    "bg": "../assets/arw_cover_bg/COVER_BG_Only.png",
+    
+    "bg": "../assets/org_indiv_page/test_bg/wg-bg.png",
+    "tagline": "Embody Your Entrepreneurial Spirit.",
+	"banner": "../assets/org_indiv_page/yes_assets/yes-banner.png",
+
+	"flagship-events": "../assets/org_indiv_page/yes_assets/yes-flag1.png, ../assets/org_indiv_page/yes_assets/yes-flag2.png, ../assets/org_indiv_page/yes_assets/yes-flag3.png, ../assets/org_indiv_page/yes_assets/yes-flag4.png, ../assets/org_indiv_page/yes_assets/yes-flag5.png",
+
 
     "physical-booth": true,
     "physical-booth-times": "10:00 AM - 5:00 PM",

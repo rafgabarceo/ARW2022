@@ -17,7 +17,7 @@
                     "physical-booth-times": "10:00 PM - 3:00 PM",
                     "online-booth-times": "9:00 PM - 5:00 PM",
                     "logo": "mc-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/mc"
+                    "page": "org.php?yes"
                 },
                 {
                     "org-name": "PHYSOC",
