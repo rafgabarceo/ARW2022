@@ -52,7 +52,7 @@
                 <img src= "<?php echo $org_info['logo']?>" class="logo"/>
 
                 <!-- abbreviated org name (banner asset + org-name) -->
-                <div class="mt-4 position-relative org-name-container">
+                <div class="mt-4 position-relative m-auto org-name-container">
                     <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
                     <img src="../assets/ribbonbanner.svg" class="position-relative centered-axis-x dom-color-filter" width="100%">
                     <div class="position-absolute org-name">
@@ -76,26 +76,26 @@
                             </text>
                         </svg>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- description & buttons -->
-            <div class="col-lg-8 description-parent">
+            <div class="col-lg-8">
                 <div class="description-box dom-color-bg">
-                    <h3>
+                    <h1>
                         <?php echo $org_info['org-long-name']?>
-                    </h3>
-                    <p>
-                        Physical Booth Open from <?php echo $org_info['physical-booth-times']?>
+                    </h1>
+                    <p class="mb-3">
+                        Physical Booth open from <?php echo $org_info['physical-booth-times']?>
                     </p>
-                    <div class="text-scrollable-justified">
+                    <div class="text-scrollable-justified light-scroll">
                         <p>
                             <?php echo $org_info['description']?>
                         </p>
                     </div>
                 </div>
                 <!-- buttons -->
-                <div class="row pt-4 gy-4 justify-content-center">
+                <div class="row pt-5 gy-4 justify-content-center">
                     <div class="col-md-5">
                         <a href=<?php echo $org_info['fb-link']?>>
                             <button type="button" class="btn btn-primary btn-lg">
@@ -133,9 +133,27 @@
         <?php } // end if ?>
     
         <!-- 3rd Section: Main Pub, Mission, Vision -->
-        <section>
-                    Mission: <?php echo $org_info['mission']?><br><br>
-                    Vission: <?php echo $org_info['vision']?>
+        <section id="section-3" class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 align-self-center">
+                    <img src="<?php echo $org_info['banner']?>" width="100%"/>
+                </div>
+                <!-- 24px default padding - 0.6px for scroll bar -->
+                <div class="col-lg-6" style="padding-right: 23.4px;">
+                    <br>
+                    <h1 class="dom-color-text">Mission</h1>
+                    <div class="text-scrollable-justified dark-scroll">
+                        <p>
+                            <?php echo $org_info['mission']?>
+                        </p>
+                    </div>
+                    <br><br>
+                    <h1 class="dom-color-text">Vision</h1>
+                    <div class="text-scrollable-justified dark-scroll">
+                        <p>
+                            <?php echo $org_info['vision']?>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
