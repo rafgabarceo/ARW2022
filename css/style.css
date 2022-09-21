@@ -73,25 +73,26 @@
     position: fixed;
     z-index: -1;
 }
-@media (min-aspect-ratio: 16/9) {
+/* @media (min-aspect-ratio: 16/9) {
     #videoBG {
-        width:100%;
-     
+        width: 100%;
         height: auto;
     }
-}
-@media (max-aspect-ratio: 16/9) {
+} */
+
+/* @media (max-aspect-ratio: 16/9) {
     #videoBG { 
-        /* width:auto; */
+
         width: 100%;
-        /* height: auto; */
+
         overflow: visible;
         position: absolute;
         top: 100px;
         left: -100%;
         height: 100%;
     }
-}
+} */
+
 @media (max-width: 767px) {
     #videoBG {
         display: none;

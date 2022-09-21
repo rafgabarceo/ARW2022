@@ -45,8 +45,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="./php/faq.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">FAQs</button>
+                    </a>
                 </li>
 
                 <li class="nav-item">
@@ -57,8 +59,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="./php/comm_page.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                        style="min-width: 128px; margin-right: 32px" href="#">About Us</button>
+                        style="min-width: 128px; margin-right: 32px" href="#">Behind ARW</button>
+                    </a>
                 </li>
 
             </ul>
