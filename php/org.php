@@ -14,6 +14,17 @@
         if (!isset($org_info['bg']) || empty($org_info['bg'])) { 
             $org_info['bg'] = "../assets/arw_cover_bg/cover_bg_noclouds.png";
         }
+
+        // Convert string to array for flagship events
+        // May have to remove this depending on result of back-end API.
+        $org_info['flagship-events'] = explode(', ', $org_info['flagship-events']);
+
+        // Set main tea party background for the rest of the sections
+        $main_bg = "background-image: url(../assets/org_indiv_page/" 
+                    . ((isset($org_info['video']) && !empty($org_info['video'])) 
+                        ? "tea_party_bg.png" 
+                        : "tea_party_bg_short.png"
+                    ) . ");";
     ?>
     
     <title><?php echo $org_info['org-name']?></title>
@@ -23,7 +34,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script src="../js/colorToFiler.js"></script>
-    <script src="../js/org_indiv.js"></script>
+    <script src="../js/orgIndiv.js"></script>
 </head>
 
 <body>
@@ -32,13 +43,13 @@
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
     <section class="text-center" id="section-1" style="background-image: url(<?php echo $org_info['bg']?>);">
         <!-- hidden image for getting dom-color purposes -->
-        <img src="<?php echo $org_info['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()">
+        <img src="<?php echo $org_info['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
         <!-- logo & description -->
         <div class="row gx-5 gy-4 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
             <!-- logo & abbreviated name -->
             <div class="col-lg-4">
-                <img src= "../assets/org_images/<?php echo $org_info['logo']?>" class="logo"/>
+                <img src= "<?php echo $org_info['logo']?>" class="logo"/>
 
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative org-name-container">
@@ -105,10 +116,10 @@
     </section>
     
     <!-- After section 1: tea party bg for other sections -->
-    <div id="tea-party-bg">
+    <div id="tea-party-bg" style="<?php echo $main_bg?>">
         <!-- 2nd Section: Optional Org Video -->
         <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
-        <?php if (isset($org_info['video']) || !empty($org_info['video'])) { // start if ?>
+        <?php if (isset($org_info['video']) && !empty($org_info['video'])) { // start if ?>
             <section class="text-center" id="section-2">
                 <div>
                     <h1 class="mb-4">
@@ -123,15 +134,17 @@
     
         <!-- 3rd Section: Main Pub, Mission, Vision -->
         <section>
-            Mission: <?php echo $org_info['mission']?><br><br>
-            Vission: <?php echo $org_info['vision']?>
-            <?php echo "background-image: url('{$org_info['bg']}');" ?>
+                    Mission: <?php echo $org_info['mission']?><br><br>
+                    Vission: <?php echo $org_info['vision']?>
+                </div>
+            </div>
         </section>
-    
+        
         <!-- 4th Section: Flagship Events (slideshow) -->
         <section>
             <!-- bootstrap carousel -->
             <!-- loop thru each image -->
+            <?php echo gettype($org_info['flagship-events'])  ?>
         </section>
     
         <!-- 5th Section: Prices Pub, Buttons, Tagline -->

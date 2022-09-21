@@ -1,0 +1,22 @@
+{
+	"org-name": "SV",
+	"org-long-name": "Societas Vitae",
+	"logo": "../assets/org_indiv_page/sv_assets/sv-logo.png",
+	"description": "Societas Vitae is the official home organization of the Biology Department as well as the premier pre-medical society in De La Salle University. We take pride as we stand at the vanguard of the life sciences, fostering aspiring doctors, scientists, and professionals in the pursuit of knowledge and social impact. Beyond such, we are the home and family of students and scientists alike.",
+	"mission": "By bridging and contextualizing the worlds of biology and medicine, Societas Vitae cultivates an environment of collaborative and diverse individuals, learning and appreciating the life sciences, who will become the country's future scientists and medical professionals.",
+	"vision": "Societas Vitae aims to push the limits of biology further beyond professionalism and career for the like-minded and the ordinary. In doing so, we align the diverse fields of biology and medicine to provide insightful perspective on Philippine society.",
+	"fb-link": "https://www.facebook.com/dlsuchemsoc",
+	"reg-link": "https://google.com",
+
+	"bg": "../assets/org_indiv_page/sv_assets/sv-bg.png",
+	"banner": "../assets/org_indiv_page/sv_assets/sv-banner.png",
+
+	"flagship-events": "../assets/org_indiv_page/sv_assets/sv-flag1.png, ../assets/org_indiv_page/sv_assets/sv-flag2.png, ../assets/org_indiv_page/sv_assets/sv-flag3.png, ../assets/org_indiv_page/sv_assets/sv-flag4.png, ../assets/org_indiv_page/sv_assets/sv-flag5.png",
+
+	"physical-booth": true,
+	"physical-booth-times": "9:00 PM - 6:00 PM",
+	"online-booth-times": "9:00 PM - 6:00 PM"
+	
+	, "video": "https://www.youtube.com/embed/6IrsK7iQkKE"
+
+}

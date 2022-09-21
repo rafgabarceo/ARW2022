@@ -33,7 +33,7 @@
                     "physical-booth-times": "9:00 PM - 6:00 PM",
                     "online-booth-times": "9:00 PM - 6:00 PM",
                     "logo": "sv-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/sv"
+                    "page": "org.php?sv"
                 }
             ]
         },

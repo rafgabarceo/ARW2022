@@ -126,8 +126,9 @@ const setDomColors = function() {
 	// Get dominant color
 	const img = document.getElementById('bg-img');
 	const domCol = getDominantColorFromImage(img);
-	// Darken dominant color
-	const rgb = lightenDarkenRGB(domCol, -60);
+	// Decide to use darker dominant color or just domCol
+	let rgb = lightenDarkenRGB(domCol, -50);
+	rgb = rgb.some(item => item !== 0) ? rgb : domCol;
 
 	// Get equivalent CSS filter. Must import colorToFiler.js first
 	// Source: https://codepen.io/sosuke/pen/Pjoqqp 
@@ -146,13 +147,13 @@ const setDomColors = function() {
 	// Check if rgb is dark, if it is, lighter text color; else darker
 	if (isRGBDark(rgb)) {
 		$('.description-box').css('color', 'white');
-		comp = lightenDarkenRGB(comp, 70);
+		comp = lightenDarkenRGB(comp, 100);
 	} else {
 		$('.description-box').css('color', 'black');
 	}
 	
 	$('.dom-color-text').css('color',  `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`);
-	$('.dom-color-bg').css('background-color',  `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.85)`);
+	$('.dom-color-bg').css('background-color',  `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.9)`);
 	$('.dom-color-filter').attr('style', filterRes.filter.slice(0,-1) + ' drop-shadow(1px 1px 5px #222);');
 	$('.comp-color-text-fill').css('fill', `rgb(${comp[0]}, ${comp[1]}, ${comp[2]})`);
 }
