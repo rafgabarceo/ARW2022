@@ -1,35 +1,12 @@
 :root {
-	--pastle-pink: #FFBFE2;
-	--pink: #FF85C7;
-	--dark-pink: #FF008A;
-
-	/* primary colors */
-	--scarlet: #d82b27;
-	--basil: #22763c;
-	--lapis: #253e94;
-	--brown: #755923;
-
-	/* subcolors */
-	--violet: #5e61a2;
-	--lime: #b7d433;
-	--honey: #f9a238;
-	--light-pink: #f8abb1;
+	--max-width-1: 1400px;
+	--max-width-2: 1000px;
+	--max-height-1: 768px;
 }
 
 body {
 	background-image: none;
 }
-
-#tea-party-bg {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	display: grid;
-}
-
 
 /****** DEVICE SPECIFIC STYLES ******/
 /* For smaller devices (phones) */
@@ -57,7 +34,7 @@ body {
 	#section-3 {
 		padding: 2em;
 	}
-	#section-4 {
+	#section-4, #section-5 {
 		width: 100%;
 	}
 }
@@ -91,7 +68,7 @@ body {
 		padding: 3em;
 		width: 85%
 	}
-	#section-4 {
+	#section-4, #section-5 {
 		width: 85%;
 	}
 }
@@ -122,12 +99,11 @@ body {
 	}
 	#section-2 div {
 		width: 70%;
-		max-width:  1200px;
 	}
 	#section-3 {
 		padding: 3em 4em 3em 4em;
 	}
-	#section-4 {
+	#section-4, #section-5 {
 		width: 70%;
 	}
 }
@@ -135,14 +111,21 @@ body {
 /* For larger desktop screens (follows laptop styles unless overwritten) */
 @media only screen and (min-width: 1200px) {
 	#section-1 div {
-		max-width: 1400px;
-		max-height: 768px;
+		max-width: var(--max-width-1);
+		max-height: var(--max-height-1);
+	}
+	#section-2 div {
+		width: 70%;
+		max-width: var(--max-width-2);
 	}
 	#section-1 .org-name-container {
 		width: 20rem;
 	}
 	.description-box {
 		height: 340px;
+	}
+	#section-4, #section-5 {
+		max-width: var(--max-width-2);
 	}
 }
 /* TODO: Will have to update the min-width value once banner is given
@@ -153,6 +136,7 @@ body {
 		left: 0;
 	}
 }
+
 
 /****** OTHER STYLES ******/
 .centered-axis-x {
@@ -192,6 +176,17 @@ body {
 	background-color: rgba(0, 0, 0, 0.233);
 }
 
+/*****/
+#tea-party-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 5em;
+	display: grid;
+}
 
 /* Section 1 styles */
 svg{
@@ -275,10 +270,16 @@ svg .curved-text {
 	max-height: 8em;
 }
 
+/* Section 4 styles */
 #section-4 {
 	color: black;
 }
 #flagship-carousel {
 	border: white solid 5px;
 	border-radius: 4px;
+}
+
+/* Section 5 styles */
+#section-5 button {
+	max-width: 70%;
 }

@@ -161,7 +161,6 @@
         <!-- 4th Section: Flagship Events (slideshow) -->
         <section id="section-4" class="container text-center p-0">
             <h1 class="mb-4" >Flagship Events</h1>
-            <!-- loop thru each image -->
             <div id="flagship-carousel" class="carousel slide" data-bs-ride="true" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -196,8 +195,25 @@
         </section>
     
         <!-- 5th Section: Prices Pub, Buttons, Tagline -->
-        <section>
-    
+        <section id="section-5" class="container p-0 text-center">
+            <div class="row gx-5 gy-5 align-items-center">
+                <div class="col-lg-6 pe-lg-5">
+                    <img src="<?php echo $org_info['banner']?>" width="100%" />
+                </div>
+                <div class="col-lg-6 d-grid gap-3 p-0">
+                    <a href=<?php echo $org_info['fb-link']?>>
+                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Facebook
+                        </button>
+                    </a>
+                    <a href=<?php echo $org_info['reg-link']?>>
+                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Register
+                        </button>
+                    </a>
+                    <h1 class="dom-color-text mt-4"><?php echo $org_info['tagline']?></h1>
+                </div>
+            </div>
         </section>
     </div>
 
