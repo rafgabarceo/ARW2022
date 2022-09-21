@@ -57,6 +57,9 @@ body {
 	#section-3 {
 		padding: 2em;
 	}
+	#section-4 {
+		width: 100%;
+	}
 }
 
 /* For tablets (Bootstrap md breakpoint) */
@@ -87,6 +90,9 @@ body {
 	#section-3 {
 		padding: 3em;
 		width: 85%
+	}
+	#section-4 {
+		width: 85%;
 	}
 }
 
@@ -120,6 +126,9 @@ body {
 	}
 	#section-3 {
 		padding: 3em 4em 3em 4em;
+	}
+	#section-4 {
+		width: 70%;
 	}
 }
 
@@ -264,4 +273,12 @@ svg .curved-text {
 }
 #section-3 * .text-scrollable-justified {
 	max-height: 8em;
+}
+
+#section-4 {
+	color: black;
+}
+#flagship-carousel {
+	border: white solid 5px;
+	border-radius: 4px;
 }

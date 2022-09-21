@@ -41,7 +41,7 @@
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
-    <section class="text-center" id="section-1" style="background-image: url(<?php echo $org_info['bg']?>);">
+    <section id="section-1" class="text-center" style="background-image: url(<?php echo $org_info['bg']?>);">
         <!-- hidden image for getting dom-color purposes -->
         <img src="<?php echo $org_info['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
         <!-- logo & description -->
@@ -120,7 +120,7 @@
         <!-- 2nd Section: Optional Org Video -->
         <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
         <?php if (isset($org_info['video']) && !empty($org_info['video'])) { // start if ?>
-            <section class="text-center" id="section-2">
+            <section id="section-2" class="text-center">
                 <div>
                     <h1 class="mb-4">
                         Organizational Video
@@ -159,10 +159,40 @@
         </section>
         
         <!-- 4th Section: Flagship Events (slideshow) -->
-        <section>
-            <!-- bootstrap carousel -->
+        <section id="section-4" class="container text-center p-0">
+            <h1 class="mb-4" >Flagship Events</h1>
             <!-- loop thru each image -->
-            <?php echo gettype($org_info['flagship-events'])  ?>
+            <div id="flagship-carousel" class="carousel slide" data-bs-ride="true" >
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <?php // indicators for second 2nd slide onwards
+                        for ($i = 1, $size = count($org_info['flagship-events']); $i < $size; ++$i) {
+                            echo "<button type='button' data-bs-target='#flagship-carousel' 
+                                    data-bs-slide-to='{$i}' aria-label='Slide {$i}'></button>";
+                        }
+                    ?>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo $org_info['flagship-events'][0]?>" class="d-block w-100" alt="Flagship event 1">
+                    </div>
+                    <?php // slides for second 2nd event onwards
+                        for ($i = 1, $size = count($org_info['flagship-events']); $i < $size; ++$i) {
+                            echo "<div class='carousel-item'>
+                                     <img src={$org_info['flagship-events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
+                                  </div>";
+                        }
+                    ?>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#flagship-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#flagship-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     
         <!-- 5th Section: Prices Pub, Buttons, Tagline -->
