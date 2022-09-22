@@ -16,20 +16,28 @@
         <source src="../assets/background/comm_bg.mp4" type="video/mp4">
     </video>
 
-    <div style = "padding-top: 30vh;"></div>
-
     <!-- SECTION 1: TITLE PAGE -->
 
     <section style = "height: 100vh;">
-        <div class="container mx-auto rounded w-75 bg-white opacity-50 text-xl-center" style = " font-family: 'Berkshire Swash';">
-            <p style = "font-size: 128px;">ARW Wonderland</p>
-            <p style = "font-size: 93px;">Central Committee</p>
-        </div>
+        <img src="../assets/arw_cencomm/TitleCard_CENCOMM.png" style="width:100%; z-index: 3;" alt="">
     </section>
  
-    <p class = "mx-auto" style = "font-size: 93px; width: 50%; height: 100vh">Central Committee</p>
+    <!-- SECTION 2: WHO WE ARE -->
 
+     <section style = "height: 100vh;">
+        <div class="container mx-auto rounded w-75 bg-white opacity-50 text-xl-center mt-4" style = "height: 50vh;" >
+            <h1 style = "font-size:72px;">WHO WE ARE</h1>
+            <p class = "mx-5" style = "font-family: 'Garamond'; font-size:35px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
 
+    <!-- SECTION 3: PHEADS -->
+    <section style = "height: 100vh;">
+        <div class="container w-100 bg-white opacity-50 text-xl mt-4" style = "width: 100%;">
+            <h1 class = "mx-3" style = "font-size:72px;">Project Heads</h1>
+            <p class = "mx-3" style = "font-family: 'Garamond'; font-size:22px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>   
+    </section>
 
     </body>
 </html>

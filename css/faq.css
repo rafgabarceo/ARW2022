@@ -1,3 +1,4 @@
+/* Accordion Styling */
 .accordion {
     background-color: #eee;
     color: #444;
@@ -12,27 +13,31 @@
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+/* Accordion when hovering */
+.active, .accordion:hover {
     background-color: #ccc;
-  }
-  
-  .accordion:after {
+}
+
+/* Accordion after clicking */
+.accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .panel {
+}
+
+/* Under the accordion styling */
+.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgb(218, 204, 204);
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     font-family: "Garamond";
     transition: max-height 0.2s ease-out;
-  }
+}
