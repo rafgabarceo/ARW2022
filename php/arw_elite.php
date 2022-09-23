@@ -31,6 +31,17 @@
     .custom-bg-orange {
         background-color: rgb(244, 162, 56, 0.85);
     }
+    .custom-bg-black {
+        background-color: rgb(5, 2, 0, 0.90);
+    }
+
+    .centerabs{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+    }
 
     </style>
 
@@ -39,8 +50,8 @@
 
     <!-- First Sec -->
 
-    <section class="text-light p-5 px-1 pt-md-5 text-center" style="background: pink">
-    <div class="container custom-bg-green p-sm-0 my-2 rounded-4">
+    <section class="text-light p-5 px-1 pt-md-5 text-center" style="background: pink; height:100vh">
+    <div class="container custom-bg-black p-sm-0 my-2 rounded-4 centerabs">
         <div class="p-3">
                 <h1 class="pt-4">The ARW Elite</h1>
                 <p class="lead px-5 text-justify" style="font-family:Garamond">
@@ -59,119 +70,120 @@
     <!-- Second Sec -->
 
     <section class="text-light p-5 text-center" style="background: #5e51a2">
-    <div><h1 class="p-3">The ARW Elite Finalists</h1>
-    <div class="container">
+    <div><h1 class="pt-3 pb-1">The ARW Elite Finalists</h1>
+    <div class="container px-5" style="width: auto">
 
+            <!-- First Row -->
             <div class="row justify-content-center">
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <!-- Second Row -->
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col px-4">
-                    <div class="row pt-4"><div class="container bg-info rounded-5" style="height: 400px; width: 200px"></div></div>
-                        <div class="row py-4"><div class="container bg-info rounded-4" style="height: 75px; width: 200px">
-                            <h5 class="pt-2" style="font-family:Garamond">ELITE NAME</p>
-                            <h5 class="pb-5" style="font-family:Garamond; font-weight:bold">ORG NAME</p>
+                <div class="col px-2">
+                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                        <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
+                            <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
+                            <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
                         </div>
                     </div>
                 </div>
-
         </div>
     </div>
     </section>
 
     <!-- Third Sec -->
-    <section class="text-dark p-5 text-center" style="background: pink">
-        <div><h1 class="p-3">GET TO KNOW THE ELITE FINALISTS</h1>
+    <section class="text-dark p-5 pb-4 text-center" style="background: pink; height:100vh">
+        <div><h1 class="p-5">GET TO KNOW THE ELITE FINALISTS</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="row pt-4 justify-content-md-center">
+                        <div class="row pt-5 justify-content-md-center">
                             <div class="container m-3 bg-light rounded-5" style="height: 400px; width: 200px"></div>
                             <div class="container m-3 bg-light rounded-5" style="height: 400px; width: 200px"></div>
                         </div>
                     </div>
                     <div class="col-md-4 text-start">
-                        <h1 class="pt-4" style="font-family:Garamond">ORG FULL NAME</h1>
-                        <h3 class="" style="font-family:Garamond">ORG NAME</h3>
-                        <h2 class="" style="font-family:Garamond">ELITE NAME</h2>
+                        <h1 class="pt-5" style="font-family:Garamond">ORG FULL NAME</h1>
+                        <h3 class="" style="font-family:Garamond;position: relative; top: -15px">ORG NAME</h3>
+                        <h2 class="" style="font-family:Garamond;position: relative; top: -30px">ELITE NAME</h2>
                         <div class="container bg-light" style="height: 360px; width: 640px"></div>
                     </div>
                 </div>
@@ -180,15 +192,15 @@
     </section>
 
     <!-- Fourth Sec -->
-    <section class="text-light p-5 text-center" style="background: #5e51a2">
+    <section class="text-light p-5 text-center" style="background: #5e51a2; height: 100vh">
         <div>
-            <div class="container">
+            <div class="container" style="position:relative;">
                 <div class="row">
                     <div class="col text-end">
                         <div class="container">
-                            <h1 class="pt-4" style="font-family:Garamond">ORG FULL NAME</h1>
-                            <h3 class="" style="font-family:Garamond">ORG NAME</h3>
-                            <h2 class="" style="font-family:Garamond">ELITE NAME</h2>
+                            <h1 class="pt-5" style="font-family:Garamond">ORG FULL NAME</h1>
+                            <h3 class="" style="font-family:Garamond;position: relative; top: -15px">ORG NAME</h3>
+                            <h2 class="" style="font-family:Garamond;position: relative; top: -30px">ELITE NAME</h2>
                             <div class="container bg-light" style="height: 360px; width: 640px"></div>
                         </div>
                             
@@ -205,9 +217,9 @@
     </section>
 
     <!-- LAST SEC -->
-    <section class="text-light p-5 px-1 pt-md-5 text-center" style="background: pink">
+    <section class="text-light p-5 px-1 pt-md-5 text-center" style="background: pink; height:95vh">
         <div class="justify-content-center">
-            <h1 class="p-3 text-dark">Who will be the ultimate ARW Elite?</h1>
+            <h1 class="p-5 pb-4 text-dark">Who will be the ultimate ARW Elite?</h1>
             <div class="container bg-light p-sm-0 my-2" style="height: 70vh; width: 1000vh">
             </div>
         </div>
