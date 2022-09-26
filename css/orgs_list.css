@@ -5,8 +5,10 @@ html {
 body {
     font-size: 14px;
     font-weight: 300;
-    overflow-x: hidden;
+    overflow: auto;
+    overflow-x: scroll;
 }
+
 
 .cluster-abrv {
     font-size: 64;

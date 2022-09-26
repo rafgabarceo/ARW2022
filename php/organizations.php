@@ -49,7 +49,7 @@
             <div class="cso-logo align-self-center">
             </div>
             <div class="align-self-center">
-                <button type="button" class="btn btn-primary btn-lg rounded-pill cso-button">Button</button>
+                <button type="button" class="btn btn-lg rounded-pill cso-button">Button</button>
             </div>
         </div>   
     </section>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- COVER PHOTO -->
-    <div class="left-cropped hide-scrollbar" style="background: pink; z-index: -1">
+    <div class="left-cropped hide-scrollbar" style="background: pink; z-index: -1;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);

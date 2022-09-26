@@ -1,3 +1,13 @@
+ @media only screen and (min-width: 480px) {
+    .card {
+        background-image: url(../assets/arw_cover_bg/cover_bg.png);
+    }
+    .card-body {
+        width: 10rem;
+        height: 13rem;
+    }
+ }
+ 
  section {
     position: relative;
     display: flex;
@@ -12,7 +22,7 @@
  }
 
  section.cso-section {
-    background-color: palegreen;
+    background-color: #FF85C7;
     padding: 25vh;
  }
 
@@ -59,8 +69,6 @@
    font-size: 26px;
    border-radius: 50%;
    width: 20rem;
- } 
-
- .hide-scrollbar {
-    overflow-x: hidden;
- }
+   background-color: #FF008A;
+   color: white;
+} 
