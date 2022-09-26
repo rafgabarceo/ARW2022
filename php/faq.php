@@ -13,58 +13,69 @@
             <img class = "FAQs" src="../assets/arw_faqs/FAQs.png" alt="">
         </div>
 
-        <div class="container" style = "position: sticky; z-index: 4; width: 50%">
-            <button class="accordion">
-                <span class = "QFont">Q#1:</span>
-                <span class = "QuestionFont">What is ARW all about?</span>
-            </button>
-            <div class="panel">
-                <span class = "QFont">A:</span>
+        <div class="container" style = "position: sticky; z-index: 4; width: 75%">
+        
+            <div class = "container accordion-container">
+                <button class="accordion">
+                    <span class = "QFont">Q1:</span>
+                    <span class = "QuestionFont">What is ARW all about?</span>
+                </button>
+                <div class="panel">
+                    <span class = "QFont">A:</span>
 
-                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
-                <!-- Spacer -->
-                <p></p>
+                    <!-- Spacer -->
+                    <p></p>
+                </div>
+            </div>
+            
+
+            <div class = "container accordion-container">
+                <button class="accordion">
+                    <span class = "QFont">Q2:</span>
+                    <span class = "QuestionFont">What is ARW Elite?</span>
+                </button>
+                <div class="panel">
+                    <span class = "QFont">A:</span>
+
+                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+                    <!-- Spacer -->
+                    <p></p>
+                </div>
             </div>
 
-            <button class="accordion">
-                <span class = "QFont">Q#2:</span>
-                <span class = "QuestionFont">What is ARW Elite?</span>
-            </button>
-            <div class="panel">
-                <span class = "QFont">A:</span>
+            <div class = "container accordion-container">
+                <button class="accordion">
+                    <span class = "QFont">Q3:</span>
+                    <span class = "QuestionFont">Sample 3?</span>
+                </button>
+                <div class="panel">
+                    <span class = "QFont">A:</span>
 
-                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
-                <!-- Spacer -->
-                <p></p>
+                    <!-- Spacer -->
+                    <p></p>
+                </div>
             </div>
 
-            <button class="accordion">
-                <span class = "QFont">Q#3:</span>
-                <span class = "QuestionFont">Sample 3?</span>
-            </button>
-            <div class="panel">
-                <span class = "QFont">A:</span>
+            <div class = "container accordion-container">
+                <button class="accordion">
+                    <span class = "QFont">Q4:</span>
+                    <span class = "QuestionFont">Sample 4?</span>
+                </button>
+                <div class="panel">
+                    <span class = "QFont">A:</span>
 
-                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
-                <!-- Spacer -->
-                <p></p>
+                    <!-- Spacer -->
+                    <p></p>
+                </div>
             </div>
 
-            <button class="accordion">
-                <span class = "QFont">Q#4:</span>
-                <span class = "QuestionFont">Sample 4?</span>
-            </button>
-            <div class="panel">
-                <span class = "QFont">A:</span>
-
-                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-
-                <!-- Spacer -->
-                <p></p>
-            </div>
             <!-- Last Q spacer -->
             <p style = "height: 10%"></p>
         </div>
