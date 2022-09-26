@@ -26,11 +26,11 @@
 
     <!-- COVER PHOTO -->
     <!-- <div class="center-cropped" style="background: white; height: 100vh; z-index: -1">
-        <!-- Desktop ver 
+        Desktop ver 
 
-        <!-- Mobile ver 
+        Mobile ver 
 
-        <!-- Both 
+        Both
     </div> -->
         
     <section class="org-page">
@@ -90,7 +90,7 @@
                                         <div class="arw-card-front">
                                             <img src="../assets/org_images/' . $cluster["organizations"][$i]["logo"] . '" />
                                             <div class="content">
-                                                <h1>' . $cluster["organizations"][$i]["org-name"] . '</h1>
+                                                <h1>' . $cluster["organizations"][$i]["organization"] . '</h1>
                                             </div>
                                         </div>
                                         <div class="arw-card-back">
