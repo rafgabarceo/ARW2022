@@ -1,43 +1,121 @@
 /* Accordion Styling */
 .accordion {
-    background-color: #eee;
+    z-index: 3;
+    background-color: #472520;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-family: "Garamond";
     font-size: 15px;
-    transition: 0.4s;
+    transition: 0.2s;
+    border: none;
+    margin-top: 5px;
+    /* border-radius: 30px 30px 30px 30px; */
+    border-radius: 30px 30px;
+    animation: radiusFix 0.1s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+    animation-delay: 0.2s;
   }
-  
+
+@keyframes radiusFix {
+    0% {border-radius: 30px 30px 30px 30px;}
+    100% {border-radius: 30px 30px 0px 0px;}
+}
+
+
 /* Accordion when hovering */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #472520;
 }
 
 /* Accordion after clicking */
-.accordion:after {
+.active, .accordion:after {
     content: '\002B';
-    color: #777;
+    color: #472520;
+    font-weight: bold;
+    float: right;
+    
+    animation: radiusFix 0.1s;
+    animation-fill-mode: forwards;
+    /* border: none;
+    border-radius: 30px 30px 0px 0px; */
+}
+
+.active:after {
+    content: "\2212";
+    color: #472520;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
-.active:after {
-    content: "\2212";
-}
-
 /* Under the accordion styling */
 .panel {
+    position: relative;
+    z-index: 2;
     padding: 0 18px;
-    background-color: rgb(218, 204, 204);
+    background-color: #472520;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     font-family: "Garamond";
     transition: max-height 0.2s ease-out;
+    transition-delay: 0.2ms;
+    border: none;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.back-center {
+    background-repeat: repeat-y!important; 
+    background-size: cover;
+    /* background-position: 100% center ; */
+    background-attachment: fixed;
+    height: auto 100%;
+}
+
+.FAQs {
+    /* position: absolute; */
+    width: 1283px;
+    object-fit: cover;
+    height: 300px;
+    margin-top: 15%;
+}
+
+.QFont {
+     font-family: 'Berkshire Swash';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+
+    color: #D82D27;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.QuestionFont {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+
+    color: #D82D27;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+}
+
+.AFont {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+
 }

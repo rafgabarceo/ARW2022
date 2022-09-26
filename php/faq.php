@@ -8,12 +8,76 @@
 <body>
     <?php require_once('nav_bar_2.php') ?>
 
-    <div class="center-cropped" style = "background-image: url('../assets/arw_faqs/wood bg.png'); background-attachment: fixed; height: 100vh; z-index: 1"></div>
+    <div class="back-center" style = "background-image: url('../assets/arw_faqs/wood bg.png'); z-index: 1;">
+        <div class="container d-none d-lg-block" style="position: sticky;">
+            <img class = "FAQs" src="../assets/arw_faqs/FAQs.png" alt="">
+        </div>
 
-    <section class="centered container">
-        <h2 style = "text-align: center;">Frequently Asked Questions</h2>
-    
-        <div class = "row">
+        <div class="container" style = "position: sticky; z-index: 4; width: 50%">
+            <button class="accordion">
+                <span class = "QFont">Q#1:</span>
+                <span class = "QuestionFont">What is ARW all about?</span>
+            </button>
+            <div class="panel">
+                <span class = "QFont">A:</span>
+
+                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+                <!-- Spacer -->
+                <p></p>
+            </div>
+
+            <button class="accordion">
+                <span class = "QFont">Q#2:</span>
+                <span class = "QuestionFont">What is ARW Elite?</span>
+            </button>
+            <div class="panel">
+                <span class = "QFont">A:</span>
+
+                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+                <!-- Spacer -->
+                <p></p>
+            </div>
+
+            <button class="accordion">
+                <span class = "QFont">Q#3:</span>
+                <span class = "QuestionFont">Sample 3?</span>
+            </button>
+            <div class="panel">
+                <span class = "QFont">A:</span>
+
+                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+                <!-- Spacer -->
+                <p></p>
+            </div>
+
+            <button class="accordion">
+                <span class = "QFont">Q#4:</span>
+                <span class = "QuestionFont">Sample 4?</span>
+            </button>
+            <div class="panel">
+                <span class = "QFont">A:</span>
+
+                <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+                <!-- Spacer -->
+                <p></p>
+            </div>
+            <!-- Last Q spacer -->
+            <p style = "height: 10%"></p>
+        </div>
+        
+            
+    </div>
+
+    <section class="container">
+        <!-- <h2 style = "text-align: center;">Frequently Asked Questions</h2> -->
+       
+
+
+        <!-- <div class = "row">
             <div class = "col">
             <button class="accordion rounded-pill mt-3">#1</button>
             <div class="panel rounded-bottom">
@@ -40,12 +104,13 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>        
             </div>
-        </div>
+        </div> -->
         
 
         
 
     </section>
+   
 
     <script>
         var acc = document.getElementsByClassName("accordion");
