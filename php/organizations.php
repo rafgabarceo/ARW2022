@@ -25,25 +25,24 @@
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- COVER PHOTO -->
-    <div class="center-cropped" style="background: white; height: 100vh; z-index: -1">
-        <!-- Desktop ver -->
+    <!-- <div class="center-cropped" style="background: white; height: 100vh; z-index: -1">
+        <!-- Desktop ver 
 
-        <!-- Mobile ver -->
+        <!-- Mobile ver 
 
-        <!-- Both -->
-    </div>
+        <!-- Both 
+    </div> -->
         
-    <section>
+    <section class="org-page">
         <div class="card">
             <div class="card-body page-title">
-                CSO Accredited
-                Organizations
+                <img src="../assets/org_page/Title.png" alt="">
             </div>   
         </div>
     </section>
 
-    <section class="palegreen">
-        <div class="d-flex flex-column">
+    <section class="cso-section">
+        <div class="d-flex flex-column ">
             <div class="cso-title-div">
                 <p class="cso-text">Council of Student Organizations</p>
             </div>
@@ -58,7 +57,7 @@
     </div>
 
     <!-- COVER PHOTO -->
-    <div class="left-cropped" style="background: pink; z-index: -1">
+    <div class="left-cropped hide-scrollbar" style="background: pink; z-index: -1">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);

@@ -3,38 +3,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: violet;
-    padding: 435px;
+    padding: 40vh;
 }
 
- section.palegreen {
-    position: rela  tive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: palegreen;
-    padding: 435px;
+ section.org-page {
+    background-image: url(../assets/org_page/WOODENBOARDtest.png);
+    background-size: cover;
  }
 
+ section.cso-section {
+    background-color: palegreen;
+    padding: 25vh;
+ }
 
+ .centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+ }
 
  .card {
     border-radius: 20px;
+    background-image: url(../assets/org_page/wood\ bg.png);
+    background-size: cover;
  }
 
  .card-body {
     width: 60rem;
-    height: 15rem;
-    text-align: center;
+    height: 13rem;
     vertical-align: middle;
-    line-height: 13rem;
-    font-size: 56px;
+ }
+
+ .card-body img {
+    height: 100%;
+    width: 100%;
  }
 
  .cso-logo {
     border-radius: 50%;
-    width: 35rem;
-    height: 35rem;
+    width: 20rem;
+    height: 20rem;
     content: url(../assets/org_images/cso-logo.webp);
  }
  
@@ -48,7 +56,11 @@
  }
 
  .cso-button {
-   font-size: 36px;
+   font-size: 26px;
    border-radius: 50%;
-   width: 25rem;
+   width: 20rem;
  } 
+
+ .hide-scrollbar {
+    overflow-x: hidden;
+ }
