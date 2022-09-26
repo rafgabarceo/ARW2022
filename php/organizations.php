@@ -34,8 +34,15 @@
     </div> -->
         
     <section class="org-page">
-        <div class="card">
+        <!-- Desktop Version -->
+        <div class="card d-none d-lg-block">
             <div class="card-body page-title">
+                <img src="../assets/org_page/Title.png" alt="">
+            </div>   
+        </div>
+        <!-- Mobile Version -->
+        <div class="card d-lg-none">
+            <div class="card-body page-title" style="position: relative;">
                 <img src="../assets/org_page/Title.png" alt="">
             </div>   
         </div>
@@ -78,7 +85,7 @@
                                         <h1>' . $cluster["cluster-name"] . '</h1>
                                     </div>
                                 </div>
-                                <div class="arw-card-back">
+                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
                                 </div>
                             </div>
                         </li>';
@@ -93,7 +100,7 @@
                                                 <h1>' . $cluster["organizations"][$i]["org-name"] . '</h1>
                                             </div>
                                         </div>
-                                        <div class="arw-card-back">
+                                        <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
                                             <div class="content">';
                 if ($cluster["organizations"][$i]["physical-booth"]) {
                     echo '<h2>Physical Booth:<br>' . $cluster["organizations"][$i]["physical-booth-times"] . '</h2>';
@@ -114,7 +121,7 @@
                                         <h1>' . $cluster["cluster-name"] . '</h1>
                                     </div>
                                 </div>
-                                <div class="arw-card-back">
+                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
                                 </div>
                             </div>
                         </li>';
