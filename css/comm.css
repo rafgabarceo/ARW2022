@@ -1,0 +1,21 @@
+.headerPic {
+    /* position: absolute; */
+    width: 1283px;
+    object-fit: cover;
+    height: 190px;
+}
+
+.headerPicLeft {
+    /* position: absolute; */
+    width: 1283px;
+    object-fit: cover;
+    height: 190px;
+    margin: 0 0 0 -94px;
+    overflow: hidden;
+}
+
+.commPic {
+    margin: 25px 0 0 0;
+    width: 734px;
+    height: 454px;
+}
