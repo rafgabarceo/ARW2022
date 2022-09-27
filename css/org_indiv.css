@@ -212,11 +212,10 @@ body {
 		padding: 3em 4em 3em 4em;
 		margin-top: 1em;
 	}
-	#section-4 {
+	#section-4, #section-5 {
 		max-width: 60vw;
 	}
 	#section-5 {
-		width: 70%;
 		margin-bottom: 2vw;
 	}
 	@media (max-width: 1070px) {
@@ -227,8 +226,16 @@ body {
 	#section-5 * img {
 		max-height: calc(200px + 2vw);
 	}
+	@media (min-width: 1110px) {
+		#section-4, #section-5 {
+			margin-bottom: 2vw;
+		}
+		#section-5 * img {
+			max-height: calc(210px + 2vw);
+		}
+	}
 	#section-5 * h1 {
-		font-size: calc(1.2rem + 1.5vw);
+		font-size: calc(1rem + 1.5vw);
 	}
 }
 
@@ -256,8 +263,14 @@ body {
 		margin-bottom: 2em;
 	}
 	#section-5 {
-		max-width: 58vw;
+		max-width: 60vw;
 		margin-bottom: 0;
+	}
+	#section-5 .row div {
+		padding: 0;
+	}
+	#section-5 * button {
+		max-width: 50% !important;
 	}
 	@media (max-width: 1250px) {
 		#section-5 {
@@ -268,7 +281,7 @@ body {
 		max-height: 240px;
 	}
 	#section-5 * h1 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 }
 /* TODO: Will have to update the min-width value once banner is given
@@ -278,13 +291,17 @@ body {
 		transform: none;
 		left: 0;
 	}
-	@media (min-width: 1320px) and (max-width: 1390px) {
+	#section-5 * h1 {
+		font-size: 2.5em;
+	}
+	@media (min-width: 1320px) and (max-width: 1399px) {
 		#section-5 {
 			margin-bottom: 1vw;
 		}
 		@media (min-width: 1340px) {
 			#section-5 .no-video { /* change banner size when there's no video */
 				max-height: 260px;
+				margin-top: 1vw;
 			}
 		}
 	}
@@ -393,6 +410,7 @@ body {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	display: grid;
+	background-image: url(../assets/org_indiv_page/tea_party_bg.png);
 }
 
 /* Section 1 styles */

@@ -18,13 +18,6 @@
         // Convert string to array for flagship events
         // May have to remove this depending on result of back-end API.
         $org_info['flagship-events'] = explode(', ', $org_info['flagship-events']);
-
-        // Set main tea party background for the rest of the sections
-        $main_bg = "background-image: url(../assets/org_indiv_page/tea_party_bg.png";
-                    // . ((isset($org_info['video']) && !empty($org_info['video'])) 
-                    //     ? "tea_party_bg.png" 
-                    //     : "tea_party_bg_short.png"
-                    // ) . ");";
     ?>
     
     <title><?php echo $org_info['org-name']?></title>
@@ -116,7 +109,7 @@
     </section>
     
     <!-- After section 1: tea party bg for other sections -->
-    <div id="tea-party-bg" style="<?php echo $main_bg?>">
+    <div id="tea-party-bg">
         <!-- 2nd Section: Optional Org Video -->
         <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
         <?php
@@ -221,25 +214,7 @@
     </div>
 
 
-    <!-- 
-        BUGS:
-        - carousel images need to be loaded (slided through) first before they can transition smoothly when clicking next
-        - page image load plop (try waiting till page images has loaded then transition or laod page?? OR transition whole body)
-
-        TODOs:
-        - coloring of the headers
-        - add image bright or dark detection on carousel slides to change the courosel between light & dark
-            - get domcol of 1st flagship event image
-            - isDark?
-            - update carousel to light or dark
-                - add `.carousel-dark` class to make carousel buttons dark (when img is light)
-                - do nothing when img is dark (since default carousel buttons r light)
-        - change highlight color to a very light shade of dom color???
-        
-        TASKS depending on OTHERS COMPLETION
-        - edit curved text path & banner url when banner is given
-        - edit get org details API when backend is done
-     -->
+   
 
     <!-- ARW Footer -->
     <!-- To be inserted when it's available -->
