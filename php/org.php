@@ -163,7 +163,7 @@
         <!-- 4th Section: Flagship Events (slideshow) -->
         <section id="section-4" class="mx-auto text-center p-0">
             <h1 class="mb-4" style="color: white;">Flagship Events</h1>
-            <div id="flagship-carousel" class="carousel slide" data-bs-ride="true" >
+            <div id="flagship-carousel" class="carousel slide" data-bs-ride="carousel" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <?php // indicators for second 2nd slide onwards
@@ -220,6 +220,26 @@
         </section>
     </div>
 
+
+    <!-- 
+        BUGS:
+        - carousel images need to be loaded (slided through) first before they can transition smoothly when clicking next
+        - page image load plop (try waiting till page images has loaded then transition or laod page?? OR transition whole body)
+
+        TODOs:
+        - coloring of the headers
+        - add image bright or dark detection on carousel slides to change the courosel between light & dark
+            - get domcol of 1st flagship event image
+            - isDark?
+            - update carousel to light or dark
+                - add `.carousel-dark` class to make carousel buttons dark (when img is light)
+                - do nothing when img is dark (since default carousel buttons r light)
+        - change highlight color to a very light shade of dom color???
+        
+        TASKS depending on OTHERS COMPLETION
+        - edit curved text path & banner url when banner is given
+        - edit get org details API when backend is done
+     -->
 
     <!-- ARW Footer -->
     <!-- To be inserted when it's available -->
