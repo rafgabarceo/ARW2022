@@ -10,32 +10,106 @@ body {
 
 /****** DEVICE SPECIFIC STYLES ******/
 /* For smaller devices (phones) */
-@media only screen and (max-width: 767.98px) {
-	#tea-party-bg {
-		padding-top: 3em;
-		gap: 4em;
+@media only screen {
+	@media (max-width: 767.98px) {
+		#tea-party-bg {
+			padding-top: 3em;
+			gap: 4em;
+			padding-bottom: calc(7vw + 0.5em);
+		}
+		#section-1 {
+			padding: 4.5em 0.1em 3em 0.1em; /* top right bottom left */
+		}
+		#section-1 .logo {
+			max-width: 160px;
+		}
+		#section-1 .org-name-container {
+			width: 15rem;
+		}
+		.description-box {
+			height: 25em;
+			padding: 1.5rem 0.8rem 2rem 1.4rem;
+		}
+		#section-2 div {
+			width: 90%;
+		}
+		#section-3 {
+			padding: 2em;
+		}
+		#section-4, #section-5 {
+			width: 100%;
+		}
+		#section-5 .tablet-has-video {
+			margin-bottom: 1.5em;
+		}
+		#section-5 * img {
+			max-height: 200px;
+		}
+		#section-1 button, #section-5 button {
+			--bs-btn-padding-y: .25rem; 
+			--bs-btn-padding-x: .5rem; 
+			--bs-btn-font-size: 1.05rem;
+			max-width: 50% !important; 
+		}
+		#section-5 * h1 {
+			font-size: calc(1rem + 1.5vw);
+		}
 	}
-	#section-1 {
-		padding: 4.5em 0.1em 3em 0.1em; /* top right bottom left */
+	/* other phone sizes */
+	@media (min-width: 360px) and (max-width: 575.98px) {
+		#section-4 {
+			margin-bottom: 2em;
+		}
+		/* no video */
+		#section-5 {
+			display: flex;
+			align-items: center;
+			height: calc(450px + 20vw);
+			margin-bottom: 8vw;
+		}
+		#section-5 .row {
+			gap: 31vw;
+		}
+		/* with video */
+		#section-5:has(.has-video) {
+			margin-bottom: 17vw;
+		}
+		#section-5 .row:has(.has-video) {
+			gap: 40vw;
+		}
+		/* either */
+		#section-5 * img {
+			max-height: calc(170px + 20vw);
+		}
+		@media (max-width: 400px) { 
+			#section-5 {
+				margin-bottom: 6vw;
+			}
+		}
 	}
-	#section-1 .logo {
-		max-width: 160px;
-	}
-	#section-1 .org-name-container {
-		width: 15rem;
-	}
-	.description-box {
-		height: 25em;
-		padding: 1.5rem 0.8rem 2rem 1.4rem;
-	}
-	#section-2 div {
-		width: 90%;
-	}
-	#section-3 {
-		padding: 2em;
-	}
-	#section-4, #section-5 {
-		width: 100%;
+	/* smallest phone size */
+	@media (max-width: 359.98px) {
+		/* no video */
+		#section-5 {
+			display: flex;
+			align-items: center;
+			height: calc(400px + 30vw);
+			margin-bottom: 0vw;
+		}
+		#section-5 .row {
+			gap: 25vw;
+		}
+		/* with video */
+		#section-5:has(.has-video) {
+			margin-bottom: 9vw;
+		}
+		#section-5 .row:has(.has-video) {
+			gap: 41vw;
+		}
+		/* either */
+		#section-5 * img {
+			max-height: calc(150px + 20vw);
+		}
 	}
 }
 
@@ -49,6 +123,7 @@ body {
 	#tea-party-bg {
 		padding-top: 4em;
 		gap: 5em;
+		padding-bottom: 4em;
 	}
 	#section-1 {
 		padding: 7em 4em 4em 4em; /* top right bottom left */
@@ -68,16 +143,31 @@ body {
 		padding: 3em;
 		width: 85%
 	}
-	#section-4, #section-5 {
+	#section-5 {
 		width: 85%;
+	}
+	#section-4 {
+		max-width: 85vw;
+	}
+	#section-5 .has-video {
+		max-height: 240px;
+		margin-bottom: 0.5em;
+		margin-top: 2em;
+	}
+	#section-5 .no-video {
+		max-height: 210px;
+	}
+	#section-5 * h1 {
+		font-size: calc(1rem + 1.5vw);
 	}
 }
 
 /* For laptop/desktops, large and small (Bootstrap lg breakpoint) */
 @media only screen and (min-width: 992px) {
 	#tea-party-bg {
-		padding-top: 5em;
-		gap: 6em;
+		padding-top: 4em;
+		gap: 4.5em;
+		padding-bottom: 2.5em;
 	}
 	#section-1 {
 		height: 100vh;
@@ -102,14 +192,33 @@ body {
 	}
 	#section-3 {
 		padding: 3em 4em 3em 4em;
+		margin-top: 1em;
 	}
-	#section-4, #section-5 {
+	#section-4 {
+		max-width: 60vw;
+	}
+	#section-5 {
 		width: 70%;
+		margin-bottom: 2vw;
+	}
+	@media (max-width: 1070px) {
+		#section-5 {
+			margin-bottom: 1vw;
+		}
+	}
+	#section-5 * img {
+		max-height: calc(200px + 2vw);
+	}
+	#section-5 * h1 {
+		font-size: calc(1.2rem + 1.5vw);
 	}
 }
 
 /* For larger desktop screens (follows laptop styles unless overwritten) */
 @media only screen and (min-width: 1200px) {
+	#tea-party-bg {
+		padding-bottom: 5em;
+	}
 	#section-1 div {
 		max-width: var(--max-width-1);
 		max-height: var(--max-height-1);
@@ -124,8 +233,24 @@ body {
 	.description-box {
 		height: 340px;
 	}
-	#section-4, #section-5 {
+	#section-4 {
+		max-width: 58vw;
+		margin-bottom: 2em;
+	}
+	#section-5 {
 		max-width: var(--max-width-2);
+		margin-bottom: 0;
+	}
+	@media (max-width: 1250px) {
+		#section-5 {
+			margin-bottom: -0.5vw;
+		}
+	}
+	#section-5 * img {
+		max-height: 240px;
+	}
+	#section-5 * h1 {
+		font-size: 2.5em;
 	}
 }
 /* TODO: Will have to update the min-width value once banner is given
@@ -134,6 +259,66 @@ body {
 	#section-1 .org-name-container {
 		transform: none;
 		left: 0;
+	}
+	@media (min-width: 1320px) and (max-width: 1390px) {
+		#section-5 {
+			margin-bottom: 1vw;
+		}
+		@media (min-width: 1340px) {
+			#section-5 .no-video { /* change banner size when there's no video */
+				max-height: 260px;
+			}
+		}
+	}
+	@media (min-width: 1400px) and (max-width: 1549.98px) {
+		#section-5 * img {
+			max-height: 310px;	
+		}
+		@media (max-width: 1450px) {
+			#section-5 * img {
+				max-height: 300px;	
+			}
+		}
+	}
+	@media (min-width: 1550px) {
+		#section-5 * img {
+			max-height: calc(300px + 2vw);
+		}
+		#section-5 {
+			margin-bottom: 1vw;
+		}
+	}
+	@media (min-width: 1800px) {
+		#section-5 * img {
+			max-height: calc(350px + 2vw);
+		}
+		#section-5 {
+			margin-bottom: 1vw;
+			margin-top: 2.5em;
+		}
+		@media (min-width: 1920px) {
+			#section-5 {
+				margin-bottom: 2vw;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 2560px) { 
+	#tea-party-bg {
+		padding-top: 8em;
+		padding-bottom: 10em;
+		gap: 6em;
+	}
+	#section-4 {
+		max-width: 60vw;
+		margin-bottom: 6em;
+	}
+	#section-5 {
+		max-width: 50vw;
+		margin-bottom: 0;
+	}
+	#section-5 * img {
+		max-height: 500px;
 	}
 }
 
@@ -149,6 +334,11 @@ body {
 
 .dom-color-filter {
 	filter: brightness(0) saturate(100%);
+}
+
+.lead {
+	font-family: Garamond;
+	font-weight:bold
 }
 
 .text-scrollable-justified {
@@ -181,10 +371,9 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
-	background-position-y: center;
+	background-position-y: bottom;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
-	padding-bottom: 5em;
 	display: grid;
 }
 

@@ -20,11 +20,11 @@
         $org_info['flagship-events'] = explode(', ', $org_info['flagship-events']);
 
         // Set main tea party background for the rest of the sections
-        $main_bg = "background-image: url(../assets/org_indiv_page/" 
-                    . ((isset($org_info['video']) && !empty($org_info['video'])) 
-                        ? "tea_party_bg.png" 
-                        : "tea_party_bg_short.png"
-                    ) . ");";
+        $main_bg = "background-image: url(../assets/org_indiv_page/tea_party_bg.png";
+                    // . ((isset($org_info['video']) && !empty($org_info['video'])) 
+                    //     ? "tea_party_bg.png" 
+                    //     : "tea_party_bg_short.png"
+                    // ) . ");";
     ?>
     
     <title><?php echo $org_info['org-name']?></title>
@@ -54,13 +54,13 @@
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative m-auto org-name-container">
                     <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
-                    <img src="../assets/ribbonbanner.svg" class="position-relative centered-axis-x dom-color-filter" width="100%">
+                    <img src="../assets/org_indiv_page/ribbonbanner.svg" class="position-relative centered-axis-x dom-color-filter" width="100%">
                     <div class="position-absolute org-name">
                         <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG
                         Curved Text from https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="50 20 400 140" width="150%" height="100%">   
                             <!-- TODO: edit text curve path to fit actual banner when available -->
-                            <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />    
+                            <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
                             <filter id="Bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
                                 <feGaussianBlur in="SourceAlpha" stdDeviation="0.2" result="blur"/>
                                 <feSpecularLighting in="blur" surfaceScale="10" specularConstant="3.5" specularExponent="10" result="specOut" lighting-color="#ffffff">
@@ -85,11 +85,11 @@
                     <h1>
                         <?php echo $org_info['org-long-name']?>
                     </h1>
-                    <p class="mb-3">
+                    <h5 class="mt-1 mb-3">
                         Physical Booth open from <?php echo $org_info['physical-booth-times']?>
-                    </p>
+                    </h5>
                     <div class="text-scrollable-justified light-scroll">
-                        <p>
+                        <p class="lead">
                             <?php echo $org_info['description']?>
                         </p>
                     </div>
@@ -119,7 +119,9 @@
     <div id="tea-party-bg" style="<?php echo $main_bg?>">
         <!-- 2nd Section: Optional Org Video -->
         <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
-        <?php if (isset($org_info['video']) && !empty($org_info['video'])) { // start if ?>
+        <?php
+        $has_video = isset($org_info['video']) && !empty($org_info['video']);
+        if ($has_video) { // start if ?>
             <section id="section-2" class="text-center">
                 <div>
                     <h1 class="mb-4">
@@ -143,14 +145,14 @@
                     <br>
                     <h1 class="dom-color-text">Mission</h1>
                     <div class="text-scrollable-justified dark-scroll">
-                        <p>
+                        <p class="lead">
                             <?php echo $org_info['mission']?>
                         </p>
                     </div>
                     <br><br>
                     <h1 class="dom-color-text">Vision</h1>
                     <div class="text-scrollable-justified dark-scroll">
-                        <p>
+                        <p class="lead">
                             <?php echo $org_info['vision']?>
                         </p>
                     </div>
@@ -159,8 +161,8 @@
         </section>
         
         <!-- 4th Section: Flagship Events (slideshow) -->
-        <section id="section-4" class="container text-center p-0">
-            <h1 class="mb-4" >Flagship Events</h1>
+        <section id="section-4" class="mx-auto text-center p-0">
+            <h1 class="mb-4" style="color: white;">Flagship Events</h1>
             <div id="flagship-carousel" class="carousel slide" data-bs-ride="true" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -196,11 +198,12 @@
     
         <!-- 5th Section: Prices Pub, Buttons, Tagline -->
         <section id="section-5" class="container p-0 text-center">
-            <div class="row gx-5 gy-5 align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <img src="<?php echo $org_info['banner']?>" width="100%" />
+            <div class="row gx-5 align-items-center">
+                <div class="col-md-6 col-sm-5 col-12 pe-lg-5 pb-lg-2">
+                    <img src="<?php echo $org_info['banner']?>" 
+                        class="<?php echo ($has_video ? "has-video" : "no-video") ?>"/>
                 </div>
-                <div class="col-lg-6 d-grid gap-3 p-0">
+                <div class="col-md-6 col-sm-7 col-12 d-grid gap-3 p-0">
                     <a href=<?php echo $org_info['fb-link']?>>
                         <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
                             Facebook
@@ -211,11 +214,12 @@
                             Register
                         </button>
                     </a>
-                    <h1 class="dom-color-text mt-4"><?php echo $org_info['tagline']?></h1>
+                    <h1 class="dom-color-text mt-xl-4"><?php echo $org_info['tagline']?> </h1>
                 </div>
             </div>
         </section>
     </div>
+
 
     <!-- ARW Footer -->
     <!-- To be inserted when it's available -->

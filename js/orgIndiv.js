@@ -151,8 +151,8 @@ const setDomColors = function() {
 		$('.dom-color-text').css('color',  `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`);
 	} else {
 		$('.description-box').css('color', 'black');
-		if (!isRGBDark(comp)) comp = lightenDarkenRGB(comp, -100);
-		// if (!isRGBDark(comp)) comp = [0,0,0];
+		// if (!isRGBDark(comp)) comp = lightenDarkenRGB(comp, -100);
+		if (!isRGBDark(comp)) comp = [0,0,0];
 		$('.dom-color-text').css('color',  `rgb(${comp[0]}, ${comp[1]}, ${comp[2]})`);
 	}
 

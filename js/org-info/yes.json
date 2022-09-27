@@ -1,0 +1,23 @@
+{
+	"org-name": "YES",
+	"org-long-name": "Young Entrepreneurs’ Society (YES) DLSU - Manila",
+	"logo": "../assets/org_indiv_page/sv_assets/sv-logo.png",
+	"description": "The Young Entrepreneurs' Society (YES) of De La Salle University - Manila is a professional student organization that aims to cultivate the entrepreneurial potentials of DLSU students. Evidently, the organization conducts events that teach student businesses tips and tricks, along with the values of being socially responsible.",
+	"mission": "The Young Entrepreneurs' Society (YES) aspires to promote the entrepreneurial spirit among business students and every other individual as the economic heroes of the future as the organization establishes projects and opportunities that would encourage students to create and design their own programs and activities. Competitive and worthwhile activities (i.e. competitions, conventions, etc.) will be facilitated encompassing the whole organization and its corresponding members. Lastly is to become a platform that will connect different entities such as government agencies, academic institutions, businesses, and religious and nonprofit organizations.",
+	"vision": "The Young Entrepreneurs' Society (YES) is a professional student organization that aims to promote the entrepreneurial spirit by actively providing activities that shall develop and enhance the skills, abilities, knowledge, and character of those individuals interested towards trends and innovations in business and industry; ultimately, for the entrepreneurial progress of the country.",
+	"fb-link": "https://www.facebook.com/dlsuchemsoc",
+	"reg-link": "https://google.com",
+
+	"tagline": "Embody Your Entrepreneurial Spirit.",
+	"bg": "../assets/org_indiv_page/yes_assets/yes-bg.png",
+	"banner": "../assets/org_indiv_page/yes_assets/yes-banner.png",
+
+	"flagship-events": "../assets/org_indiv_page/yes_assets/yes-flag1.png, ../assets/org_indiv_page/yes_assets/yes-flag2.png, ../assets/org_indiv_page/yes_assets/yes-flag3.png, ../assets/org_indiv_page/yes_assets/yes-flag4.png, ../assets/org_indiv_page/yes_assets/yes-flag5.png",
+
+	"physical-booth": true,
+	"physical-booth-times": "9:00 PM - 6:00 PM",
+	"online-booth-times": "9:00 PM - 6:00 PM"
+	
+	, "video": "https://www.youtube.com/embed/6IrsK7iQkKE"
+
+}
