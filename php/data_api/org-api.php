@@ -18,34 +18,50 @@ declare(strict_types=1);
  */
 class fetchARWAPI {
 
-	private string $name;
-	private string $long_name;
-	private string $desc;
-	private string $mission;
-	private string $vision;
-	private string $logo_path;
-	private string $pub_path;
-	private string $fb_url;
-	private string $video_url;
-	private string $form_url;
-	private bool $has_video;
-	private string $color_hex;
-	private $slides;
+	private $name;
+	public $long_name;
+	public $desc;
+	public $mission;
+	public $vision;
+	public $logo_path;
+	public $pub_path;
+	public $fb_url;
+	public $video_url;
+	public $form_url;
+	public $has_video;
+	public $color_hex;
+	public $slides;
 
 
-	function __construct(string $org_name, string $hostname, string $username, string $password, string $database, int $port)
-	{
+	function __construct(string $org_name, string $hostname, string $username, string $password, string $database, int $port) { $name = $org_name;
+		$this->name = $org_name;
 		$conn = new mysqli($hostname, $username, $password, $database, $port);
 		if ($conn -> connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-		$name = $org_name;
 
-		// Insert SQL fetch code
+		$stmt = $conn->prepare("SELECT * FROM Org WHERE org_abbr=?");
+		// Check if the statement is valid
+		if($stmt)
+		{
+			// Bind variables to the query
+			$stmt->bind_param("s", $this->name);
+			// Execute the query
+			$stmt->execute();
+		} else{
+			echo "Error in statement. Refer:" .$conn->error;
+		}
+
+		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
+
+		print_r($orgInfo);
+		// Unset the statement to ensure no memory leak. 
+
+		unset($stmt);
 	}
 
 	function getOrgName() {
-		return 0;
+		return $this->name;
 	}
 
 	function getOrgLongName() {
@@ -92,20 +108,5 @@ class fetchARWAPI {
 	function getOrgSlides() {
 		return 0;
 	}
-
-	/**
-	 * 
-	 * Takes in the user-input and the query to execute a mysqli prepare statement routine. 
-	 * Function returns the query information. This function is private and is not exposed externally.
-	 * @param string user-input
-	 * @param string query
-	 * @return object
-	 * 
-	 */
-	private function sanitizeInput(string $input, string $query)
-	{
-		return 0; 
-	}
-
 }
 ?>
