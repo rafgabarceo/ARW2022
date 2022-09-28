@@ -26,12 +26,12 @@ error_reporting(E_ALL);
         // echo "<script> console.log('".strtoupper($pageID)."');</script>";
 
         $api = new fetchARWAPI("ACCESS", "localhost", "root", "dev1234567890","arw", 3306);
-        $information = $api->getInfo();
+        $information = $api->get_info();
 
-        print_r($information);
+        var_dump($information); 
     ?>
     
-    <title><?php echo $information['org-name']?></title>
+    <title><?php echo $information['org_name']?></title>
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/org_indiv.css">
