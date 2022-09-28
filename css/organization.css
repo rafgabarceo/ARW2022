@@ -1,7 +1,4 @@
  @media only screen and (max-width: 760px) {
-    .card {
-        background-image: url(../assets/arw_cover_bg/cover_bg.png);
-    }
     .card-body {
         width: 10rem;
         height: 13rem;
@@ -14,16 +11,13 @@
     flex-direction: column;
     align-items: center;
     padding: 40vh;
+    background-image: url(../assets/org_page/wood\ bg.png);
+    background-size: 100% 100%;
 }
-
- section.org-page {
-    background-image: url(../assets/org_page/WOODENBOARDtest.png);
-    background-size: cover;
- }
 
  section.cso-section {
     background-color: #FF85C7;
-    padding: 25vh;
+    padding: 5vh;
  }
 
  .centered {
@@ -32,16 +26,16 @@
     width: 100px;
  }
 
- .card {
-    border-radius: 20px;
-    background-image: url(../assets/org_page/wood\ bg.png);
-    background-size: cover;
+ .page-title {
+    justify-content: center;
+    
  }
 
- .card-body {
-    width: 60rem;
-    height: 13rem;
-    vertical-align: middle;
+
+ .logo-wrapper {
+    padding: 10% 20% 20% 20%;
+    background: url(../assets/org_page/Scroll.png);
+    background-size: 100% 100%;
  }
 
  .card-body img {
@@ -58,6 +52,12 @@
  
  .cso-text {
    font-size: 56px;
+   text-align: center;
+}
+
+ .cso-sub-text {
+    font-size: 46px;
+    text-align: center;
  }
 
  .cso-title-div {
@@ -72,3 +72,20 @@
    background-color: #FF008A;
    color: white;
 } 
+
+.card, #title-card {
+    background: rgba(0,0,0,0.5);
+    padding-left: 2%;
+    color: white;
+}
+
+.card-parent {
+    overflow:hidden;
+    padding: 10px;
+}
+
+.card-body{
+    width: 60rem;   
+    height: 13rem;
+    vertical-align: middle;
+ }

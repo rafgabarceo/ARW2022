@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body>
+<body style="overflow-x:hidden;">
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- COVER PHOTO -->
@@ -33,38 +33,38 @@
         <!-- Both 
     </div> -->
         
-    <section class="org-page">
+    <section>
         <!-- Desktop Version -->
-        <div class="card d-none d-lg-block">
-            <div class="card-body page-title">
-                <img src="../assets/org_page/Title.png" alt="">
+        <div class="d-none d-lg-block flex">
+            <div class="page-title card-body">
+                <img src="../assets/org_page/Title.png">
             </div>   
         </div>
         <!-- Mobile Version -->
-        <div class="card d-lg-none">
-            <div class="card-body page-title" style="position: relative;">
-                <img src="../assets/org_page/Title.png" alt="">
+        <div class="d-lg-none flex">
+            <div class="page-title card-body" style="position: relative;">
+                <img src="../assets/org_page/Title.png">
             </div>   
         </div>
     </section>
 
     <section class="cso-section">
-        <div class="d-flex flex-column ">
-            <div class="cso-title-div">
-                <p class="cso-text">Council of Student Organizations</p>
+        <div class="logo-wrapper">
+            <div class="d-flex flex-column">
+                <div class="cso-logo align-self-center">
+                </div>
+                <div class="cso-title-div">
+                    <p class="cso-text">Council of Student Organizations</p>
+                    <p class="cso-sub-text">Lorem Ipsum</p>
+                </div>
             </div>
-            <div class="cso-logo align-self-center">
-            </div>
-            <div class="align-self-center">
-                <button type="button" class="btn btn-lg rounded-pill cso-button">Button</button>
-            </div>
-        </div>   
+        </div>
     </section>
 
     </div>
 
     <!-- COVER PHOTO -->
-    <div class="left-cropped hide-scrollbar" style="background: pink; z-index: -1;">
+    <div class="left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
@@ -72,10 +72,13 @@
 
         foreach ($clusters as $cluster) {
             echo '
-                <div style="padding: 5% 0% 0% 0%; margin: 0% 5% 0% 5%;">
-                    <h2 class="cluster-abrv">' . $cluster["cluster-name"] . '</h2>
-                    <h3 class="cluster-long-name">' . $cluster["cluster-long-name"] . '</h3>
-                    <div class="arw-card-deck">
+                <div style="padding: 5% 0% 0% 0%; margin: 0% 5% 0% 5%; overflow-x: hidden;">
+                    <div class="card">
+                        <h2 class="cluster-abrv">' . $cluster["cluster-name"] . '</h2>
+                        <h3 class="cluster-long-name">' . $cluster["cluster-long-name"] . '</h3>
+                    </div>
+                    <div class="card-parent">
+                    <div class="arw-card-deck" style="overflow:auto; overflow-y:hidden;">
                         <ul class="arw-cards">';
             echo '<li class="arw-card arw-card-1">
                             <div class="arw-card-inner">
@@ -125,7 +128,7 @@
                                 </div>
                             </div>
                         </li>';
-            echo '</div></div>';
+            echo '</div></div></div>';
         }
 
 
