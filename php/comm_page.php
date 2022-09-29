@@ -18,20 +18,21 @@
 
     <!-- SECTION 1: TITLE PAGE -->
 
-    <section style = "height: 100vh;">
+    <section class = "d-none d-lg-block" style = "height: 100vh;">
         <img src="../assets/arw_cencomm/TitleCard_CENCOMM.png" style="width:100%; z-index: 3;" alt="">
     </section>
  
     <!-- SECTION 2: WHO WE ARE -->
 
-    <section style = "height: 100vh;">
+    <section class = "d-none d-lg-block" style = "height: 100vh;">
         <img class = "headerPic" src="../assets/arw_cencomm/WhoWeAre.png" style="width:100%; z-index: 3;" alt="">
         <div class="container mx-auto rounded w-75 text-white text-xl-center mt-4" style = "height: 50vh; background: rgba(216, 45, 39, 0.75);" >
             <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:46px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </section>
 
-    <section style = "height: 100vh;">
+    <!-- SECTION 3: PROJECT HEADS -->
+    <section  class = "d-none d-lg-block" style = "height: 100vh;">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/phead.png" style="z-index: 3;" alt="">
         <div class="rounded text-white text-xl-left mt-4" style = "width: 1378px; height: 158px; margin-left: 12%; background: rgba(216, 45, 39, 0.75);" >
             <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:33px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

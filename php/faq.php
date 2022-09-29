@@ -4,12 +4,18 @@
     <link rel="stylesheet" type="text/css" href="../css/faq.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <?php require_once('head_2.php')?>
+    <style>
+        body
+        {
+            overflow: scroll;
+        }
+    </style>
 </head>
 <body>
     <?php require_once('nav_bar_2.php') ?>
 
     <div class="back-center" style = "background-image: url('../assets/arw_faqs/wood bg.png'); z-index: 1;">
-        <div class="container d-none d-lg-block" style="position: sticky;">
+        <div class="container" style="position: relative;">
             <img class = "FAQs" src="../assets/arw_faqs/FAQs.png" alt="">
         </div>
 
@@ -17,11 +23,11 @@
         
             <div class = "container accordion-container">
                 <button class="accordion">
-                    <span class = "QFont">Q1:</span>
+                    <span class = "QFont">Q: </span>
                     <span class = "QuestionFont">What is ARW all about?</span>
                 </button>
                 <div class="panel">
-                    <span class = "QFont">A:</span>
+                    <span class = "QFont">A: </span>
 
                     <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
@@ -33,11 +39,11 @@
 
             <div class = "container accordion-container">
                 <button class="accordion">
-                    <span class = "QFont">Q2:</span>
+                    <span class = "QFont">Q: </span>
                     <span class = "QuestionFont">What is ARW Elite?</span>
                 </button>
                 <div class="panel">
-                    <span class = "QFont">A:</span>
+                    <span class = "QFont">A: </span>
 
                     <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
@@ -48,11 +54,11 @@
 
             <div class = "container accordion-container">
                 <button class="accordion">
-                    <span class = "QFont">Q3:</span>
+                    <span class = "QFont">Q: </span>
                     <span class = "QuestionFont">Sample 3?</span>
                 </button>
                 <div class="panel">
-                    <span class = "QFont">A:</span>
+                    <span class = "QFont">A: </span>
 
                     <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
@@ -63,11 +69,11 @@
 
             <div class = "container accordion-container">
                 <button class="accordion">
-                    <span class = "QFont">Q4:</span>
+                    <span class = "QFont">Q: </span>
                     <span class = "QuestionFont">Sample 4?</span>
                 </button>
                 <div class="panel">
-                    <span class = "QFont">A:</span>
+                    <span class = "QFont">A: </span>
 
                     <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
 
