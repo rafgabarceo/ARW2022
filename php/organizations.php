@@ -36,15 +36,13 @@
     <section>
         <!-- Desktop Version -->
         <div class="d-none d-lg-block flex">
-            <div class="page-title card-body">
+            <div class="card-body">
                 <img src="../assets/org_page/Title.png">
             </div>   
         </div>
         <!-- Mobile Version -->
-        <div class="d-lg-none flex">
-            <div class="page-title card-body" style="position: relative;">
-                <img src="../assets/org_page/Title.png">
-            </div>   
+        <div class="d-lg-none">
+            <img src="../assets/org_page/Title.png" class="" style="position: relative; max-width: 540px; height: 150px;">
         </div>
     </section>
 
@@ -64,15 +62,21 @@
     </div>
 
     <!-- COVER PHOTO -->
-    <div class="left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
+    <div class="d-none d-lg-block left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
         $clusters = $decoded_json["clusters"];
+        $counter = 0;
 
         foreach ($clusters as $cluster) {
-            echo '
-                <div style="padding: 5% 0% 0% 0%; margin: 0% 5% 0% 5%; overflow-x: hidden;">
+            if (count($clusters) != $counter+1) {
+                echo'<div style="padding: 5% 0% 0% 0%; margin: 0% 5% 5% 5%; overflow-x: hidden; background-image: url(../assets/org_page/WOODENBOARD2.png); background-repeat: no-repeat; background-size: 100% 100%;">';
+            }
+            else {
+                echo'<div style="padding: 5% 0% 0% 0%; margin: 0% 5% 0% 5%; overflow-x: hidden; background-image: url(../assets/org_page/WOODENBOARD2.png); background-repeat: no-repeat; background-size: 100% 100%;">';
+            }
+            echo ' 
                     <div class="card">
                         <h2 class="cluster-abrv">' . $cluster["cluster-name"] . '</h2>
                         <h3 class="cluster-long-name">' . $cluster["cluster-long-name"] . '</h3>
@@ -88,7 +92,7 @@
                                         <h1>' . $cluster["cluster-name"] . '</h1>
                                     </div>
                                 </div>
-                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
+                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: auto 100%;">
                                 </div>
                             </div>
                         </li>';
@@ -129,12 +133,96 @@
                             </div>
                         </li>';
             echo '</div></div></div>';
+            $counter++;
         }
 
 
 
         ?>
     </div>
+
+
+    <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
+        <?php
+        $org_info_json = file_get_contents('../js/org-info.json');
+        $decoded_json = json_decode($org_info_json, true);
+        $clusters = $decoded_json["clusters"];
+        $counter = 0;
+
+        foreach ($clusters as $cluster) {
+            if (count($clusters) != $counter+1) {
+                echo'<div style="padding: 5% 0% 0% 0%; margin: 0% 5% 5% 5%; overflow-x: hidden; background-image: url(../assets/org_page/WOODENBOARD3.png); background-repeat: no-repeat; background-size: 100% 100%;">';
+            }
+            else {
+                echo'<div style="padding: 5% 0% 0% 0%; margin: 0% 5% 0% 5%; overflow-x: hidden; background-image: url(../assets/org_page/WOODENBOARD3.png); background-repeat: no-repeat; background-size: 100% 100%;">';
+            }
+            echo ' 
+                    <div class="card">
+                        <h2 class="cluster-abrv">' . $cluster["cluster-name"] . '</h2>
+                        <h3 class="cluster-long-name">' . $cluster["cluster-long-name"] . '</h3>
+                    </div>
+                    <div class="card-parent">
+                    <div class="arw-card-deck" style="overflow:auto; overflow-y:hidden;">
+                        <ul class="arw-cards">';
+            echo '<li class="arw-card arw-card-1">
+                            <div class="arw-card-inner">
+                                <div class="arw-card-front">
+                                    <img src="" />
+                                    <div class="content">
+                                        <h1>' . $cluster["cluster-name"] . '</h1>
+                                    </div>
+                                </div>
+                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: auto 100%;">
+                                </div>
+                            </div>
+                        </li>';
+
+            for ($i = 0; $i < count($cluster["organizations"]); $i++) {
+                echo '<a href="' . $cluster["organizations"][$i]["page"] . '">
+                                <li class="arw-card arw-card-' . $i + 2 . '">
+                                    <div class="arw-card-inner">
+                                        <div class="arw-card-front">
+                                            <img src="../assets/org_images/' . $cluster["organizations"][$i]["logo"] . '" />
+                                            <div class="content">
+                                                <h1>' . $cluster["organizations"][$i]["organization"] . '</h1>
+                                            </div>
+                                        </div>
+                                        <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
+                                            <div class="content">';
+                if ($cluster["organizations"][$i]["physical-booth"]) {
+                    echo '<h2>Physical Booth:<br>' . $cluster["organizations"][$i]["physical-booth-times"] . '</h2>';
+                };
+                echo '<h2>Online Booth:<br>' . $cluster["organizations"][$i]["online-booth-times"] . '</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>';
+            };
+
+            echo '<li class="arw-card arw-card-' . count($cluster["organizations"]) + 2 . '">
+                            <div class="arw-card-inner">
+                                <div class="arw-card-front">
+                                    <img src="" />
+                                    <div class="content">
+                                        <h1>' . $cluster["cluster-name"] . '</h1>
+                                    </div>
+                                </div>
+                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
+                                </div>
+                            </div>
+                        </li>';
+            echo '</div></div></div>';
+            $counter++;
+        }
+
+
+
+        ?>
+    </div>
+
+
+
 
 
 
