@@ -24,34 +24,14 @@
 <body style="overflow-x:hidden;">
     <?php require_once('nav_bar_2.php') ?>
 
-    <!-- COVER PHOTO -->
-    <!-- <div class="center-cropped" style="background: white; height: 100vh; z-index: -1">
-        Desktop ver 
-
-        Mobile ver 
-
-        Both
-    </div> -->
-
-
-    <!-- <section>
-        <div class="d-none d-lg-block flex">
-            <div class="card-body">
-                <img src="../assets/org_page/Title.png">
-            </div>   
-        </div>
-        <div class="d-lg-none">
-            <img src="../assets/org_page/Title.png" class="" style="position: relative; max-width: 540px; height: 150px;">
-        </div>
-    </section> -->
-        
+    <!-- Desktop Version -->
     <section class="d-none d-lg-flex" style="background-image:url(../assets/org_page/woodbgtop.png); background-size: 100% 100%;">
         <div class="card-body">
             <img src="../assets/org_page/Title.png">
         </div>   
     </section>
 
-
+    <!-- Mobile Version -->
     <section class="d-lg-none">
         <div>
             <img src="../assets/org_page/Title.png" class="" style="position: absolute; left: -20px; max-width: 540px; height: 150px;">
@@ -86,6 +66,7 @@
     </div>
 
     <!-- COVER PHOTO -->
+    <!-- Desktop Version -->
     <div class="d-none d-lg-block left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
@@ -165,7 +146,7 @@
         ?>
     </div>
 
-
+    <!-- Mobile Version -->
     <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
