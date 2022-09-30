@@ -78,6 +78,21 @@ class fetchARWAPI {
 		return $orgInfo;
 	}
 
+	// Takes the abbreviation of the org in question.
+	function get_org_slides($abbrev){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
 
+		$stmt = $conn->prepare("SELECT orgs_path_0, orgs_path_1, orgs_path_2, orgs_path_3, orgs_path_extra FROM OrgSlides INNER JOIN Org ON Org.org_id=OrgSlides.org_id WHERE Org.org_abbr=?");
+		if($stmt){
+			$stmt->bind_param("s", $abbrev);
+			$stmt->execute();
+		} else {
+			echo "Error in statement. Refer: ".$conn->error;
+		}
+		return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+	}
 }
 ?>
