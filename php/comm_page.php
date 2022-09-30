@@ -8,7 +8,7 @@
 
     </head>
     <body>
-
+        
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- BACKGROUND VIDEO -->
@@ -33,22 +33,50 @@
 
     <!-- SECTION 3: PROJECT HEADS -->
     <section  class = "d-none d-lg-block" style = "height: 100vh;">
-        <img class = "headerPicLeft" src="../assets/arw_cencomm/phead.png" style="z-index: 3;" alt="">
+        <img class = "headerPicLeft" src="../assets/arw_cencomm/phead.png" style="z-index: 3; margin: 0 0 0 -5.34%;" alt="">
         <div class="rounded text-white text-xl-left mt-4" style = "width: 1378px; height: 158px; margin-left: 12%; background: rgba(216, 45, 39, 0.75);" >
             <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:33px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <span>
+        <div class = "flex" style = "margin-left: 8%">
             <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-        </span>
-        <span>
-            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3; margin-left: -20%;" alt="">
-        </span>
-        <span>
-            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3; margin-left: -20%;" alt="">
-        </span>
-        <span>
-            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3; margin-left: -20%;" alt="">
-        </span>
+            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+        </div>
+    </section>
+
+    <!-- SECTION 4: EXECUTIVES COMMITTEEE -->
+    <section  class = "d-none d-lg-block">
+        <img class = "headerPicLeft" src="../assets/arw_cencomm/execcomm.png" style="z-index: 3; margin: 0 0 0 3.34%;" alt="">
+        <div class="rounded text-white text-xl-left mt-4" style = "width: 1378px; height: 158px; margin-left: 12%; background: rgba(216, 45, 39, 0.75);" >
+            <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:33px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class = "flex" style = "margin-left: 8%">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+        </div>
+        <div style = "height:20vh"></div>
+    </section>
+
+    <!-- SECTION 5: EXECUTIVES-->
+    <section  class = "d-none d-lg-block" style = "height: 100vh;">
+        <img class = "headerPicLeft" src="../assets/arw_cencomm/exec.png" style="z-index: 3; margin: 0 0 0 -8.34%;" alt="">
+        <div class="rounded text-white text-xl-left mt-4" style = "width: 1378px; height: 158px; margin-left: 12%; background: rgba(216, 45, 39, 0.75);" >
+            <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:33px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div style = "border-radius: 30px; background: rgba(216, 45, 39, 0.75);"> SDDAWDADW</div>
     </section>
 
     </body>

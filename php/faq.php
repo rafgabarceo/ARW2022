@@ -40,12 +40,12 @@
             <div class = "container accordion-container">
                 <button class="accordion">
                     <span class = "QFont">Q: </span>
-                    <span class = "QuestionFont">What is ARW Elite?</span>
+                    <span class = "QuestionFont">Asan ung faqs?</span>
                 </button>
                 <div class="panel">
                     <span class = "QFont">A: </span>
 
-                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">Di ko ren alam boi</span>
 
                     <!-- Spacer -->
                     <p></p>
