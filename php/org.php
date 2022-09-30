@@ -24,12 +24,25 @@
          */
         // echo "<script> console.log('".strtoupper($pageID)."');</script>";
 
-        $api = new fetchARWAPI("ACCESS", "localhost", "root", "dev1234567890","arw", 3306);
+        /**
+         * DEBUGGING PURPOSES ONLY.
+         * Delete this line in final revision and for production.
+         */
+        $org_abbrev = "CHEMSOC";
+
+        $api = new fetchARWAPI($org_abbrev, "localhost", "root", "dev1234567890","arw", 3306);
         $information = $api->get_info();
 
-        echo "<br><br><br><br><br><br>";
-        // print_r($information);
-        var_dump($information);
+        // get org flagship events (array containing the paths to each flagship events?)
+        //$information['flagship_events'] = $api->get_org_slides($org_abbrev);
+        /**
+         * Comment this line and uncomment the one above when get_org_slides() is available.
+         */
+        $information['flagship_events'] = array("../assets/org_indiv_page/yes_assets/yes-flag1.png", "../assets/org_indiv_page/yes_assets/yes-flag2.png", "../assets/org_indiv_page/yes_assets/yes-flag3.png", "../assets/org_indiv_page/yes_assets/yes-flag4.png", "../assets/org_indiv_page/yes_assets/yes-flag5.png"); 
+
+        
+        // echo "<br><br><br><br><br><br>";
+        // var_dump($information);
 
         /**
          * | Field                 | Type         | Null | Key | Default | Extra |
@@ -47,8 +60,12 @@
          * | org_path_to_price_pub | longtext     | NO   |     | NULL    |       |
          * | org_path_to_fb_page   | longtext     | YES  |     | NULL    |       |
          * | group_id              | int(11)      | NO   | MUL | 0       |       |
+         * | org_booth_times        | varchar(255) | NO   |     | NULL    |                |
+         * | org_path_to_background | varchar(255) | NO   |     | NULL    |                |
+         * | org_tagline            | varchar(255) | YES  |     | NULL    |                |
          */
 
+        // check if org has video or not (crucial for section 2)
         $has_video = isset($information['org_path_to_video']) && !empty($information['org_path_to_video']);
     ?>
     
@@ -67,9 +84,10 @@
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
     <!-- TODO: update PHP for org-bg path -->
-    <section id="section-1" class="text-center" style="background-image: url(<?php echo $information['bg']?>);">
+    <section id="section-1" class="text-center" 
+            style="background-image: url(<?php echo $information['org_path_to_background']?>);">
         <!-- hidden image for getting dom-color purposes -->
-        <img src="<?php echo $information['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
+        <img src="<?php echo $information['org_path_to_background']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
         <!-- logo & description -->
         <div class="row gx-5 gy-4 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
@@ -115,7 +133,7 @@
                         <?php
                         // TODO: add condition for when no physical booth times, print online booth times instead
                         ?>
-                        Physical Booth open from <?php echo $information['physical-booth-times']?>
+                        Booth open from <?php echo $information['org_booth_times']?>
                     </h5>
                     <div class="text-scrollable-justified light-scroll">
                         <p class="lead">
@@ -194,7 +212,7 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <?php // indicators for second 2nd slide onwards
-                        for ($i = 1, $size = count($information['flagship-events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($information['flagship_events']); $i < $size; ++$i) {
                             echo "<button type='button' data-bs-target='#flagship-carousel' 
                                     data-bs-slide-to='{$i}' aria-label='Slide {$i}'></button>";
                         }
@@ -202,12 +220,12 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo $information['flagship-events'][0]?>" class="d-block w-100" alt="Flagship event 1">
+                        <img src="<?php echo $information['flagship_events'][0]?>" class="d-block w-100" alt="Flagship event 1">
                     </div>
                     <?php // slides for second 2nd event onwards
-                        for ($i = 1, $size = count($information['flagship-events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($information['flagship_events']); $i < $size; ++$i) {
                             echo "<div class='carousel-item'>
-                                     <img src={$information['flagship-events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
+                                     <img src={$information['flagship_events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
                                   </div>";
                         }
                     ?>
@@ -241,7 +259,7 @@
                             Register
                         </button>
                     </a>
-                    <h1 class="dom-color-text mt-xl-4"><?php echo $information['tagline']?> </h1>
+                    <h1 class="dom-color-text mt-xl-4"><?php echo $information['org_tagline']?> </h1>
                 </div>
             </div>
         </section>
