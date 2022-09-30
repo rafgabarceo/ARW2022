@@ -36,8 +36,11 @@ class fetchARWAPI {
 	}
 
 	function get_info(){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
 
-		$conn = establishConnection();
 		$stmt = $conn->prepare("SELECT * FROM Org WHERE org_abbr=?");
 
 		// Check if the statement is valid
@@ -57,20 +60,22 @@ class fetchARWAPI {
 		return $orgInfo;
 	}
 
-	function getOrgGroupInfo(){
-		$conn = establishConnection();
-		return $this->org_group_info;
-	}
-
-	private function establishConnection(){
+	function get_group_info($id){
 		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
 		if ($conn -> connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-
-		return $conn;
-
-		
+		$stmt = $conn->prepare("SELECT Org.org_id, Org.org_name, Org.org_path_to_logo, OrgGroup.group_acrn FROM Org INNER JOIN OrgGroup ON Org.group_id=OrgGroup.group_id WHERE Org.group_id=?");
+		if($stmt){
+			$stmt->bind_param("i", $id);
+			$stmt->execute();
+		} else {
+			echo "Error in statement. Refer: ".$conn->error;
+		}
+		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
+		return $orgInfo;
 	}
+
+
 }
 ?>
