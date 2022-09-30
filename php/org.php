@@ -1,26 +1,57 @@
+
 <!-- Indiv org template -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once('head_2.php')?>
+    <?php 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    require_once('head_2.php');
+    require_once('data_api/org-api.php'); 
+    
+    ?>
     <?php
         $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        $pageID = parse_url($url, PHP_URL_QUERY);
+        $org_abbrev = parse_url($url, PHP_URL_QUERY);
 
-        // Will have to replace file_get_contents() with a function returning a .json. Communication must be from back-end API.
-        $org_json = file_get_contents('../js/org-info/'. $pageID .'.json');
-        $org_info = json_decode($org_json, true);
+        /**
+         * 
+         * DEBUGGING PURPOSES ONLY. PLEASE DO NOT USE SAME USERNAME AND PASSWORD FOR PRODUCTION! 
+         * 
+         * This debugging API will assume that there is a database at default MYSQL port with -u root -p dev1234567890
+         * 
+         */
+        // echo "<script> console.log('".strtoupper($pageID)."');</script>";
 
-        // Set org bg to the default one when none is given
-        if (!isset($org_info['bg']) || empty($org_info['bg'])) { 
-            $org_info['bg'] = "../assets/arw_cover_bg/cover_bg_noclouds.png";
-        }
+        $api = new fetchARWAPI("ACCESS", "localhost", "root", "dev1234567890","arw", 3306);
+        $information = $api->get_info();
 
-        // Convert string to array for flagship events
-        // May have to remove this depending on result of back-end API.
-        $org_info['flagship-events'] = explode(', ', $org_info['flagship-events']);
+        echo "<br><br><br><br><br><br>";
+        print_r($information);
+
+        /**
+         * | Field                 | Type         | Null | Key | Default | Extra |
+         * +-----------------------+--------------+------+-----+---------+-------+
+         * | org_id                | int(11)      | NO   |     | NULL    |       |
+         * | org_name              | varchar(255) | NO   |     | NULL    |       |
+         * | org_desc              | longtext     | NO   |     | NULL    |       |
+         * | org_abbr              | varchar(16)  | NO   |     | NULL    |       |
+         * | org_path_to_logo      | varchar(255) | NO   |     | NULL    |       |
+         * | org_path_to_pub       | varchar(255) | NO   |     | NULL    |       |
+         * | org_path_to_video     | varchar(255) | YES  |     | NULL    |       |
+         * | org_mission           | longtext     | YES  |     | NULL    |       |
+         * | org_vision            | longtext     | YES  |     | NULL    |       |
+         * | org_path_to_forms     | longtext     | NO   |     | NULL    |       |
+         * | org_path_to_price_pub | longtext     | NO   |     | NULL    |       |
+         * | org_path_to_fb_page   | longtext     | YES  |     | NULL    |       |
+         * | group_id              | int(11)      | NO   | MUL | 0       |       |
+         */
+
+        $has_video = isset($information['org_path_to_video']) && !empty($information['org_path_to_video']);
     ?>
     
-    <title><?php echo $org_info['org-name']?></title>
+    <title><?php echo $information['org_abbr']?></title>
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/org_indiv.css">
@@ -34,15 +65,16 @@
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
-    <section id="section-1" class="text-center" style="background-image: url(<?php echo $org_info['bg']?>);">
+    <!-- TODO: update PHP for org-bg path -->
+    <section id="section-1" class="text-center" style="background-image: url(<?php echo $information['bg']?>);">
         <!-- hidden image for getting dom-color purposes -->
-        <img src="<?php echo $org_info['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
+        <img src="<?php echo $information['bg']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
         <!-- logo & description -->
         <div class="row gx-5 gy-4 m-0 align-items-center">
             <!-- full width on mobile, 4/12 on desktop -->
             <!-- logo & abbreviated name -->
             <div class="col-lg-4">
-                <img src= "<?php echo $org_info['logo']?>" class="logo"/>
+                <img src= "<?php echo $information['org_path_to_logo']?>" class="logo"/>
 
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative m-auto org-name-container">
@@ -64,7 +96,7 @@
                             </filter>
                             <text x="0" y="0" class="bevel curved-text comp-color-text-fill" filter="url(#Bevel)">
                                 <textPath xlink:href="#curve" startOffset="50%">
-                                    <?php echo $org_info['org-name']?>
+                                    <?php echo $information['org_abbr']?>
                                 </textPath>
                             </text>
                         </svg>
@@ -76,28 +108,31 @@
             <div class="col-lg-8">
                 <div class="description-box dom-color-bg">
                     <h1>
-                        <?php echo $org_info['org-long-name']?>
+                        <?php echo $information['org_name']?>
                     </h1>
                     <h5 class="mt-1 mb-3">
-                        Physical Booth open from <?php echo $org_info['physical-booth-times']?>
+                        <?php
+                        // TODO: add condition for when no physical booth times, print online booth times instead
+                        ?>
+                        Physical Booth open from <?php echo $information['physical-booth-times']?>
                     </h5>
                     <div class="text-scrollable-justified light-scroll">
                         <p class="lead">
-                            <?php echo $org_info['description']?>
+                            <?php echo $information['org_desc']?>
                         </p>
                     </div>
                 </div>
                 <!-- buttons -->
                 <div class="row pt-5 gy-4 justify-content-center">
                     <div class="col-md-5">
-                        <a href=<?php echo $org_info['fb-link']?>>
+                        <a href=<?php echo $information['org_path_to_fb_page']?>>
                             <button type="button" class="btn btn-primary btn-lg">
                                 Facebook
                             </button>
                         </a>
                     </div>
                     <div class="col-md-5">
-                        <a href=<?php echo $org_info['reg-link']?>>
+                        <a href=<?php echo $information['org_path_to_forms']?>>
                             <button type="button" class="btn btn-primary btn-lg">
                                 Register
                             </button>
@@ -112,16 +147,14 @@
     <div id="tea-party-bg">
         <!-- 2nd Section: Optional Org Video -->
         <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
-        <?php
-        $has_video = isset($org_info['video']) && !empty($org_info['video']);
-        if ($has_video) { // start if ?>
+        <?php if ($has_video) { // start if ?>
             <section id="section-2" class="text-center">
                 <div>
                     <h1 class="mb-4">
                         Organizational Video
                     </h1>
                     <div>
-                        <iframe width="80%" height="90%" src=<?php echo $org_info['video']?>></iframe>
+                        <iframe width="80%" height="90%" src=<?php echo $information['org_path_to_video']?>></iframe>
                     </div>
                 </div>
             </section>
@@ -131,7 +164,7 @@
         <section id="section-3" class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 align-self-center">
-                    <img src="<?php echo $org_info['banner']?>" width="100%"/>
+                    <img src="<?php echo $information['org_path_to_pub']?>" width="100%"/>
                 </div>
                 <!-- 24px default padding - 0.6px for scroll bar -->
                 <div class="col-lg-6" style="padding-right: 23.4px;">
@@ -139,14 +172,14 @@
                     <h1 class="dom-color-text">Mission</h1>
                     <div class="text-scrollable-justified dark-scroll">
                         <p class="lead">
-                            <?php echo $org_info['mission']?>
+                            <?php echo $information['org_mission']?>
                         </p>
                     </div>
                     <br><br>
                     <h1 class="dom-color-text">Vision</h1>
                     <div class="text-scrollable-justified dark-scroll">
                         <p class="lead">
-                            <?php echo $org_info['vision']?>
+                            <?php echo $information['org_vision']?>
                         </p>
                     </div>
                 </div>
@@ -160,7 +193,7 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <?php // indicators for second 2nd slide onwards
-                        for ($i = 1, $size = count($org_info['flagship-events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($information['flagship-events']); $i < $size; ++$i) {
                             echo "<button type='button' data-bs-target='#flagship-carousel' 
                                     data-bs-slide-to='{$i}' aria-label='Slide {$i}'></button>";
                         }
@@ -168,12 +201,12 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo $org_info['flagship-events'][0]?>" class="d-block w-100" alt="Flagship event 1">
+                        <img src="<?php echo $information['flagship-events'][0]?>" class="d-block w-100" alt="Flagship event 1">
                     </div>
                     <?php // slides for second 2nd event onwards
-                        for ($i = 1, $size = count($org_info['flagship-events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($information['flagship-events']); $i < $size; ++$i) {
                             echo "<div class='carousel-item'>
-                                     <img src={$org_info['flagship-events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
+                                     <img src={$information['flagship-events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
                                   </div>";
                         }
                     ?>
@@ -193,21 +226,21 @@
         <section id="section-5" class="container p-0 text-center">
             <div class="row gx-5 align-items-center">
                 <div class="col-md-6 col-sm-5 col-12 pe-lg-5 pb-lg-2">
-                    <img src="<?php echo $org_info['banner']?>" 
+                    <img src="<?php echo $information['org_path_to_price_pub']?>" 
                         class="<?php echo ($has_video ? "has-video" : "no-video") ?>"/>
                 </div>
                 <div class="col-md-6 col-sm-7 col-12 d-grid gap-3 p-0">
-                    <a href=<?php echo $org_info['fb-link']?>>
+                    <a href=<?php echo $information['org_path_to_fb_page']?>>
                         <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
                             Facebook
                         </button>
                     </a>
-                    <a href=<?php echo $org_info['reg-link']?>>
+                    <a href=<?php echo $information['org_path_to_forms']?>>
                         <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
                             Register
                         </button>
                     </a>
-                    <h1 class="dom-color-text mt-xl-4"><?php echo $org_info['tagline']?> </h1>
+                    <h1 class="dom-color-text mt-xl-4"><?php echo $information['tagline']?> </h1>
                 </div>
             </div>
         </section>
