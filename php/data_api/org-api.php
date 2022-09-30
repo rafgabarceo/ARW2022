@@ -60,6 +60,8 @@ class fetchARWAPI {
 		return $orgInfo;
 	}
 
+	// Takes in groupid. Refer to table.:w
+	
 	function get_group_info($id){
 		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
 		if ($conn -> connect_error) {
