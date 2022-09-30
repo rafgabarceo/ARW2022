@@ -32,28 +32,52 @@
 
         Both
     </div> -->
-        
-    <section>
-        <!-- Desktop Version -->
+
+
+    <!-- <section>
         <div class="d-none d-lg-block flex">
             <div class="card-body">
                 <img src="../assets/org_page/Title.png">
             </div>   
         </div>
-        <!-- Mobile Version -->
         <div class="d-lg-none">
             <img src="../assets/org_page/Title.png" class="" style="position: relative; max-width: 540px; height: 150px;">
+        </div>
+    </section> -->
+        
+    <section class="d-none d-lg-flex" style="background-image:url(../assets/org_page/woodbgtop.png); background-size: 100% 100%;">
+        <div class="card-body">
+            <img src="../assets/org_page/Title.png">
+        </div>   
+    </section>
+
+
+    <section class="d-lg-none">
+        <div>
+            <img src="../assets/org_page/Title.png" class="" style="position: absolute; left: -20px; max-width: 540px; height: 150px;">
         </div>
     </section>
 
     <section class="cso-section">
-        <div class="logo-wrapper">
+        <!-- Desktop Version -->
+        <div class="d-none d-lg-block logo-wrapper">
             <div class="d-flex flex-column">
                 <div class="cso-logo align-self-center">
                 </div>
                 <div class="cso-title-div">
                     <p class="cso-text">Council of Student Organizations</p>
-                    <p class="cso-sub-text">Lorem Ipsum</p>
+                    <p class="cso-sub-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Version -->
+        <div class="d-lg-none" style="padding: 80% 25% 80% 25%; background: url(../assets/org_page/Scroll.png); background-size: 100% 100%; background-repeat:no-repeat;">
+            <div class="d-flex flex-column">
+                <div class="align-self-center" style="border-radius: 50%; width: 10rem; height: 10rem; content: url(../assets/org_images/cso-logo.webp);">
+                </div>
+                <div class="cso-title-div">
+                    <p style="font-size: 36px; text-align: center;">Council of Student Organizations</p>
+                    <p style="font-size: 16px; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
         </div>
