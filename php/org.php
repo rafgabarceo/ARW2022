@@ -21,28 +21,47 @@
          * 
          * This debugging API will assume that there is a database at default MYSQL port with -u root -p dev1234567890
          * 
+         * Delete lines with 'DELETE' comment for production.
          */
-        // echo "<script> console.log('".strtoupper($pageID)."');</script>";
 
-        /**
-         * DEBUGGING PURPOSES ONLY.
-         * Delete this line in final revision and for production.
-         */
-        $org_abbrev = "CHEMSOC";
+        $org_abbrev = "CHEMSOC"; /**DELETE***/
 
         $api = new fetchARWAPI($org_abbrev, "localhost", "root", "dev1234567890","arw", 3306);
+        // get org info
         $information = $api->get_info();
 
-        // get org flagship events (array containing the paths to each flagship events?)
-        //$information['flagship_events'] = $api->get_org_slides($org_abbrev);
+        // get org flagship events
+        //$org_flagship_events = $api->get_org_slides($org_abbrev);  // returns an associative array
         /**
-         * Comment this line and uncomment the one above when get_org_slides() is available.
+         * Comment the next line and uncomment the one above when get_org_slides() is available.
+         * 
+         * | Field           | Type         | Null | Key | Default | Extra          |
+         * | orgs_id         | int(11)      | NO   | PRI | NULL    | auto_increment |
+         * | orgs_path_0     | varchar(255) | YES  |     | NULL    |                |
+         * | orgs_path_1     | varchar(255) | YES  |     | NULL    |                |
+         * | orgs_path_2     | varchar(255) | YES  |     | NULL    |                |
+         * | orgs_path_3     | varchar(255) | YES  |     | NULL    |                |
+         * | orgs_path_extra | varchar(255) | YES  |     | NULL    |                |
+         * | org_id          | int(11)      | NO   | MUL | NULL    |                |
          */
-        $information['flagship_events'] = array("../assets/org_indiv_page/yes_assets/yes-flag1.png", "../assets/org_indiv_page/yes_assets/yes-flag2.png", "../assets/org_indiv_page/yes_assets/yes-flag3.png", "../assets/org_indiv_page/yes_assets/yes-flag4.png", "../assets/org_indiv_page/yes_assets/yes-flag5.png"); 
+        $org_flagship_events = array(  /**DELETE***/
+            "orgs_id" => 1,
+            "orgs_path_0" => "../assets/org_indiv_page/yes_assets/yes-flag1.png", 
+            "orgs_path_1" => "../assets/org_indiv_page/yes_assets/yes-flag2.png", 
+            "orgs_path_2" => "../assets/org_indiv_page/yes_assets/yes-flag3.png",
+            "orgs_path_3" => "../assets/org_indiv_page/yes_assets/yes-flag4.png", 
+            "orgs_path_extra" => "../assets/org_indiv_page/yes_assets/yes-flag5.png",
+            "org_id" => -1
+        );
+
+        // retrieve non-empty values whose key starts with 'orgs_path_'
+        $org_flagship_events = array_values(array_filter($org_flagship_events, function($key) {
+            return strncmp($key, 'orgs_path_', 10) === 0;
+        }, ARRAY_FILTER_USE_KEY));
 
         
-        // echo "<br><br><br><br><br><br>";
-        // var_dump($information);
+        // echo "<br><br><br><br><br><br>"; /**DELETE***/
+        // var_dump($information); /**DELETE***/
 
         /**
          * | Field                 | Type         | Null | Key | Default | Extra |
@@ -165,7 +184,6 @@
     <!-- After section 1: tea party bg for other sections -->
     <div id="tea-party-bg">
         <!-- 2nd Section: Optional Org Video -->
-        <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
         <?php if ($has_video) { // start if ?>
             <section id="section-2" class="text-center">
                 <div>
@@ -212,7 +230,7 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <?php // indicators for second 2nd slide onwards
-                        for ($i = 1, $size = count($information['flagship_events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($org_flagship_events); $i < $size; ++$i) {
                             echo "<button type='button' data-bs-target='#flagship-carousel' 
                                     data-bs-slide-to='{$i}' aria-label='Slide {$i}'></button>";
                         }
@@ -220,12 +238,12 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo $information['flagship_events'][0]?>" class="d-block w-100" alt="Flagship event 1">
+                        <img src="<?php echo $org_flagship_events[0]?>" class="d-block w-100" alt="Flagship event 1">
                     </div>
                     <?php // slides for second 2nd event onwards
-                        for ($i = 1, $size = count($information['flagship_events']); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($org_flagship_events); $i < $size; ++$i) {
                             echo "<div class='carousel-item'>
-                                     <img src={$information['flagship_events'][$i]} class='d-block w-100' alt='Flagship event {$i}'>
+                                     <img src={$org_flagship_events[$i]} class='d-block w-100' alt='Flagship event {$i}'>
                                   </div>";
                         }
                     ?>
