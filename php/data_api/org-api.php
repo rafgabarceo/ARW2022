@@ -5,7 +5,7 @@
  * Each function will query the database through PHP's built-in mysqli interface. Additionally,
  * functions present in this php file will automatically sanitize the input through the "sanitizeInput" function. 
  * 
- * NOTE: Please do not attempt to contact the database directly from the front-end.
+ * NOTE: Please do not attempt to contact the database directly from the front-end. Only use this API.
  * 
  * 
  */
@@ -18,94 +18,66 @@ declare(strict_types=1);
  */
 class fetchARWAPI {
 
-	private string $name;
-	private string $long_name;
-	private string $desc;
-	private string $mission;
-	private string $vision;
-	private string $logo_path;
-	private string $pub_path;
-	private string $fb_url;
-	private string $video_url;
-	private string $form_url;
-	private bool $has_video;
-	private string $color_hex;
-	private $slides;
+	private $org_abbrev;
+	private $hostname;
+	private $username;
+	private $password;
+	private $database;
+	private $port;
 
+	function __construct(string $org_abbrev, string $hostname, string $username, string $password, string $database, int $port) { 
+		
+		$this->org_abbrev = $org_abbrev;
+		$this->hostname = $hostname;
+		$this->username = $username;
+		$this->password = $password;
+		$this->database = $database;
+		$this->port = $port;
+	}
 
-	function __construct(string $org_name, string $hostname, string $username, string $password, string $database, int $port)
-	{
-		$conn = new mysqli($hostname, $username, $password, $database, $port);
+	function get_info(){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
 		if ($conn -> connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-		$name = $org_name;
 
-		// Insert SQL fetch code
+		$stmt = $conn->prepare("SELECT * FROM Org WHERE org_abbr=?");
+
+		// Check if the statement is valid
+		if($stmt)
+		{
+
+			// Bind variables to the query
+			$stmt->bind_param("s", $this->org_abbrev);
+			// Execute the query
+			$stmt->execute();
+
+		} else {
+			echo "Error in statement. Refer:" .$conn->error;
+		}
+
+		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
+		return $orgInfo;
 	}
 
-	function getOrgName() {
-		return 0;
+	// Takes in groupid. Refer to table.:w
+
+	function get_group_info($id){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+		$stmt = $conn->prepare("SELECT Org.org_id, Org.org_name, Org.org_path_to_logo, OrgGroup.group_acrn FROM Org INNER JOIN OrgGroup ON Org.group_id=OrgGroup.group_id WHERE Org.group_id=?");
+		if($stmt){
+			$stmt->bind_param("i", $id);
+			$stmt->execute();
+		} else {
+			echo "Error in statement. Refer: ".$conn->error;
+		}
+		$orgInfo = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+		return $orgInfo;
 	}
 
-	function getOrgLongName() {
-		return 0;
-	}
-
-	function getOrgDesc() {
-		return 0;
-	}
-
-	function getOrgMission() {
-		return 0;
-	}
-
-	function getOrgVision() {
-		return 0;
-	}
-
-	function getOrgLogo()
-	{
-		return 0;
-	}
-
-	function getOrgPub() {
-		return 0;
-	}
-
-	function getOrgFB() {
-		return 0;
-	}
-
-	function getOrgVideo() {
-		return 0;
-	}
-
-	function getOrgForm() {
-		return 0;
-	}
-
-	function getOrgColor() {
-		return 0;
-	}
-
-	function getOrgSlides() {
-		return 0;
-	}
-
-	/**
-	 * 
-	 * Takes in the user-input and the query to execute a mysqli prepare statement routine. 
-	 * Function returns the query information. This function is private and is not exposed externally.
-	 * @param string user-input
-	 * @param string query
-	 * @return object
-	 * 
-	 */
-	private function sanitizeInput(string $input, string $query)
-	{
-		return 0; 
-	}
 
 }
 ?>
