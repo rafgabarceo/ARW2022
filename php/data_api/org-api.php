@@ -61,7 +61,7 @@ class fetchARWAPI {
 	}
 
 	// Takes in groupid. Refer to table.:w
-	
+
 	function get_group_info($id){
 		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
 		if ($conn -> connect_error) {
@@ -74,7 +74,7 @@ class fetchARWAPI {
 		} else {
 			echo "Error in statement. Refer: ".$conn->error;
 		}
-		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
+		$orgInfo = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 		return $orgInfo;
 	}
 
