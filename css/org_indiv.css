@@ -10,6 +10,12 @@
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
+#section-2, #section-3 {
+	background-image: none;
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 @keyframes fadeInAnimation {
 	0% {
 			opacity: 0;
@@ -433,20 +439,18 @@ svg text {
 	text-anchor: middle;
 	dominant-baseline: mathematical;	
 }
-svg .curved-text {
-	letter-spacing: 2px;
-}
+
 .bevel {  /* larger font */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
 	fill: #4fa389;
 	font-weight: bold;
-	font-size: 60;
+	font-size: 18px;
 	/* text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2); */
 }
 .org-name {
 	top: 17px;
 	left: 50%;
-	transform: translateX(-75%); /* half of the SVG's width attribute value */
+	transform: translateX(-100%); /* half of the SVG's width attribute value */
 }
 
 #section-1 {
