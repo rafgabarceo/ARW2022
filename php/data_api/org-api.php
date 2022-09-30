@@ -19,12 +19,24 @@ declare(strict_types=1);
 class fetchARWAPI {
 
 	private $org_abbrev;
-	private $full_info;
+	private $hostname;
+	private $username;
+	private $password;
+	private $database;
+	private $port;
 
 	function __construct(string $org_abbrev, string $hostname, string $username, string $password, string $database, int $port) { 
 		
 		$this->org_abbrev = $org_abbrev;
-		$conn = new mysqli($hostname, $username, $password, $database, $port);
+		$this->hostname = $hostname;
+		$this->username = $username;
+		$this->password = $password;
+		$this->database = $database;
+		$this->port = $port;
+	}
+
+	function get_info(){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
 		if ($conn -> connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
@@ -45,12 +57,27 @@ class fetchARWAPI {
 		}
 
 		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
-
-		$this->full_info = $orgInfo;
+		return $orgInfo;
 	}
 
-	function get_info(){
-		return $this->full_info;
+	// Takes in groupid. Refer to table.:w
+
+	function get_group_info($id){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+		$stmt = $conn->prepare("SELECT Org.org_id, Org.org_name, Org.org_path_to_logo, OrgGroup.group_acrn FROM Org INNER JOIN OrgGroup ON Org.group_id=OrgGroup.group_id WHERE Org.group_id=?");
+		if($stmt){
+			$stmt->bind_param("i", $id);
+			$stmt->execute();
+		} else {
+			echo "Error in statement. Refer: ".$conn->error;
+		}
+		$orgInfo = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+		return $orgInfo;
 	}
+
+
 }
 ?>

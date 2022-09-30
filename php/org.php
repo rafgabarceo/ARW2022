@@ -28,7 +28,8 @@
         $information = $api->get_info();
 
         echo "<br><br><br><br><br><br>";
-        print_r($information);
+        // print_r($information);
+        var_dump($information);
 
         /**
          * | Field                 | Type         | Null | Key | Default | Extra |
