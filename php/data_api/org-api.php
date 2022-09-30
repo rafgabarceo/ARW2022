@@ -19,16 +19,25 @@ declare(strict_types=1);
 class fetchARWAPI {
 
 	private $org_abbrev;
-	private $full_info;
+	private $hostname;
+	private $username;
+	private $password;
+	private $database;
+	private $port;
 
 	function __construct(string $org_abbrev, string $hostname, string $username, string $password, string $database, int $port) { 
 		
 		$this->org_abbrev = $org_abbrev;
-		$conn = new mysqli($hostname, $username, $password, $database, $port);
-		if ($conn -> connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		}
+		$this->hostname = $hostname;
+		$this->username = $username;
+		$this->password = $password;
+		$this->database = $database;
+		$this->port = $port;
+	}
 
+	function get_info(){
+
+		$conn = establishConnection();
 		$stmt = $conn->prepare("SELECT * FROM Org WHERE org_abbr=?");
 
 		// Check if the statement is valid
@@ -45,12 +54,23 @@ class fetchARWAPI {
 		}
 
 		$orgInfo = $stmt->get_result()->fetch_array(MYSQLI_ASSOC);
-
-		$this->full_info = $orgInfo;
+		return $orgInfo;
 	}
 
-	function get_info(){
-		return $this->full_info;
+	function getOrgGroupInfo(){
+		$conn = establishConnection();
+		return $this->org_group_info;
+	}
+
+	private function establishConnection(){
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		if ($conn -> connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+		return $conn;
+
+		
 	}
 }
 ?>
