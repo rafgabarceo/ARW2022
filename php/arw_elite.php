@@ -47,6 +47,20 @@
         text-align: justify;
     }
 
+    .thumbnail {
+        opacity: 0;
+        transition-duration: 0.5s;
+    }
+
+    .thumbnail:hover {
+        opacity: 1;
+    }
+
+    .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    }
+
     </style>
 
     <?php require_once('nav_bar_2.php') ?>
@@ -68,7 +82,7 @@
                 Duis mollis neque ex, ut bibendum justo tempus sit amet. Suspendisse ut vulputate quam. Cras accumsan ornare congue. Sed sagittis fringilla felis quis venenatis. 
                 Morbi rhoncus at ligula ac ultricies. Vestibulum lobortis iaculis nisl. Vivamus nec augue venenatis, tristique dolor id, accumsan massa.
                 </p>
-            <button class="btn btn-lg text-light" style="background: #3b5998">Facebook</button>
+            <button class="btn btn-lg text-light" style="background: #3b5998"><a href="https://m.facebook.com/DLSUARW/?paipv=0&eav=AfaDp5XdSxz1alnaZHzApJdEuOa7aqZB5if7Oszc4dZlaHERNskE0EKhnfjAQVobcCg" style="color:inherit">Facebook</a></button>
         </div>
     </div>
     </section>
@@ -81,8 +95,15 @@
 
             <!-- First Row -->
             <div class="row justify-content-center">
+
+                <!-- For navigation, <a class="nav-link" href="#elite*Number*D">; D means desktop, M for mobile, still have not added IDs for the rest of the elites-->
+                <!-- IDs are on the section class div -->
+                <!-- For images with hover (insert default image at image1, and second image after hover in image2)-->
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite1D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -91,7 +112,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite2D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -100,7 +124,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite3D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -109,7 +136,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite4D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -118,7 +148,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite5D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -128,7 +161,10 @@
 
                 <!-- Second Row -->
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite6D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -137,7 +173,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite7D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -146,7 +185,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite8D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -155,7 +197,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite9D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -164,7 +209,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 140px"></div></div>
+                <div class="row pt-1"><a class="nav-link" href="#elite10D">
+                    <div class="container-fluid bg-info no-padding" style="height: 300px; width: 140px; background-image: url(image1)" >
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 140px;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 200px">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -176,7 +224,7 @@
     </section>
 
     <!-- Third Sec -->
-    <section class="text-dark p-5 pb-4 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block" style="background: pink; height:100vh">
+    <section class="text-dark p-5 pb-4 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block" id="elite1D" style="background: pink; height:100vh">
         <div><h1 class="p-5">GET TO KNOW THE ELITE FINALISTS</h1>
             <div class="container">
                 <div class="row">
@@ -198,7 +246,7 @@
     </section>
 
     <!-- Fourth Sec -->
-    <section class="text-light p-5 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block" style="background: #5e51a2; height: 100vh">
+    <section class="text-light p-5 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block" id="elite2D" style="background: #5e51a2; height: 100vh">
         <div>
             <div class="container" style="position:relative;">
                 <div class="row">
@@ -233,7 +281,7 @@
 
 
 
-    <!-- Desktop ver -->
+    <!-- Mobile ver -->
 
     <!-- First Sec -->
 
@@ -249,7 +297,7 @@
                 Duis mollis neque ex, ut bibendum justo tempus sit amet. Suspendisse ut vulputate quam. Cras accumsan ornare congue. Sed sagittis fringilla felis quis venenatis. 
                 Morbi rhoncus at ligula ac ultricies. Vestibulum lobortis iaculis nisl. Vivamus nec augue venenatis, tristique dolor id, accumsan massa.
                 </p>
-            <button class="btn btn-lg text-light" style="background: #3b5998">Facebook</button>
+            <button class="btn btn-lg text-light" style="background: #3b5998"><a href="https://m.facebook.com/DLSUARW/?paipv=0&eav=AfaDp5XdSxz1alnaZHzApJdEuOa7aqZB5if7Oszc4dZlaHERNskE0EKhnfjAQVobcCg" style="color:inherit">Facebook</a></button>
         </div>
     </div>
     </section>        
@@ -263,7 +311,10 @@
             <!-- First Row -->
             <div class="row justify-content-center">
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite1M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -272,7 +323,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite2M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -281,7 +335,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite3M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -290,7 +347,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite4M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -299,7 +359,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite5M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -308,7 +371,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite6M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -317,7 +383,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite7M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -326,7 +395,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite8M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -335,7 +407,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite9M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -344,7 +419,10 @@
                 </div>
 
                 <div class="col px-2">
-                    <div class="row pt-1"><div class="container bg-info rounded-4" style="height: 300px; width: 19vh"></div></div>
+                    <div class="row pt-1"><a class="nav-link" href="#elite10M">
+                        <div class="container-fluid bg-info no-padding" style="height: 300px; width: 19vh; background-image: url(image1)">
+                        <img class="img-fluid thumbnail" style="height: 300px; width: 19vh;" src="image2" alt="...">
+                    </div></a></div>
                         <div class="row pt-1 pb-4 px-3"><div class="container bg-info rounded-4" style="height: 45px; width: 19vh">
                             <h6 class="pt-1" style="font-family:Garamond">Sample Name</h6>
                             <h5 class="pb-0" style="position: relative; top: -10px;font-family:Garamond; font-weight:bold">ORG NAME</h5>
@@ -357,7 +435,7 @@
 
      <!-- Third Sec -->
 
-     <section class="text-dark text-center d-block d-sm-block d-md-block d-lg-none d-xl-none" style="background: pink; height:100vh">
+     <section class="text-dark text-center d-block d-sm-block d-md-block d-lg-none d-xl-none " id="elite1M" style="background: pink; height:100vh">
         <div><h1 class="p-5">GET TO KNOW THE ELITE FINALISTS</h1>
             <div class="container px-3">
             <div class="row justify-content-center">
@@ -377,9 +455,9 @@
 
      <!-- Fourth Sec -->
     
-     <section class="text-light text-center d-block d-sm-block d-md-block d-lg-none d-xl-none" style="background: #5e51a2; height:100vh">
-        <div><h1 class="p-5">GET TO KNOW THE ELITE FINALISTS</h1>
-            <div class="container px-3">
+     <section class="text-light text-center d-block d-sm-block d-md-block d-lg-none d-xl-none" id="elite2M" style="background: #5e51a2; height:100vh">
+        <div>
+            <div class="container px-3 pt-5">
             <div class="row justify-content-center">
                 <div class="col px-2"><div class="row pt-1"><div class="container bg-light rounded-4" style="height: 300px; width: 19vh"></div></div></div>
                 <div class="col px-2"><div class="row pt-1"><div class="container bg-light rounded-4" style="height: 300px; width: 19vh"></div></div></div>
