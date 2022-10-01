@@ -132,3 +132,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.swiper{
+    margin-top: 32px;
+    background: rgba(248, 171, 178, 0.349);
+    width: 100%;
+    height: 65vh;
+}

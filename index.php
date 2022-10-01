@@ -40,7 +40,7 @@
     </div>
 
     <!-- Second Div -->
-    <div class="center-cropped" style = "background-color: #f8abb1; height: calc(100vh - 10px); box-shadow: 0px -5px 25px; overflow: hidden;">
+    <section class="center-cropped" style = "background-color: #f8abb1; height: calc(100vh - 50px); box-shadow: 0px -5px 25px; overflow: hidden;">
         <!-- Desktop ver -->
         <div class="slideshow-home mx-auto w-75 d-none d-lg-block" id = "desktop-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel">
@@ -114,11 +114,21 @@
                 </button>
             </div>
         </div> 
-    </div>
+    </section>
     <!-- Third Div -->
-    <div class="center-cropped" style = "background-color: #FFFFFF; height: calc(100vh - 70px);  overflow: hidden;">
-    <!-- Footer -->
+    <section class="center-cropped" style = "background-color: #FFFFFF; height: calc(100vh - 70px);  overflow: hidden;">
+        <div class="container mx-auto rounded py-5 px-1 w-75 text-xl-center mt-4"></div>
+            <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
+                We would like to thank the following
+            </h1>
+        </div>
+        <div class="container mx-auto swiper">
 
+        </div>
+
+    </section>
+    <!-- Footer -->
+    
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
