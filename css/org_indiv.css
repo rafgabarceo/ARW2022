@@ -10,7 +10,7 @@
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
-#section-2, #section-3 {
+#section-2, #section-3, #section-5 {
 	background-image: none;
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
@@ -387,6 +387,9 @@
 .dom-color-filter {
 	filter: brightness(0) saturate(100%);
 }
+.default-filter {
+	filter: invert(6%) sepia(81%) saturate(2978%) hue-rotate(235deg) brightness(92%) contrast(122%) drop-shadow(1px 1px 30px rgb(236, 250, 252));
+}
 
 .lead {
 	font-family: Garamond;
@@ -409,7 +412,6 @@
 }
 .text-scrollable-justified::-webkit-scrollbar-thumb {
 	border-radius: 5px;
-	/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.932); */
 }
 .light-scroll::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.3);
@@ -442,15 +444,23 @@ svg text {
 
 .bevel {  /* larger font */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
-	fill: #4fa389;
+	fill: #705faf;
 	font-weight: bold;
 	font-size: 18px;
-	/* text-shadow: 0 -3px 7px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2); */
 }
 .org-name {
 	top: 17px;
 	left: 50%;
 	transform: translateX(-100%); /* half of the SVG's width attribute value */
+}
+
+#section-1 button, #section-5 button {
+	min-width: 70%;
+	border: 0;
+	background-color: rgb(0, 0, 61) !important;
+}
+#section-3 h1, #section-5 h1 {
+	color: #705faf;
 }
 
 #section-1 {
@@ -463,11 +473,9 @@ svg text {
 	justify-content: center;
 	align-items: center;
 }
-#section-1 button {
-	min-width: 70%;
-}
+
 .description-box {
-	background-color: rgba(94, 97, 162, 0.85);
+	background-color: rgb(0, 0, 61, 0.5);
 	border-radius: 2rem;
 	color: white;
 	display: flex;
@@ -520,6 +528,3 @@ svg text {
 }
 
 /* Section 5 styles */
-#section-5 button {
-	max-width: 70%;
-}

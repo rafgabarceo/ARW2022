@@ -44,6 +44,7 @@
         //     "orgs_path_extra" => "../assets/org_indiv_page/yes_assets/yes-flag5.png",
         //     "org_id" => -1
         // );
+        // $information['org_path_to_background'] = "../assets/org_indiv_page/test_bg/wg-bg.png";  /**DELETE***/
 
         // retrieve non-empty values whose key starts with 'orgs_path_'
         $org_flagship_events = array_values(array_filter($org_flagship_events, function($key) {
@@ -75,10 +76,10 @@
          * | org_tagline            | varchar(255) | YES  |     | NULL    |                |
          */
 
+
         // Set org bg to the default one when none is given
-        if (!isset($information['org_path_to_background']) || empty($information['org_path_to_background'])) { 
-            $information['org_path_to_background'] = "../assets/arw_cover_bg/cover_bg_noclouds.png";
-        }
+        $has_bg = isset($information['org_path_to_background']) && !empty($information['org_path_to_background']);
+        if (!$has_bg) $information['org_path_to_background'] = "../assets/org_indiv_page/default_bg.png";
 
         // check if org has video or not (crucial for section 2)
         $has_video = isset($information['org_path_to_video']) && !empty($information['org_path_to_video']);
@@ -109,16 +110,16 @@
             <!-- logo & abbreviated name -->
             <div class="col-lg-4">
                 <img src= "<?php echo $information['org_path_to_logo']?>" class="logo"/>
+                <!-- <img src= "../assets/org_images/chemsoc-logo.webp" class="logo"/> --> <!--DELETE-->
 
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative m-auto org-name-container">
                     <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
-                    <img src="../assets/org_indiv_page/ribbonbanner.svg" class="position-relative centered-axis-x dom-color-filter" width="100%">
+                    <img src="../assets/org_indiv_page/ribbonbanner.svg" width="100%" 
+                        class="position-relative centered-axis-x <?php echo ($has_bg ? "dom-color-filter" : "default-filter") ?>" >
                     <div class="position-absolute org-name">
-                        <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG
-                        Curved Text from https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30" width="200%" height="100%">   
-                            <!-- TODO: edit text curve path to fit actual banner when available -->
+                        <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30" width="200%" height="100%">
                             <filter id="Bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
                                 <feGaussianBlur in="SourceAlpha" stdDeviation="0.2" result="blur"/>
                                 <feSpecularLighting in="blur" surfaceScale="10" specularConstant="3.5" specularExponent="10" result="specOut" lighting-color="#ffffff">
@@ -127,7 +128,7 @@
                                 <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
                                 <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
                             </filter>
-                            <text x="50%" y="40%" class="bevel comp-color-text-fill" filter="url(#Bevel)">
+                            <text x="50%" y="40%" class="bevel <?php echo ($has_bg ? "comp-color-text-fill" : "") ?>" filter="url(#Bevel)">
                                     <?php echo $information['org_abbr']?>
                             </text>
                         </svg>
@@ -137,7 +138,7 @@
             </div>
             <!-- description & buttons -->
             <div class="col-lg-8">
-                <div class="description-box dom-color-bg">
+                <div class="description-box <?php echo ($has_bg ? "dom-color-bg-opaque" : "") ?>">
                     <h1>
                         <?php echo $information['org_name']?>
                     </h1>
@@ -154,14 +155,14 @@
                 <div class="row pt-5 gy-4 justify-content-center">
                     <div class="col-md-5">
                         <a href=<?php echo $information['org_path_to_fb_page']?>>
-                            <button type="button" class="btn btn-primary btn-lg">
+                            <button type="button" class="btn btn-primary btn-lg <?php echo ($has_bg ? "dom-color-bg" : "") ?>">
                                 Facebook
                             </button>
                         </a>
                     </div>
                     <div class="col-md-5">
                         <a href=<?php echo $information['org_path_to_forms']?>>
-                            <button type="button" class="btn btn-primary btn-lg">
+                            <button type="button" class="btn btn-primary btn-lg <?php echo ($has_bg ? "dom-color-bg" : "") ?>">
                                 Register
                             </button>
                         </a>
@@ -196,14 +197,14 @@
                 <!-- 24px default padding - 0.6px for scroll bar -->
                 <div class="col-lg-6" style="padding-right: 23.4px;">
                     <br>
-                    <h1 class="dom-color-text">Mission</h1>
+                    <h1 class="<?php echo ($has_bg ? "dom-color-text" : "") ?>">Mission</h1>
                     <div class="text-scrollable-justified dark-scroll">
                         <p class="lead">
                             <?php echo $information['org_mission']?>
                         </p>
                     </div>
                     <br><br>
-                    <h1 class="dom-color-text">Vision</h1>
+                    <h1 class="d<?php echo ($has_bg ? "dom-color-text" : "") ?>t">Vision</h1>
                     <div class="text-scrollable-justified dark-scroll">
                         <p class="lead">
                             <?php echo $information['org_vision']?>
@@ -258,16 +259,16 @@
                 </div>
                 <div class="col-md-6 col-sm-7 col-12 d-grid gap-3 p-0">
                     <a href=<?php echo $information['org_path_to_fb_page']?>>
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <button type="button" class="btn btn-primary btn-lg <?php echo ($has_bg ? "dom-color-bg" : "") ?>" style="width: 100%;">
                             Facebook
                         </button>
                     </a>
                     <a href=<?php echo $information['org_path_to_forms']?>>
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <button type="button" class="btn btn-primary btn-lg <?php echo ($has_bg ? "dom-color-bg" : "") ?>" style="width: 100%;">
                             Register
                         </button>
                     </a>
-                    <h1 class="dom-color-text mt-xl-4"><?php echo $information['org_tagline']?> </h1>
+                    <h1 class="mt-xl-4 <?php echo ($has_bg ? "dom-color-text" : "") ?>"><?php echo $information['org_tagline']?> </h1>
                 </div>
             </div>
         </section>

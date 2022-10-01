@@ -19,7 +19,6 @@ const getDominantColorFromImage = function(img) {
 		});
 	}
 	
-	console.log(domCol);
 	return domCol; 
 }
 
@@ -119,7 +118,6 @@ const isRGBDark = function(rgb) {
 	return (rgb[0] + rgb[1] + rgb[2] / 3) > 186 ? 0 : 1;
 }
 
-// document.getElementById('bg-img').addEventListener('load', function(event) {
 
 // Set the corresponding color of the dom-color-* classes in the DOM
 const setDomColors = function() {
@@ -136,29 +134,38 @@ const setDomColors = function() {
 	const solver = new Solver(color);
 	let filterRes = solver.solve();
 	// Redo when color is far off
-	while (filterRes.loss >= 5) {
+	while (filterRes.loss >= 3) {
 		filterRes = solver.solve();
 	}
-	console.log(filterRes.filter);
 
 	// Get 1st tetradic color by shifting color by 270 degrees
 	let comp = shiftRGBOnColorWheel(rgb, 270);
 	
+	let bgTextColor;
+	
 	// Check if rgb is dark, if it is, lighter text color; else darker
 	if (isRGBDark(rgb)) {
-		$('.description-box').css('color', 'white');
+		bgTextColor = "white";
+		$('.dom-color-bg-opaque').css('color', 'white');
 		comp = lightenDarkenRGB(comp, 100);
 		$('.dom-color-text').css('color',  `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`);
 	} else {
-		$('.description-box').css('color', 'black');
+		bgTextColor = "black";
+		$('.dom-color-bg-opaque').css('color', 'black');
 		// if (!isRGBDark(comp)) comp = lightenDarkenRGB(comp, -100);
 		if (!isRGBDark(comp)) comp = [0,0,0];
 		$('.dom-color-text').css('color',  `rgb(${comp[0]}, ${comp[1]}, ${comp[2]})`);
 	}
 
-	$('.dom-color-bg').css('background-color',  `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.9)`);
+	// https://stackoverflow.com/a/2655976
+	$('.dom-color-bg').attr('style', function(i,s) { 
+		return (s || '') + `color: ${bgTextColor} !important;` + 
+		`background-color: rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}) !important`
+	});
+	$('.dom-color-bg-opaque').css('background-color',  `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.9)`);
 	$('.dom-color-filter').attr('style', filterRes.filter.slice(0,-1) + ' drop-shadow(1px 1px 5px #222);');
 	$('.comp-color-text-fill').css('fill', `rgb(${comp[0]}, ${comp[1]}, ${comp[2]})`);
 }
 
-// });
+// set colors only after everything (not only DOM) has been loaded
+$(window).on("load", setDomColors);
