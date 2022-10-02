@@ -41,8 +41,10 @@
     </div>
 
     <!-- Second Div -->
-    <section class="center-cropped" style = "background-color: #f8abb1; height: calc(100vh - 50px); box-shadow: 0px -5px 25px; overflow: hidden;">
-        <!-- Desktop ver -->
+ 
+    <section class="center-cropped" style = "background-image: url('./assets/Important Dates.png'); height:1080px; width: 1920px; box-shadow: 0px -5px 25px; overflow: hidden;">
+       
+<!--         
         <div class="slideshow-home mx-auto w-75 d-none d-lg-block" id = "desktop-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel">
                 <div class="carousel-inner">
@@ -66,7 +68,7 @@
                 </button>
             </div>
         </div> 
-        <!-- Tablet ver -->
+        
         <div class="slideshow-home p-2 mx-auto d-none d-md-block d-lg-none" id="tablet-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel" >
                 <div class="carousel-inner">
@@ -90,8 +92,7 @@
                 </button>
             </div>
         </div> 
-        <!-- Mobile ver -->
-        <!-- Test -->
+       
         <div class="slideshow-home mx-auto d-sm-block d-md-none d-lg-none" id="mobile-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel" >
                 <div class="carousel-inner">
@@ -114,10 +115,10 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div> 
-    </section>
+        </div> -->
+    </section>  
     <!-- Third Div -->
-    <section class="center-cropped" style = "background-color: #FFFFFF; height: 350vh;  overflow: hidden;">
+    <section class="center-cropped" style = "background-color: #FFFFFF; height: 300vh;  overflow: hidden;">
         <!-- Desktop version -->
         <div class="container mx-auto rounded py-5 px-1 w-75 text-xl-center mt-4"></div>
             <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
@@ -251,6 +252,260 @@
             </div>
         </div>
     </section>
+    <!-- Tablet Version -->
+        <div class="container d-none d-md-block d-lg-none mx-auto swiper-tab">
+            <!-- Diamond Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4" style = "font-family: 'EB Garamond'; text-align:center;">Diamond Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/_Ask Lex PH Academy.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/01 - Bukas.png" style="height: auto; width: 90%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/1_logowhite.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/02 - SSV .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/03 -  HENRY + LUCY.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/04 - Rae Lifestyle .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/05 - UFOTO.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/06 - Mazars .png" style="height: auto; width: 100%; margin-right: -1250px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/07 - Accenture .png" style="height: auto; width: 100%; margin-right: -1250px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/08 - Amihan.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/09 - Bratpack.png" style="height: auto; width: 90%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/B_lue Logo.jpg" style="height: auto; width: 100%; margin-right: -3050px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Great Taste Logo.png" style="width: 120%; margin-right: -160px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Japanmatcha.ph logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/MINILA_LOGO NEW_RL TRANSPARENT.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/MSI 3.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/SACO-Logo [WHITE].png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Shopee_logo_white.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Platinum Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Platinum Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/01 - Del Monte.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/02 - Meetbit.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/03 - Loreal - white.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/04 - Dormy (white) .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/05 - Closeup White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/Dulcet Corporate Logo - Green.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Gold Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Gold Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/01 - Guess.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/02 - Motivo .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/03 - Silvanas Las Pinas.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/04 - Nextile - with background.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/05 - Eden.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/07 - Swiftlet - horizontal.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/08 - Splore.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/09 - The Everyday.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/10 - Ur Lola PH.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/11 - Ysera Skin (png).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/12 - K-Cool.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/13 - Chic Nail Color Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Bloom Logo.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Commune Picks Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Franchise Manila Logo-151.png" style="height: auto; width: 90%; margin-right: -100px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/image003.png" style="height: auto; width: 90%; margin-right: -500px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/KONSULTA MD 1.png" style="height: auto; width: 90%; margin-right: -1000px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/new_dn_logo_white_500x500_png.png" style="height: auto; width: 80%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Polarix_Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/The Collective_White.png" style="height: auto; width: 90%; margin-right: -1000px;"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Silver Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Silver Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/01 - HS Fashionwear Logo.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/02 - Camalig Media Group.JPG"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/02 - Udenna.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/03 - Hiraya Journal (white).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/04 - Tasty Snacks.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/AKIPOP_LOGO_V2_SQUARELOGO.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/FGC Logo Black Text.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/Liang Logo_1.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/MALAYA WHITE LOGO (1).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/MIT Logo Horizontal (WHITE).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/Mitasu Yakiniku Landscape WHITE_1.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/nabe new logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/NYFD Logo-3.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/ZAPPP_White Transparent with text.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Bronze Sponsors -->
+            <div class="row">
+                 <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Bronze Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/01 - Yummy2Tummy .png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/03 - Transcendent MNL.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/04 - Jacinto _ Lirio .jpg" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/Kleo Active Logo (new).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/Papa K_s Logo (v. 5) YELLOW.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Media Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Media Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/01 - Spotted .png" style="height: auto; width: 100%; margin-right: -3000px;" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/02 - You Magazine.jpeg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/03 - Diyaryo Milenyo.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/COLORED VERSION.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/GGFM Logo_Dark.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/IKOTLOGO_colored.png" style="height: auto; width: 100%; margin-right: -1750px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/INQUIRER-DOT-NET-blue-bg.jpg" style="height: auto; width: 100%; margin-right: -1750px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/Logo LSM White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/Pop 2021 violet x pink.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/04 - APP White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/ARCH LOGO White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/SparkUp white.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/wtp logo name.png"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    <!--Mobile Version-->
+        <div class="container d-block d-md-none mx-auto swiper-mob">
+            <!-- Diamond Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4" style = "font-family: 'EB Garamond'; text-align:center;">Diamond Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/_Ask Lex PH Academy.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/01 - Bukas.png" style="height: auto; width: 90%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/1_logowhite.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/02 - SSV .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/03 -  HENRY + LUCY.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/04 - Rae Lifestyle .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/05 - UFOTO.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/06 - Mazars .png" style="height: auto; width: 100%; margin-right: -1250px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/07 - Accenture .png" style="height: auto; width: 100%; margin-right: -1250px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/08 - Amihan.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/09 - Bratpack.png" style="height: auto; width: 90%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/B_lue Logo.jpg" style="height: auto; width: 100%; margin-right: -3050px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Great Taste Logo.png" style="width: 120%; margin-right: -160px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Japanmatcha.ph logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/MINILA_LOGO NEW_RL TRANSPARENT.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/MSI 3.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/SACO-Logo [WHITE].png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[1] Diamond Logos/Shopee_logo_white.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Platinum Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Platinum Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/01 - Del Monte.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/02 - Meetbit.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/03 - Loreal - white.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/04 - Dormy (white) .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/05 - Closeup White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/Dulcet Corporate Logo - Green.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Gold Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Gold Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/01 - Guess.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/02 - Motivo .png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/03 - Silvanas Las Pinas.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/04 - Nextile - with background.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/05 - Eden.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/07 - Swiftlet - horizontal.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/08 - Splore.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/09 - The Everyday.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/10 - Ur Lola PH.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/11 - Ysera Skin (png).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/12 - K-Cool.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/13 - Chic Nail Color Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Bloom Logo.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Commune Picks Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Franchise Manila Logo-151.png" style="height: auto; width: 90%; margin-right: -100px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/image003.png" style="height: auto; width: 90%; margin-right: -500px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/KONSULTA MD 1.png" style="height: auto; width: 90%; margin-right: -1000px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/new_dn_logo_white_500x500_png.png" style="height: auto; width: 80%; margin-right: -800px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/Polarix_Logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[3] Gold Logos/The Collective_White.png" style="height: auto; width: 90%; margin-right: -1000px;"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Silver Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Silver Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/01 - HS Fashionwear Logo.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/02 - Camalig Media Group.JPG"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/02 - Udenna.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/03 - Hiraya Journal (white).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/04 - Tasty Snacks.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/AKIPOP_LOGO_V2_SQUARELOGO.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/FGC Logo Black Text.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/Liang Logo_1.jpg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/MALAYA WHITE LOGO (1).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/MIT Logo Horizontal (WHITE).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/Mitasu Yakiniku Landscape WHITE_1.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/nabe new logo.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/NYFD Logo-3.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[4] Silver Logos/ZAPPP_White Transparent with text.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Bronze Sponsors -->
+            <div class="row">
+                 <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Bronze Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/01 - Yummy2Tummy .png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/03 - Transcendent MNL.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/04 - Jacinto _ Lirio .jpg" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/Kleo Active Logo (new).png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[5] Bronze Logos/Papa K_s Logo (v. 5) YELLOW.png"></div>
+                    </section>
+                </div>
+            </div>
+            <!-- Media Sponsors -->
+            <div class="row">
+                <div class="container">
+                    <h2 class = "p-4 mt-5" style = "font-family: 'EB Garamond'; text-align:center;">Media Sponsors</h2>
+                    <section class="logo-carousel slider" data-arrows="true">
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/01 - Spotted .png" style="height: auto; width: 100%; margin-right: -3000px;" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/02 - You Magazine.jpeg"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/03 - Diyaryo Milenyo.png" ></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/COLORED VERSION.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/GGFM Logo_Dark.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/IKOTLOGO_colored.png" style="height: auto; width: 100%; margin-right: -1750px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/INQUIRER-DOT-NET-blue-bg.jpg" style="height: auto; width: 100%; margin-right: -1750px;"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/Logo LSM White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[6] Primary Media/Pop 2021 violet x pink.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/04 - APP White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/ARCH LOGO White.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/SparkUp white.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[7] Major Media/wtp logo name.png"></div>
+                    </section>
+                </div>
+            </div>
+        </div>    
     <!-- Footer -->
     
     

@@ -137,6 +137,20 @@
     margin-top: 32px;
     background: rgba(248, 171, 178, 0.349);
     width: 100%;
+    height: 230vh;
+}
+
+.swiper-tab{
+    margin-top: 32px;
+    background: rgba(248, 171, 178, 0.349);
+    width: 100%;
+    height: 200vh;
+}
+
+.swiper-mob{
+    margin-top: 32px;
+    background: rgba(248, 171, 178, 0.349);
+    width: 100%;
     height: 300vh;
 }
 
