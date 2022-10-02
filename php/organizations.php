@@ -213,7 +213,7 @@
                                 </div>
                             </div>
                         </li>';
-            echo '</div></div></div>';
+            echo '</div></div>';
             $counter++;
         }
         ?>
