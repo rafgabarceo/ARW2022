@@ -156,6 +156,9 @@ error_reporting(E_ALL);
     <!-- To be inserted when it's available -->
 
     <!-- Must include for nav-bar-collapse on mobile -->
+    <?php
+        require_once('footer.php');
+    ?>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     

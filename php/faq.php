@@ -110,48 +110,13 @@
             <!-- Last Q spacer -->
             <p style = "height: 10%"></p>
         </div>
-        
+        <div style = "background-color: #d82d27; height: 11.5vh">
+        <?php
+            require_once('footer.php');
+        ?>
+        </div>
             
     </div>
-
-    <section class="container">
-        <!-- <h2 style = "text-align: center;">Frequently Asked Questions</h2> -->
-       
-
-
-        <!-- <div class = "row">
-            <div class = "col">
-            <button class="accordion rounded-pill mt-3">#1</button>
-            <div class="panel rounded-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>        
-            </div>
-            <div class = "col">
-            <button class="accordion rounded-pill mt-3">#2</button>
-            <div class="panel rounded-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>        
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col">
-            <button class="accordion rounded-pill mt-3">#3</button>
-            <div class="panel rounded-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>        
-            </div>
-            <div class = "col">
-            <button class="accordion rounded-pill mt-3">#4</button>
-            <div class="panel rounded-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>        
-            </div>
-        </div> -->
-        
-
-        
-
-    </section>
    
 
     <script>
@@ -170,6 +135,7 @@
         });
         }
     </script>
-
+   
+      
 </body>
 </html>

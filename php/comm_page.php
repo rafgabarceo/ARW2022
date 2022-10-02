@@ -69,6 +69,8 @@
         <img class = "headerPicLeft" src="../assets/arw_cencomm/exec.png" style="z-index: 3; margin: 0 0 0 -8.34%;" alt="">
         <div style = "border-radius: 30px; background: rgba(216, 45, 39, 0.75);"> SDDAWDADW</div>
     </section>
-
+    <?php
+        require_once('footer.php');
+    ?>
     </body>
 </html>

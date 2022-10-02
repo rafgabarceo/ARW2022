@@ -129,7 +129,7 @@
         </div> -->
     </section>  
     <!-- Third Div -->
-    <section class="center-cropped d-none d-lg-block" style = "background-color: #FFFFFF; height: 300vh;  overflow: hidden;">
+    <section class="center-cropped d-none d-lg-block" style = "background-color: #FFFFFF; height: 250vh;  overflow: hidden;">
         <!-- Desktop version -->
         <div class="container mx-auto rounded pt-5 px-1 w-75 text-xl-center mt-4"></div>
             <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
@@ -529,8 +529,22 @@
                     </section>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
+
+    <div style = "background-color: #d82d27; height: 10vh;">
+    <style>
+        footer {
+            background-color: #d82d27;
+
+        };
+        </style>
+        <footer>
+            <img src="./assets/logos.png" style="position: absolute; padding: 8px 8px 8px 8px; overflow: visible;">
+            <h1 class="footer-text d-none d-md-block" style="color: white; text-align: right; padding: 24px 16px 8px 16px">CURIOUSER and CURIOUSER</h1>
+            <h1 class="footer-text d-md-none" style="color: white; text-align: right; padding: 43px 16px 8px 16px; font-size:12px;">CURIOUSER and CURIOUSER</h1>
+        </footer>
+    </div>
     <!-- Footer -->
     
     
@@ -562,5 +576,7 @@
         });
     });
     </script>
+    
+
 </body>
 </html>

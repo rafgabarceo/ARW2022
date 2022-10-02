@@ -222,6 +222,9 @@
             <!-- Both -->
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <?php
+        require_once('footer.php');
+    ?>
 </body>
 
 </html>
