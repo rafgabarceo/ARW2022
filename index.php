@@ -129,9 +129,9 @@
         </div> -->
     </section>  
     <!-- Third Div -->
-    <section class="center-cropped" style = "background-color: #FFFFFF; height: 300vh;  overflow: hidden;">
+    <section class="center-cropped d-none d-lg-block" style = "background-color: #FFFFFF; height: 300vh;  overflow: hidden;">
         <!-- Desktop version -->
-        <div class="container mx-auto rounded py-5 px-1 w-75 text-xl-center mt-4"></div>
+        <div class="container mx-auto rounded pt-5 px-1 w-75 text-xl-center mt-4"></div>
             <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
                 We would like to thank the following
             </h1>
@@ -263,8 +263,14 @@
             </div>
         </div>
     </section>
-    <!-- Tablet Version -->
-        <div class="container d-none d-md-block d-lg-none mx-auto swiper-tab">
+    <section class="center-cropped d-none d-md-block d-lg-none" style = "background-color: #FFFFFF; height: 230vh;  overflow: hidden;">
+        <!-- Tablet Version -->
+        <div class="container mx-auto rounded pt-5 px-1 w-75 text-xl-center mt-4"></div>
+            <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
+                We would like to thank the following
+            </h1>
+        </div>
+        <div class="container d-none d-md-block d-lg-none mx-auto swiper-tab mb-5">
             <!-- Diamond Sponsors -->
             <div class="row">
                 <div class="container">
@@ -390,7 +396,14 @@
                 </div>
             </div>
         </div>
+    </section>
     <!--Mobile Version-->
+    <section class="center-cropped d-block d-md-none" style = "background-color: #FFFFFF; height: 270vh;  overflow: hidden;">
+        <div class="container mx-auto rounded pt-5 px-1 w-75 text-xl-center mt-4"></div>
+            <h1 class="m-3" style = "font-family: 'EB Garamond'; text-align:center;">
+                We would like to thank the following
+            </h1>
+        </div>
         <div class="container d-block d-md-none mx-auto swiper-mob">
             <!-- Diamond Sponsors -->
             <div class="row">
@@ -517,6 +530,7 @@
                 </div>
             </div>
         </div>    
+    </section>
     <!-- Footer -->
     
     
