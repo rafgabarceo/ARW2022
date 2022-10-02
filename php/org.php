@@ -1,17 +1,37 @@
+
 <!-- Indiv org template -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once('head_2.php')?>
+    <?php 
+    ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+    require_once('head_2.php');
+    require_once("data_api/org-api.php"); 
+    
+    ?>
     <?php
         $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        $pageID = parse_url($url, PHP_URL_QUERY);
+        $org_abbrev = parse_url($url, PHP_URL_QUERY);
 
-        // Will have to replace file_get_contents() with a function returning a .json. Communication must be from back-end API.
-        $org_json = file_get_contents('../js/org-info/'. $pageID .'.json');
-        $org_info = json_decode($org_json, true);
+
+        /**
+         * 
+         * DEBUGGING PURPOSES ONLY. PLEASE DO NOT USE SAME USERNAME AND PASSWORD FOR PRODUCTION! 
+         * 
+         * This debugging API will assume that there is a database at default MYSQL port with -u root -p dev1234567890
+         * 
+         */
+        // echo "<script> console.log('".strtoupper($pageID)."');</script>";
+
+        $api = new fetchARWAPI("ACCESS", "localhost", "root", "dev1234567890","arw", 3306);
+        $information = $api->get_info();
+
+        var_dump($information); 
     ?>
     
-    <title><?php echo $org_info['org-name']?></title>
+    <title><?php echo $information['org_name']?></title>
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/org_indiv.css">
@@ -102,9 +122,15 @@
     <!-- 2nd Section: Optional Org Video -->
     <!-- May have to edit the condition for checking if org has video or not depending on backend API. -->
     <?php if (isset($org_info['video'])) { // start if ?>
-        <section>
-            <!-- Insert html here -->
-            Hi there!
+        <section class="text-center" id="section-2">
+            <div>
+                <h1 class="dom-color-text mb-4">
+                    Organizational Video
+                </h1>
+                <div>
+                    <iframe width="80%" height="90%" src=<?php echo $org_info['video']?>></iframe>
+                </div>
+            </div>
         </section>
     <?php } // end if ?>
 
