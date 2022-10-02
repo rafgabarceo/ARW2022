@@ -17,7 +17,7 @@
     <?php require_once('./php/floater.php') ?>
         
     <!-- First Div -->
-    <div class="center-cropped" style = "background-image: url('./assets/arw_cover_bg/cover_bg_noclouds.png'); background-attachment: fixed; height: 100vh; z-index: 1">
+    <div class="center-cropped" style = "background-image: url('./assets/arw_cover_bg/cover_bg_noclouds.png'); background-attachment: fixed; height: 100vh; z-index: 1; overflow: hidden;">
             <!-- Desktop ver -->
             <div class="container d-none d-lg-block" style="position: relative;">
                 <img src="./assets/arw_cover_bg/cover_text.png" style="width:100%; z-index: 3;" alt="">
@@ -39,12 +39,23 @@
         </div>
         
     </div>
-
+   
     <!-- Second Div -->
- 
-    <section class="center-cropped" style = "background-image: url('./assets/Important Dates.png'); height:1080px; width: 1920px; box-shadow: 0px -5px 25px; overflow: hidden;">
-       
-<!--         
+    <!-- Desktop Version -->
+    <section class="center-cropped d-none d-lg-block" style = "background-image: url('./assets/Important Dates.png'); height:1080px; width: 1920px; box-shadow: 0px -5px 25px; overflow: hidden;"></section>
+    <!-- Tablet Version -->
+    <section class="center-cropped d-none d-md-block d-lg-none" style = "background-color: #f8abb1; height: calc(100vh - 50px); box-shadow: 0px -5px 25px; overflow: hidden;">
+        <div class="p-3 align-self-center" id = "dates-tab" >
+            <img src="./assets/Important Dates.png" alt="" style = "max-width: 100%; height:auto; border-radius: 8px;" id = "dates-tab">
+        </div>
+    </section>
+    <!-- Mobile Version -->
+    <section class="center-cropped d-block d-md-none d-lg-none" style = "background-color: #f8abb1; height: calc(100vh - 200px); box-shadow: 0px -5px 25px; overflow: hidden;">
+        <div class="p-3 align-self-center">
+            <img src="./assets/Important Dates.png" alt="" style = "max-width: 100%; height:auto; border-radius: 15px;" id = "dates-mob">
+        </div>
+    </section>
+    <!--         
         <div class="slideshow-home mx-auto w-75 d-none d-lg-block" id = "desktop-slideshow">
             <div id = "carouselSlidesHome" class="carousel slide" data-bs-ride = "carousel">
                 <div class="carousel-inner">

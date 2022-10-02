@@ -133,6 +133,22 @@
     flex-wrap: wrap;
 }
 
+#dates-tab{
+    position: relative !important;
+    top: 10rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#dates-mob{
+    position: relative !important;
+    top: 6rem !important;
+    padding: .75rem !important;
+}
+
+
 .swiper{
     margin-top: 32px;
     background: rgba(248, 171, 178, 0.349);
