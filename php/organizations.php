@@ -143,7 +143,7 @@
     </div>
 
     <!-- Mobile Version -->
-    <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\bg.png); z-index: -1; padding: 0% 0% 10% 0%; background-repeat: no-repeat;">
+    <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1; padding: 0% 0% 10% 0%; background-repeat: repeat-y;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
@@ -213,7 +213,7 @@
                                 </div>
                             </div>
                         </li>';
-            echo '</div></div>';
+            echo '</div></div></div>';
             $counter++;
         }
         ?>
