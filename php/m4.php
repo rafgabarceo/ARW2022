@@ -16,7 +16,7 @@
             position: relative;
         }
         .background {
-            background-image: url("assets/ww_images/bg.png");
+            background-image: url("../assets/ww_images/bg.png");
             height: 2000px;
             margin: 0;
             position: center;
@@ -87,16 +87,16 @@
     
         
     <body>
-        
         <?php require_once('nav_bar_2.php') ?>
+        
         <center>
             <div class = "background"> 
             <div class = "container">
-                <div class = "photorighttop"> <img src="assets/ww_images/samplepix.jpg"/>
-                <div class = "photolefttop"> <img src="assets/ww_images/samplepix.jpg"/>
-                <div class = "photorightbottom"> <img src="assets/ww_images/samplepix.jpg"/>
-                <div class = "photoleftbottom"> <img src="assets/ww_images/samplepix.jpg"/>
-                <div class = "center"> <img src="assets/ww_images/scroll.png"/>
+                <div class = "photorighttop"> <img src="../assets/ww_images/samplepix.jpg"/>
+                <div class = "photolefttop"> <img src="../assets/ww_images/samplepix.jpg"/>
+                <div class = "photorightbottom"> <img src="../assets/ww_images/samplepix.jpg"/>
+                <div class = "photoleftbottom"> <img src="../assets/ww_images/samplepix.jpg"/>
+                <div class = "center"> <img src="../assets/ww_images/scroll.png"/>
                 <div class = "box"> 
                 <div class = " button"> <button onClick="window.location.href='https://www.youtube.com/';">Click Me!</button> 
                 </div>
