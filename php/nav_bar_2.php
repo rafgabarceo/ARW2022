@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav position-relative start-50 translate-middle-x">
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="../index.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">Home</button>
@@ -47,6 +47,13 @@
                 <li class="nav-item">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">FAQs</button>
+                </li>
+
+                <li class="nav-item">
+                <a href="../php/arw_elite.php">
+                    <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
+                        style="min-width: 128px; margin-right: 32px" href="#">ARW Elite</button>
+                    </a>
                 </li>
 
                 <li class="nav-item">
