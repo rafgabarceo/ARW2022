@@ -69,8 +69,9 @@ ul.arw-cards li.arw-card div.content {
     font-weight: 400px;
 }
 
-ul.arw-cards li.arw-card div.content h1 {
+ul.arw-cards li.arw-card h2 {
     font-size: 22;
+    font-family: 'EB Garamond', serif;
     font-weight: 500px;
     text-align: center;
 }

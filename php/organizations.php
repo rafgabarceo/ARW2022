@@ -67,7 +67,8 @@
 
     <!-- COVER PHOTO -->
     <!-- Desktop Version -->
-    <div class="d-none d-lg-block left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1; padding: 0% 0% 5% 0%;">
+    <div class="d-none d-lg-block left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1; padding: 0% 0% 5% 0%; background-repeat: repeat-y;">
+
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
@@ -100,11 +101,7 @@
             echo '<li class="arw-card arw-card-1">
                             <div class="arw-card-inner">
                                 <div class="arw-card-front" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;>
-                                    <img src="" />
-                                    <div class="content">
-                                    </div>
-                                </div>
-                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: auto 100%;">
+
                                 </div>
                             </div>
                         </li>';
@@ -116,9 +113,7 @@
                                         <div class="arw-card-front">
                                             <h1 class="top-left-card" style="color: '. $clusterColors[strtolower($cluster["cluster-name"])] .'">'. substr($cluster["organizations"][$i]["organization"], 0, 1) .'</h1>
                                             <img src="../assets/org_images/' . $cluster["organizations"][$i]["logo"] . '";/>
-                                            <div class="content">
-                                                <h1 style="color: '. $clusterColors[strtolower($cluster["cluster-name"])] .'">' . $cluster["organizations"][$i]["organization"] . '</h1>
-                                            </div>
+                                            <h2 style="color: '. $clusterColors[strtolower($cluster["cluster-name"])] .'; height: auto">' . $cluster["organizations"][$i]["organization"] . '</h2>
                                             <h1 class="bottom-right-card" style="color: '. $clusterColors[strtolower($cluster["cluster-name"])] .'">'. substr($cluster["organizations"][$i]["organization"], 0, 1) .'</h1>
                                         </div>
                                         <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
@@ -133,11 +128,8 @@
             echo '<li class="arw-card arw-card-' . count($cluster["organizations"]) + 2 . '">
                             <div class="arw-card-inner">
                                 <div class="arw-card-front" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;>
-                                    <img src="" />
                                     <div class="content">
                                     </div>
-                                </div>
-                                <div class="arw-card-back" style="background-image: url(../assets/org_page/'.$cluster["cluster-name"].'.png); background-size: cover;">
                                 </div>
                             </div>
                         </li>';
@@ -151,7 +143,7 @@
     </div>
 
     <!-- Mobile Version -->
-    <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\ bg.png); z-index: -1; padding: 0% 0% 10% 0%">
+    <div class="d-lg-none left-cropped hide-scrollbar" style="background: url(../assets/org_page/wood\bg.png); z-index: -1; padding: 0% 0% 10% 0%; background-repeat: no-repeat;">
         <?php
         $org_info_json = file_get_contents('../js/org-info.json');
         $decoded_json = json_decode($org_info_json, true);
