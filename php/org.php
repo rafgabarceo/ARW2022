@@ -104,7 +104,6 @@
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
-    <!-- TODO: update PHP for org-bg path -->
     <section id="section-1" class="text-center" 
             style="background-image: url(<?php echo $information['org_path_to_background']?>);">
         <!-- hidden image for getting dom-color purposes -->
@@ -147,10 +146,7 @@
                     <h1>
                         <?php echo $information['org_name']?>
                     </h1>
-                    <h5 class="mt-1 mb-3">
-                        Booth open from <?php echo $information['org_booth_times']?>
-                    </h5>
-                    <div class="text-scrollable-justified light-scroll">
+                    <div class="mt-3 text-scrollable-justified light-scroll">
                         <p class="lead">
                             <?php echo $information['org_desc']?>
                         </p>

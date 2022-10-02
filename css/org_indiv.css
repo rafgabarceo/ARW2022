@@ -432,6 +432,15 @@
 	background-image: url(../assets/org_indiv_page/tea_party_bg.png);
 }
 
+#section-1 button, #section-5 button {
+	min-width: 70%;
+	border: 0;
+	background-color: rgb(0, 0, 61) !important;
+}
+#section-3 h1, #section-5 h1 {
+	color: #705faf;
+}
+
 /* Section 1 styles */
 svg{
 	/* border: 3px solid red; */
@@ -444,7 +453,7 @@ svg text {
 
 .bevel {  /* larger font */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a537e', endColorstr='#1d2040', GradientType=1 );
-	fill: #705faf;
+	fill: #5e51a2;
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -452,15 +461,6 @@ svg text {
 	top: 17px;
 	left: 50%;
 	transform: translateX(-100%); /* half of the SVG's width attribute value */
-}
-
-#section-1 button, #section-5 button {
-	min-width: 70%;
-	border: 0;
-	background-color: rgb(0, 0, 61) !important;
-}
-#section-3 h1, #section-5 h1 {
-	color: #705faf;
 }
 
 #section-1 {
