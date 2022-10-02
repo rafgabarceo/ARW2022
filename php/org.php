@@ -24,9 +24,14 @@
          * Delete lines with 'DELETE' comment for production.
          */
 
-        $org_abbrev = "CHEMSOC"; /**DELETE***/
 
-        $api = new fetchARWAPI($org_abbrev, "localhost", "root", "dev1234567890","arw", 3306);
+        // Get information
+        $myfile = fopen("key.config", "r") or die("Config error");
+        $db_name = fgets($myfile);
+        $db_pass = fgets($myfile);
+
+        $api = new fetchARWAPI($org_abbrev, "localhost", $db_name, $db_pass, $db_name, 3306);
+
         // get org info
         $information = $api->get_info();
 
