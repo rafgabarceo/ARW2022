@@ -24,12 +24,14 @@
             <div class = "container accordion-container">
                 <button class="accordion">
                     <span class = "QFont">Q: </span>
-                    <span class = "QuestionFont">What is ARW all about?</span>
+                    <span class = "QuestionFont">What organizations can I join?</span>
                 </button>
                 <div class="panel">
                     <span class = "QFont">A: </span>
 
-                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">
+                    You may check out the list of booths of the organizations through the booth schedules sheet (https://bit.ly/ARW2022-BoothSchedules) or you may also check the organizations tab in the website for the list of organizations under the Council of Student Organizations (CSO) that are available for you to join.
+                    </span>
 
                     <!-- Spacer -->
                     <p></p>
@@ -40,12 +42,14 @@
             <div class = "container accordion-container">
                 <button class="accordion">
                     <span class = "QFont">Q: </span>
-                    <span class = "QuestionFont">Asan ung faqs?</span>
+                    <span class = "QuestionFont">How can I join an organization?</span>
                 </button>
                 <div class="panel">
                     <span class = "QFont">A: </span>
 
-                    <span class = "AFont">Di ko ren alam boi</span>
+                    <span class = "AFont">
+                    You may visit the organizations tab through for the organizations under the Council of Student Organizations (CSO) and their respective registration forms. For organizations outside CSO you may reach out to them by joining their physical or online booths.
+                    </span>
 
                     <!-- Spacer -->
                     <p></p>
@@ -55,12 +59,14 @@
             <div class = "container accordion-container">
                 <button class="accordion">
                     <span class = "QFont">Q: </span>
-                    <span class = "QuestionFont">Sample 3?</span>
+                    <span class = "QuestionFont">Where can I learn more about a specific organization?</span>
                 </button>
                 <div class="panel">
                     <span class = "QFont">A: </span>
 
-                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">
+                    You may visit the ARW 2022 website for details of an organization and their previous events. You may also join their physical or online booths as well to get a feel of the organization's atmosphere or to meet the people who you could be with.
+                    </span>
 
                     <!-- Spacer -->
                     <p></p>
@@ -70,12 +76,31 @@
             <div class = "container accordion-container">
                 <button class="accordion">
                     <span class = "QFont">Q: </span>
-                    <span class = "QuestionFont">Sample 4?</span>
+                    <span class = "QuestionFont">What is the difference between ARW Elite and Wonderweek?</span>
                 </button>
                 <div class="panel">
                     <span class = "QFont">A: </span>
 
-                    <span class = "AFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <span class = "AFont">
+                    ARW Elite is a pagaent which showcases representatives from each organization wherein they show what it means to be part of their organization. Wonderweek is the recruitment week wherein students can play games and interact with the officers of each organization to get to know more about them.
+                    </span>
+
+                    <!-- Spacer -->
+                    <p></p>
+                </div>
+            </div>
+
+            <div class = "container accordion-container">
+                <button class="accordion">
+                    <span class = "QFont">Q: </span>
+                    <span class = "QuestionFont">Do I have to pay a membership fee to be part of any organization?</span>
+                </button>
+                <div class="panel">
+                    <span class = "QFont">A: </span>
+
+                    <span class = "AFont">
+                    You may check each organization’s respective page and check whether or not they have a membership fee and how much it is. You may find the necessary payment details in each organization’s registration form.
+                    </span>
 
                     <!-- Spacer -->
                     <p></p>
