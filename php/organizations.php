@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body style="overflow-x:hidden; background-color: #d82d27">
+<body style="overflow-x:hidden;">
     <?php require_once('nav_bar_2.php') ?>
 
     <!-- Desktop Version -->
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </li>';
-            echo '</div></div></div>';
+            echo '</div></div>';
             $counter++;
         }
 
