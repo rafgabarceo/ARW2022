@@ -9,7 +9,6 @@ body {
     overflow-x: scroll;
 }
 
-
 .cluster-abrv {
     font-size: 64;
     font-weight: 700px;
@@ -56,7 +55,7 @@ ul.arw-cards li.arw-card {
 }
 
 ul.arw-cards li.arw-card img {
-    max-width: 80%;
+    max-width: 55%;
     padding-top: 5%;
     display: block;
     margin-left: auto;
@@ -65,13 +64,34 @@ ul.arw-cards li.arw-card img {
 }
 
 ul.arw-cards li.arw-card div.content {
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-family: 'EB Garamond', serif;
-    font-size: 12;
     font-weight: 400px;
 }
 
 ul.arw-cards li.arw-card div.content h1 {
+    font-size: 22;
+    font-weight: 500px;
+    text-align: center;
+}
+
+.top-left-card {
+    font-size: 55;
+    font-weight: 500px;
+    text-align: left;
+    vertical-align: top;
+    padding: 4px 16px 0px 16px;
+}
+
+.bottom-right-card {
+    font-size: 55;
+    font-weight: 500px;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 0px 16px 0px 16px;
+}
+
+ul.arw-cards li.arw-card {
     font-size: 20;
     font-weight: 500px;
     text-align: center;
@@ -87,10 +107,6 @@ ul.arw-cards li.arw-card div.content h1 {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-
-.arw-card:hover .arw-card-inner {
-    transform: rotateY(180deg);
 }
 
 .arw-card-front,

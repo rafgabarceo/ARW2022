@@ -1,78 +1,78 @@
  section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40vh;
-    background-image: url(../assets/org_page/wood\ bg.png);
-    background-size: 100% 100%;
-}
-
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40vh;
+     background-image: url(../assets/org_page/wood\ bg.png);
+     background-size: 100% 100%;
+ }
+ 
  section.cso-section {
-    background-color: #FF85C7;
-    padding: 5vh;
+     background-color: #FF85C7;
+     padding: 5vh;
  }
-
+ 
  .centered {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100px;
  }
-
+ 
  .logo-wrapper {
-    padding: 10% 20% 20% 20%;
-    background: url(../assets/org_page/Scroll.png);
-    background-size: 100% 100%;
+     padding: 10% 15% 10% 15%;
+     background: url(../assets/org_page/Scroll.png);
+     background-size: 100% 100%;
  }
-
+ 
  .card-body img {
-    height: 100%;
-    width: 100%;
+     height: 100%;
+     width: 100%;
  }
-
+ 
  .cso-logo {
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    content: url(../assets/org_images/cso-logo.webp);
+     border-radius: 50%;
+     width: 20rem;
+     height: 20rem;
+     content: url(../assets/org_images/cso-logo.webp);
  }
  
  .cso-text {
-   font-size: 56px;
-   text-align: center;
-}
-
+     font-size: 56px;
+     text-align: center;
+ }
+ 
  .cso-sub-text {
-    font-size: 26px;
-    text-align: center;
+     font-size: 26px;
+     text-align: center;
  }
-
+ 
  .cso-title-div {
-   align-items: center;
-   float: left;
+     align-items: center;
+     float: left;
  }
-
+ 
  .cso-button {
-   font-size: 26px;
-   border-radius: 50%;
-   width: 20rem;
-   background-color: #FF008A;
-   color: white;
-} 
-
-.card {
-    background: rgba(0,0,0,0.5);
-    padding-left: 2%;
-    color: white;
-}
-
-.card-parent {
-    overflow:hidden;
-    padding: 10px;
-}
-
-.card-body{
-    width: 85rem;   
-    height: 25rem;
-    vertical-align: middle;
+     font-size: 26px;
+     border-radius: 50%;
+     width: 20rem;
+     background-color: #FF008A;
+     color: white;
+ }
+ 
+ .card {
+     background: rgba(0, 0, 0, 0.5);
+     padding-left: 2%;
+     color: white;
+ }
+ 
+ .card-parent {
+     overflow: hidden;
+     padding: 10px;
+ }
+ 
+ .card-body {
+     width: 85rem;
+     height: 25rem;
+     vertical-align: middle;
  }

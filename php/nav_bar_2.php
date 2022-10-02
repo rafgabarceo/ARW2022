@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="./php/organizations.php">
+                    <a href="organizations.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">Organizations</button>
                     </a>
