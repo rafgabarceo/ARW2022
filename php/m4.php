@@ -16,8 +16,8 @@
             position: relative;
         }
         .background {
-            background-image: url("bg.png");
-            height: 1440px;
+            background-image: url("assets/ww_images/bg.png");
+            height: 2000px;
             margin: 0;
             position: center;
             background-repeat: no-repeat;
@@ -27,9 +27,9 @@
         .photorighttop img{
             margin: 130px 0px 0px 0px;
             width: 705px;
-            height: 400px;
+            height: 300px;
             float: left;
-            border: 30px solid black;
+            border: 3px solid black;
             transform: rotate(3deg);
             border-image: url(frame.png);
             border-image-slice: 250;
@@ -45,7 +45,7 @@
             transform: rotate(-3deg);
         }
         .photorightbottom img{
-            margin: 600px 0px 0px 0px;
+            margin: 800px 0px 0px 0px;
             width: 705px;
             height: 300px;
             border: 3px solid gray;
@@ -53,7 +53,7 @@
             transform: rotate(3deg);
         }
         .photoleftbottom img{
-            margin: 500px 0px 0px 0px;
+            margin: 800px 0px 0px 0px;
             width: 705px;
             height: 300px;
             border: 3px solid gray;
@@ -62,10 +62,10 @@
             transform: rotate(-3deg);
         }
         .center img{
-            margin: -1100px 0px 0px 400px;
+            margin: -1250px 0px 0px 400px;
             border: 0px;
             width: 700px;
-            height: 1000px;
+            height: 1100px;
             
         }
         .box {
@@ -74,7 +74,7 @@
             
         }
         .button {
-            margin: 1050px 0px 0px 700px;
+            margin: 1200px 0px 0px 700px;
             padding: 15px 43px;
             text-align: center;
             display: inline-block;
@@ -92,11 +92,11 @@
         <center>
             <div class = "background"> 
             <div class = "container">
-                <div class = "photorighttop"> <img src="samplepix.jpg"/>
-                <div class = "photolefttop"> <img src="samplepix.jpg"/>
-                <div class = "photorightbottom"> <img src="samplepix.jpg"/>
-                <div class = "photoleftbottom"> <img src="samplepix.jpg"/>
-                <div class = "center"> <img src="scroll.png"/>
+                <div class = "photorighttop"> <img src="assets/ww_images/samplepix.jpg"/>
+                <div class = "photolefttop"> <img src="assets/ww_images/samplepix.jpg"/>
+                <div class = "photorightbottom"> <img src="assets/ww_images/samplepix.jpg"/>
+                <div class = "photoleftbottom"> <img src="assets/ww_images/samplepix.jpg"/>
+                <div class = "center"> <img src="assets/ww_images/scroll.png"/>
                 <div class = "box"> 
                 <div class = " button"> <button onClick="window.location.href='https://www.youtube.com/';">Click Me!</button> 
                 </div>
@@ -104,13 +104,5 @@
             </div>
         </center>
 
-
-
-           
-           
-
-                
-    
-    </center>
     </body>
 </html>
