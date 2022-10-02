@@ -4,36 +4,36 @@
             "cluster-name": "ASO",
             "cluster-long-name": "Alliance of Science Organizations",
             "organizations": [{
-                    "org-name": "CHEMSOC",
-                    "physical-booth": true,
-                    "physical-booth-times": "9:00 PM - 3:00 PM",
-                    "online-booth-times": "8:00 PM - 5:00 PM",
+                    "organization": "CHEMSOC",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
                     "logo": "chemsoc-logo.webp",
                     "page": "org.php?chemsoc"
                 },
                 {
-                    "org-name": "MC",
-                    "physical-booth": true,
-                    "physical-booth-times": "10:00 PM - 3:00 PM",
-                    "online-booth-times": "9:00 PM - 5:00 PM",
+                    "organization": "MC",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
                     "logo": "mc-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/mc"
+                    "page": "org.php?mc"
                 },
                 {
-                    "org-name": "PHYSOC",
-                    "physical-booth": false,
+                    "organization": "PHYSOC",
+                    "physical-booth": "",
                     "physical-booth-times": "",
-                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "online-booth-times": "",
                     "logo": "physoc-logo.webp",
                     "page": "org.php?physoc"
                 },
                 {
-                    "org-name": "SV",
-                    "physical-booth": true,
-                    "physical-booth-times": "9:00 PM - 6:00 PM",
-                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "organization": "SV",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
                     "logo": "sv-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/sv"
+                    "page": "org.php?sv"
                 }
             ]
         },
@@ -41,28 +41,388 @@
             "cluster-name": "ASPIRE",
             "cluster-long-name": "College of Education and Special Interest and Socio-Civic Organizations",
             "organizations": [{
-                    "org-name": "AIESEC",
-                    "physical-booth": true,
-                    "physical-booth-times": "9:00 PM - 3:00 PM",
-                    "online-booth-times": "8:00 PM - 5:00 PM",
-                    "logo": "aiesec-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/aiesec"
-                },
-                {
-                    "org-name": "AJA",
-                    "physical-booth": true,
-                    "physical-booth-times": "10:00 PM - 3:00 PM",
-                    "online-booth-times": "9:00 PM - 5:00 PM",
-                    "logo": "aja-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/aja"
-                },
-                {
-                    "org-name": "ArCG",
-                    "physical-booth": false,
+                    "organization": "AFL",
+                    "physical-booth": "",
                     "physical-booth-times": "",
-                    "online-booth-times": "9:00 PM - 6:00 PM",
+                    "online-booth-times": "",
+                    "logo": "afl-logo.webp",
+                    "page": "org.php?afl"
+                },
+                {
+                    "organization": "AIESEC",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "aiesec-logo.webp",
+                    "page": "org.php?aiesec"
+                },
+                {
+                    "organization": "AJA Animo",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "aja animo-logo.webp",
+                    "page": "org.php?aja animo"
+                },
+                {
+                    "organization": "ArCG",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
                     "logo": "arcg-logo.webp",
-                    "page": "https://arw-2021-web-development.github.io/arcg"
+                    "page": "org.php?arcg"
+                },
+                {
+                    "organization": "AU",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "au-logo.webp",
+                    "page": "org.php?au"
+                },
+                {
+                    "organization": "ECO",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "eco-logo.webp",
+                    "page": "org.php?eco"
+                },
+                {
+                    "organization": "ENGLICOM",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "englicom-logo.webp",
+                    "page": "org.php?englicom"
+                },
+                {
+                    "organization": "GAS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "gas-logo.webp",
+                    "page": "org.php?gas"
+                },
+                {
+                    "organization": "HFH",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "hfh-logo.webp",
+                    "page": "org.php?hfh"
+                },
+                {
+                    "organization": "IS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "is-logo.webp",
+                    "page": "org.php?is"
+                },
+                {
+                    "organization": "OC",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "oc-logo.webp",
+                    "page": "org.php?oc"
+                },
+                {
+                    "organization": "PRISM",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "prism-logo.webp",
+                    "page": "org.php?prism"
+                },
+                {
+                    "organization": "ROTARACT",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "rotaract-logo.webp",
+                    "page": "org.php?rotaract"
+                },
+                {
+                    "organization": "UNITED",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "united-logo.webp",
+                    "page": "org.php?united"
+                },
+                {
+                    "organization": "VA",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "va-logo.webp",
+                    "page": "org.php?va"
+                },
+                {
+                    "organization": "WG",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "wg-logo.webp",
+                    "page": "org.php?wg"
+                }
+            ]
+        },
+        "cap13": {
+            "cluster-name": "CAP13",
+            "cluster-long-name": "College of Liberal Arts Organizations",
+            "organizations": [{
+                    "organization": "AMSTUD",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "amstud-logo.webp",
+                    "page": "org.php?amstud"
+                },
+                {
+                    "organization": "BSS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "bss-logo.webp",
+                    "page": "org.php?bss"
+                },
+                {
+                    "organization": "Cultura",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "cultura-logo.webp",
+                    "page": "org.php?cultura"
+                },
+                {
+                    "organization": "DANUM",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "danum-logo.webp",
+                    "page": "org.php?danum"
+                },
+                {
+                    "organization": "DEVINT",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "devint-logo.webp",
+                    "page": "org.php?devint"
+                },
+                {
+                    "organization": "ESA",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "esa-logo.webp",
+                    "page": "org.php?esa"
+                },
+                {
+                    "organization": "NKK",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "nkk-logo.webp",
+                    "page": "org.php?nkk"
+                },
+                {
+                    "organization": "PILOSOPO",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "pilosopo-logo.webp",
+                    "page": "org.php?pilosopo"
+                },
+                {
+                    "organization": "POLISCY",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "poliscy-logo.webp",
+                    "page": "org.php?poliscy"
+                },
+                {
+                    "organization": "SDH",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "sdh-logo.webp",
+                    "page": "org.php?sdh"
+                },
+                {
+                    "organization": "SEASON",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "season-logo.webp",
+                    "page": "org.php?season"
+                },
+                {
+                    "organization": "SMS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "sms-logo.webp",
+                    "page": "org.php?sms"
+                },
+                {
+                    "organization": "TEAMCOMM",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "teamcomm-logo.webp",
+                    "page": "org.php?teamcomm"
+                }
+            ]
+        },
+        "engage": {
+            "cluster-name": "ENGAGE",
+            "cluster-long-name": "Engineering Alliance Geared Towards Excellence",
+            "organizations": [{
+
+                    "organization": "ACCESS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "access-logo.webp",
+                    "page": "org.php?access"
+                },
+                {
+                    "organization": "BES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "bes-logo.webp",
+                    "page": "org.php?bes"
+                },
+                {
+                    "organization": "CES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "ces-logo.webp",
+                    "page": "org.php?ces"
+                },
+                {
+                    "organization": "ChEn",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "chen-logo.webp",
+                    "page": "org.php?chen"
+                },
+                {
+                    "organization": "ECES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "eces-logo.webp",
+                    "page": "org.php?eces"
+                },
+                {
+                    "organization": "IMES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "imes-logo.webp",
+                    "page": "org.php?imes"
+                },
+                {
+                    "organization": "LSCS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "lscs-logo.webp",
+                    "page": "org.php?lscs"
+                },
+                {
+                    "organization": "MES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "mes-logo.webp",
+                    "page": "org.php?mes"
+                },
+                {
+                    "organization": "SME",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "sme-logo.webp",
+                    "page": "org.php?sme"
+                }
+            ]
+        },
+        "probe": {
+            "cluster-name": "PROBE",
+            "cluster-long-name": "Professional Organizations of Business and Economics",
+            "organizations": [{
+                    "organization": "AdCreate",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "adcreate-logo.webp",
+                    "page": "org.php?adcreate"
+                },
+                {
+                    "organization": "BMS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "bms-logo.webp",
+                    "page": "org.php?bms"
+                },
+                {
+                    "organization": "ECONORG",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "econorg-logo.webp",
+                    "page": "org.php?econorg"
+                },
+                {
+                    "organization": "JEMA",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "jema-logo.webp",
+                    "page": "org.php?jema"
+                },
+                {
+                    "organization": "JPIA",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "jpia-logo.webp",
+                    "page": "org.php?jpia"
+                },
+                {
+                    "organization": "LLS",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "lls-logo.webp",
+                    "page": "org.php?lls"
+                },
+                {
+                    "organization": "MaFIA",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "mafia-logo.webp",
+                    "page": "org.php?mafia"
+                },
+                {
+                    "organization": "YES",
+                    "physical-booth": "",
+                    "physical-booth-times": "",
+                    "online-booth-times": "",
+                    "logo": "yes-logo.webp",
+                    "page": "org.php?yes"
                 }
             ]
         }

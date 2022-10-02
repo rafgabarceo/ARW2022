@@ -1,0 +1,171 @@
+/* Accordion Styling */
+.accordion-container{
+    border: none; border-radius: 30px 30px 30px 30px; background-color: #472520; color: #444; padding-bottom: 5px; margin-top: 5px;
+}
+
+.accordion {
+    z-index: 3;
+    background-color: #472520;
+    color: #444;
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    text-align: left;
+    outline: none;
+    /* font-family: "Garamond"; */
+    /* font-size: 15px; */
+    transition: 0.2s;
+    border: none;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 767.98px){
+    .accordion {
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .accordion {
+        padding: 18px;
+    }
+}
+
+
+/* Accordion when hovering */
+.active, .accordion:hover {
+    background-color: #472520;
+}
+
+/* Accordion after clicking */
+.active, .accordion:after {
+    content: '\002B';
+    color: #472520;
+    font-weight: bold;
+    float: right;
+    
+    /* animation: radiusFix 0.1s;
+    animation-fill-mode: forwards; */
+    /* border: none;
+    border-radius: 30px 30px 0px 0px; */
+}
+
+.active:after {
+    content: "\2212";
+    color: #472520;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Under the accordion styling */
+.panel {
+    position: relative;
+    z-index: 2;
+    /* padding: 0 18px; */
+    /* background-color: #472520; */
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    font-family: "Garamond";
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    /* margin-left: 3px; */
+    /* border: none;
+    border-radius: 0px 0px 30px 30px; */
+    
+}
+
+@media only screen and (max-width: 767.98px){
+    .panel {
+        padding: 0 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .panel {
+        padding: 0 18px;
+        margin-left: 3px;
+    }
+}
+
+
+.back-center {
+    background-size: cover;
+    background-position: 100% center ;
+    background-attachment: fixed;
+    height: auto 100%;
+}
+
+.FAQs {
+    /* position: absolute; */
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    margin-top: 15%;
+}
+
+.QFont {
+     font-family: 'Berkshire Swash';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 45px; */
+    line-height: 56px;
+
+    color: #D82D27;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.QuestionFont {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 34px; */
+    line-height: 44px;
+
+    color: #D82D27;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+}
+
+.AFont {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 20px; */
+    line-height: 26px;
+    color: #FFFFFF;
+
+}
+
+@media only screen and (max-width: 768.98px){
+    .QFont{
+        font-size: 22px;
+    }
+    .QuestionFont {
+        font-size: 15px;
+    }
+    .AFont {
+        font-size: 12px; 
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 780px) {
+    .QFont{
+        font-size: 45px;
+    }
+    .QuestionFont {
+        font-size: 34px;
+    }
+    .AFont {
+        font-size: 20px; 
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+}
