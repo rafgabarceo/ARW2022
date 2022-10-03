@@ -531,6 +531,8 @@
             </div>
         </div>
     </section>
+    <!-- Xtra Small Mobile Version -->
+   
 
     <div style = "background-color: #d82d27; height: 10vh;">
     <style>
