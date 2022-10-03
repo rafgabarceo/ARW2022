@@ -1,0 +1,63 @@
+.headerPic {
+    /* position: absolute; */
+    width: 100%;
+    object-fit: cover;
+    height: 190px;
+}
+
+.headerPicLeft {
+    /* position: absolute; */
+    width: 70%;
+    object-fit: cover;
+    height: 190px;
+    overflow: hidden;
+}
+
+.commPic {
+    margin: 25px 0 0 0;
+    object-fit: cover;
+    width: 380px;
+    height: 454px;
+}
+
+.execommPic {
+    margin: 25px 0 0 0;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+}
+
+/* for moving background */
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+/* @media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+} */
+
+/* @media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+
+        width: 100%;
+
+        overflow: visible;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        height: 100%;
+    }
+} */
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('../assets/background/comm_bg.png');
+        background-size: cover;
+    }
+}

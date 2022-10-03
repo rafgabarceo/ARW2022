@@ -33,32 +33,40 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="../php/organizations.php">
+                    <a href="organizations.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">Organizations</button>
                     </a>
                 </li>
 
                 <li class="nav-item">
+                <a href="../php/comingsoon.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">Events</button>
+                        </a>
                 </li>
 
                 <li class="nav-item">
+                    <a href="../php/faq.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">FAQs</button>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                <a href="../php/arw_elite.php">
+
+                <a href="../php/comingsoon.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">ARW Elite</button>
                     </a>
                 </li>
 
                 <li class="nav-item">
+                <a href="../php/comingsoon.php">
+
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
-                        style="min-width: 128px; margin-right: 32px" href="#">About Us</button>
+                        style="min-width: 128px; margin-right: 32px" href="#">Behind ARW</button>
+                    </a>
                 </li>
 
             </ul>

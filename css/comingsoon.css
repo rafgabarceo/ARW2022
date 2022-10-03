@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+:root {
+    /*
+    Desktop: 200px
+    Mobile: 64px
+    */
+    --z_index: 5;
+}
+
+.moving_bg {
+    background-position: 0% center;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    overflow: hidden;
+}
+
+#bg-div {
+    width: 100%;
+    height: 100%;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+
+.bg_moving {
+    height: calc(var(--logo-size) * 0.5373);
+    overflow: visible;
+    position: relative;
+    /* 
+    Desktop: -24px
+    Mobile: 0px
+    */
+    /* top: -24px; */
+}
+
+#_fixed_layers {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 2000px;
+    z-index: var(--z_index)+2;
+}
+
+#_moving_layer1 {
+    top: -485px;
+    left: -775px;
+    position: absolute;
+    z-index: var(--z_index)+2;
+    transform-origin: 50% 50%;
+    transform: rotate 100deg;
+    animation: layer1_anim 6s infinite linear alternate;
+}
+
+#_moving_layer2 {
+    top: -660px;
+    left: -1023px;
+    width: 2750px;
+    height: auto;
+    position: absolute;
+    z-index: var(--z_index)+3;
+    transform-origin: 50% 50%;
+    animation: layer2_anim 6s infinite linear alternate-reverse;
+}
+
+#_moving_layer3 {
+    top: -960px;
+    left: -1660px;
+    width: 3750px;
+    height: auto;
+    position: absolute;
+    z-index: var(--z_index)+3;
+    transform-origin: 50% 50%;
+    animation: layer3_anim 6s infinite linear alternate;
+}
+
+#_moving_layer4 {
+    top: -960px;
+    left: -2000px;
+    width: 5000px;
+    height: auto;
+    position: absolute;
+    z-index: var(--z_index)+3;
+    transform-origin: 50% 50%;
+    animation: layer4_anim 6s infinite linear alternate-reverse;
+}
+
+@keyframes layer1_anim {
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes layer2_anim {
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes layer3_anim {
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes layer4_anim {
+    to {
+        transform: rotate(75deg);
+    }
+}
+
+#_core {
+    top: -24px;
+    position: absolute;
+    z-index: var(--z_index)+4;
+}
+
+* {
+    margin: 0px;
+  }
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    overflow-y: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.countdown-font {
+    font-size: 225px;
+    
+}
+
+.countdown-font-small {
+    font-size: 60px;
+}
+
+.countdown-font-xsmall {
+    font-size: 50px;
+}
+
+.arwlogo {
+    height: 128px;
+    width: 128px;
+    object-fit: contain;
+    box-sizing: content-box;
+}
+
+.arwlogo-sm {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    box-sizing: content-box;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #d82d27 !important;
+    border-color: #d82d27 !important; /*set the color you want here*/
+    
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff !important;
+    background-color: #e65151 !important;
+    border-color: #e65151 !important; /*set the color you want here*/
+}
+
+.center-cropped {
+    background-repeat: no-repeat !important; 
+    background-size: cover;
+    background-position: 100% center ;
+    overflow: hidden;
+}
