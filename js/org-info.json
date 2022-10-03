@@ -8,7 +8,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "chemsoc-logo.webp",
+                    "logo": "/org_assets/CHEMSOC/chemsoc-logo.png",
                     "page": "org.php?chemsoc"
                 },
                 {
@@ -16,7 +16,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "mc-logo.webp",
+                    "logo": "/org_assets/MC/mc-logo.png",
                     "page": "org.php?mc"
                 },
                 {
@@ -24,7 +24,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "physoc-logo.webp",
+                    "logo": "/org_assets/PHYSOC/physoc-logo.png",
                     "page": "org.php?physoc"
                 },
                 {
@@ -32,7 +32,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "sv-logo.webp",
+                    "logo": "/org_assets/SV/sv-logo.png",
                     "page": "org.php?sv"
                 }
             ]
@@ -45,7 +45,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "afl-logo.webp",
+                    "logo": "/org_assets/AFL/afl-logo.png",
                     "page": "org.php?afl"
                 },
                 {
@@ -53,7 +53,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "aiesec-logo.webp",
+                    "logo": "/org_assets/AIESEC/aiesec-logo1.png",
                     "page": "org.php?aiesec"
                 },
                 {
@@ -61,7 +61,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "aja animo-logo.webp",
+                    "logo": "/org_assets/AJA/aja-logo.png",
                     "page": "org.php?aja animo"
                 },
                 {
@@ -69,7 +69,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "arcg-logo.webp",
+                    "logo": "/org_assets/ARCG/arcg-logo.png",
                     "page": "org.php?arcg"
                 },
                 {
@@ -77,7 +77,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "au-logo.webp",
+                    "logo": "/org_assets/AU/au-logo.png",
                     "page": "org.php?au"
                 },
                 {
@@ -85,7 +85,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "eco-logo.webp",
+                    "logo": "/org_assets/ECO/eco-logo.png",
                     "page": "org.php?eco"
                 },
                 {
@@ -93,7 +93,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "englicom-logo.webp",
+                    "logo": "/org_assets/ENGLICOM/englicom-logo.png",
                     "page": "org.php?englicom"
                 },
                 {
@@ -101,7 +101,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "gas-logo.webp",
+                    "logo": "/org_assets/GAS/gas-logo2.png",
                     "page": "org.php?gas"
                 },
                 {
@@ -109,7 +109,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "hfh-logo.webp",
+                    "logo": "/org_assets/HFH/hfh-logo.png",
                     "page": "org.php?hfh"
                 },
                 {
@@ -117,7 +117,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "is-logo.webp",
+                    "logo": "/org_assets/IS/is-logo1.png",
                     "page": "org.php?is"
                 },
                 {
@@ -125,7 +125,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "oc-logo.webp",
+                    "logo": "/org_assets/OC/oc-logo1.png",
                     "page": "org.php?oc"
                 },
                 {
@@ -133,7 +133,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "prism-logo.webp",
+                    "logo": "/org_assets/PRISM/prism-logo1.png",
                     "page": "org.php?prism"
                 },
                 {
@@ -141,7 +141,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "rotaract-logo.webp",
+                    "logo": "/org_assets/ROTARACT/rotaract-logo1.png",
                     "page": "org.php?rotaract"
                 },
                 {
@@ -149,7 +149,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "united-logo.webp",
+                    "logo": "/org_assets/UNITED/united-logo.png",
                     "page": "org.php?united"
                 },
                 {
@@ -157,7 +157,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "va-logo.webp",
+                    "logo": "/org_assets/VA/va-logo.png",
                     "page": "org.php?va"
                 },
                 {
@@ -165,7 +165,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "wg-logo.webp",
+                    "logo": "/org_assets/WG/wg-logo.png",
                     "page": "org.php?wg"
                 }
             ]
@@ -178,7 +178,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "amstud-logo.webp",
+                    "logo": "/org_assets/AMSTUD/amstud-logo.png",
                     "page": "org.php?amstud"
                 },
                 {
@@ -186,7 +186,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "bss-logo.webp",
+                    "logo": "/org_assets/BSS/bss-logo1.png",
                     "page": "org.php?bss"
                 },
                 {
@@ -194,7 +194,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "cultura-logo.webp",
+                    "logo": "/org_assets/CULTURA/cultura-logo.png",
                     "page": "org.php?cultura"
                 },
                 {
@@ -202,7 +202,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "danum-logo.webp",
+                    "logo": "/org_assets/DANUM/danum-logo1.png",
                     "page": "org.php?danum"
                 },
                 {
@@ -210,7 +210,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "devint-logo.webp",
+                    "logo": "/org_assets/DEVINT/devint-logo.png",
                     "page": "org.php?devint"
                 },
                 {
@@ -218,7 +218,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "esa-logo.webp",
+                    "logo": "/org_assets/ESA/esa-logo.png",
                     "page": "org.php?esa"
                 },
                 {
@@ -226,7 +226,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "nkk-logo.webp",
+                    "logo": "/org_assets/NKK/nkk-logo.png",
                     "page": "org.php?nkk"
                 },
                 {
@@ -234,7 +234,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "pilosopo-logo.webp",
+                    "logo": "/org_assets/PILOSOPO/pilosopo-logo1.png",
                     "page": "org.php?pilosopo"
                 },
                 {
@@ -242,7 +242,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "poliscy-logo.webp",
+                    "logo": "/org_assets/POLISCY/poliscy-logo.png",
                     "page": "org.php?poliscy"
                 },
                 {
@@ -250,7 +250,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "sdh-logo.webp",
+                    "logo": "/org_assets/SDH/sdh-logo.png",
                     "page": "org.php?sdh"
                 },
                 {
@@ -258,7 +258,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "season-logo.webp",
+                    "logo": "/org_assets/SEASON/season-logo.PNG",
                     "page": "org.php?season"
                 },
                 {
@@ -266,7 +266,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "sms-logo.webp",
+                    "logo": "/org_assets/SMS/sms-logo3.png",
                     "page": "org.php?sms"
                 },
                 {
@@ -274,7 +274,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "teamcomm-logo.webp",
+                    "logo": "/org_assets/TEAMCOMM/teamcomm-logo.png",
                     "page": "org.php?teamcomm"
                 }
             ]
@@ -288,7 +288,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "access-logo.webp",
+                    "logo": "/org_assets/ACCESS/access-logo.png",
                     "page": "org.php?access"
                 },
                 {
@@ -296,7 +296,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "bes-logo.webp",
+                    "logo": "/org_assets/BES/bes-logo1.png",
                     "page": "org.php?bes"
                 },
                 {
@@ -304,7 +304,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "ces-logo.webp",
+                    "logo": "/org_assets/CES/ces-logo.png",
                     "page": "org.php?ces"
                 },
                 {
@@ -312,7 +312,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "chen-logo.webp",
+                    "logo": "/org_assets/CHEN/chen-logo1.PNG",
                     "page": "org.php?chen"
                 },
                 {
@@ -320,7 +320,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "eces-logo.webp",
+                    "logo": "/org_assets/ECES/eces-logo.png",
                     "page": "org.php?eces"
                 },
                 {
@@ -328,7 +328,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "imes-logo.webp",
+                    "logo": "/org_assets/IMES/imes-logo3.png",
                     "page": "org.php?imes"
                 },
                 {
@@ -336,7 +336,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "lscs-logo.webp",
+                    "logo": "/org_assets/LSCS/lscs-logo1.png",
                     "page": "org.php?lscs"
                 },
                 {
@@ -344,7 +344,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "mes-logo.webp",
+                    "logo": "/org_assets/MES/mes-logo.png",
                     "page": "org.php?mes"
                 },
                 {
@@ -352,7 +352,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "sme-logo.webp",
+                    "logo": "/org_assets/SME/sme-logo1.png",
                     "page": "org.php?sme"
                 }
             ]
@@ -365,7 +365,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "adcreate-logo.webp",
+                    "logo": "/org_assets/ADCREATE/adcreate-logo.png",
                     "page": "org.php?adcreate"
                 },
                 {
@@ -373,7 +373,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "bms-logo.webp",
+                    "logo": "/org_assets/BMS/bms-logo.png",
                     "page": "org.php?bms"
                 },
                 {
@@ -381,7 +381,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "econorg-logo.webp",
+                    "logo": "/org_assets/ECONORG/econorg-logo.png",
                     "page": "org.php?econorg"
                 },
                 {
@@ -389,7 +389,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "jema-logo.webp",
+                    "logo": "/org_assets/JEMA/jema-logo.png",
                     "page": "org.php?jema"
                 },
                 {
@@ -397,7 +397,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "jpia-logo.webp",
+                    "logo": "/org_assets/JPIA/jpia-logo.png",
                     "page": "org.php?jpia"
                 },
                 {
@@ -405,7 +405,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "lls-logo.webp",
+                    "logo": "/org_assets/LLS/lls-logo.png",
                     "page": "org.php?lls"
                 },
                 {
@@ -413,7 +413,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "mafia-logo.webp",
+                    "logo": "/org_assets/MAFIA/mafia-logo.png",
                     "page": "org.php?mafia"
                 },
                 {
@@ -421,7 +421,7 @@
                     "physical-booth": "",
                     "physical-booth-times": "",
                     "online-booth-times": "",
-                    "logo": "yes-logo.webp",
+                    "logo": "/org_assets/YES/yes-logo.png",
                     "page": "org.php?yes"
                 }
             ]

@@ -36,7 +36,7 @@ class fetchARWAPI {
 	}
 
 	function get_info(){
-		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database, $this->port);
+		$conn = new mysqli($this->hostname, $this->username, $this->password, $this->database);
 		if ($conn -> connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}

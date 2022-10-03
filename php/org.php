@@ -23,19 +23,21 @@
          * Delete lines with 'DELETE' comment for production.
          */
 
-
         // Get information
         $myfile = fopen("key.config", "r") or die("Config error");
-        $db_name = fgets($myfile);
-        $db_pass = fgets($myfile);
+        $db_name = rtrim(fgets($myfile));
+        $db_pass = rtrim(fgets($myfile));
+        $db_db = rtrim(fgets($myfile));
 
-        $api = new fetchARWAPI($org_abbrev, "localhost", $db_name, $db_pass, $db_name, 3306);
+        $api = new fetchARWAPI($org_abbrev, "localhost", $db_name, $db_pass, $db_db, 3306);
 
         // get org info
         $information = $api->get_info();
 
         // get org flagship events
         $org_flagship_events = $api->get_org_slides($org_abbrev);  // returns an associative array
+        
+        print_r($org_flagship_events[0]);
         /**
          * Comment the next line and uncomment the one above when get_org_slides() is available.
          */
@@ -51,9 +53,9 @@
         // $information['org_path_to_background'] = "../assets/org_indiv_page/test_bg/wg-bg.png";  /**DELETE***/
 
         // retrieve non-empty values whose key starts with 'orgs_path_'
-        $org_flagship_events = array_values(array_filter($org_flagship_events, function($key) {
-            return strncmp($key, 'orgs_path_', 10) === 0;
-        }, ARRAY_FILTER_USE_KEY));
+        // $org_flagship_events = array_values(array_filter($org_flagship_events, function($key) {
+        //    return strncmp($key, 'orgs_path_', 10) === 0;
+        // }, ARRAY_FILTER_USE_KEY));
 
         
         // echo "<br><br><br><br><br><br>"; /**DELETE***/
@@ -87,6 +89,8 @@
 
         // check if org has video or not (crucial for section 2)
         $has_video = isset($information['org_path_to_video']) && !empty($information['org_path_to_video']);
+        
+        $keys = array_values($org_flagship_events[0]);
     ?>
     
     <title><?php echo $information['org_abbr']?></title>
@@ -101,10 +105,21 @@
 
 <body>
     <?php require_once('nav_bar_2.php') ?>
+     <?php require_once('floater.php') ?>
 
     <!-- 1st Section: Org Logo, Name, Description, and Buttons -->
     <section id="section-1" class="text-center" 
-            style="background-image: url(<?php echo $information['org_path_to_background']?>);">
+            style="background-image: url(
+            <?php
+            $finder = "..";
+            $finder.= $information['org_path_to_background'];
+            if (!file_exists($finder)) {
+                echo "../assets/org_indiv_page/default_bg.png";
+            }
+            else{
+                echo $information['org_path_to_background'];
+            }
+            ?>);">
         <!-- hidden image for getting dom-color purposes -->
         <img src="<?php echo $information['org_path_to_background']?>" style="display: none;" id="bg-img" onload="setDomColors()"/>
         <!-- logo & description -->
@@ -112,14 +127,11 @@
             <!-- full width on mobile, 4/12 on desktop -->
             <!-- logo & abbreviated name -->
             <div class="col-lg-4">
-                <img src= "<?php echo $information['org_path_to_logo']?>" class="logo"/>
+                <img src= "<?php echo $information['org_path_to_logo']?>" class="logo" />
                 <!-- <img src= "../assets/org_images/chemsoc-logo.webp" class="logo"/> --> <!--DELETE-->
 
                 <!-- abbreviated org name (banner asset + org-name) -->
                 <div class="mt-4 position-relative m-auto org-name-container">
-                    <!-- TODO: replace w/ actual banner asset & edit text curve path for it when available -->
-                    <img src="../assets/org_indiv_page/ribbonbanner.svg" width="100%" 
-                        class="position-relative centered-axis-x <?php echo ($has_bg ? "dom-color-filter" : "default-filter") ?>" >
                     <div class="position-absolute org-name">
                         <!-- Bevel Text code taken from https://codepen.io/brrrl/pen/zamZRG -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 30" width="200%" height="100%">
@@ -131,7 +143,7 @@
                                 <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
                                 <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
                             </filter>
-                            <text x="50%" y="40%" class="bevel <?php echo ($has_bg ? "comp-color-text-fill" : "") ?>" filter="url(#Bevel)">
+                            <text x="40%" y="50%" class="bevel <?php echo ($has_bg ? "comp-color-text-fill" : "") ?> " filter="url(#Bevel)">
                                     <?php echo $information['org_abbr']?>
                             </text>
                         </svg>
@@ -167,6 +179,13 @@
                             </button>
                         </a>
                     </div>
+                    <div class="col-md-5" style="padding: 16px 0px 0px 0px">
+                        <a href="https://bit.ly/ARW2022-BoothSchedules">
+                            <button type="button" class="btn btn-primary btn-lg <?php echo ($has_bg ? "dom-color-bg" : "") ?>" >
+                                Booth Links
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +211,7 @@
         <section id="section-3" class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 align-self-center">
-                    <img src="<?php echo $information['org_path_to_pub']?>" width="100%"/>
+                    <img src="/org_assets/org_mainpubs/<?php echo strtoupper($org_abbrev) ?>.png" width="100%"/>
                 </div>
                 <!-- 24px default padding - 0.6px for scroll bar -->
                 <div class="col-lg-6" style="padding-right: 23.4px;">
@@ -221,7 +240,12 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#flagship-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <?php // indicators for second 2nd slide onwards
-                        for ($i = 1, $size = count($org_flagship_events); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($keys); $i < ($size); ++$i) {
+                            $finder = "..";
+                            $finder.= $keys[$i];
+                            if (!file_exists($finder)) {
+                                break;
+                            }
                             echo "<button type='button' data-bs-target='#flagship-carousel' 
                                     data-bs-slide-to='{$i}' aria-label='Slide {$i}'></button>";
                         }
@@ -229,12 +253,18 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo $org_flagship_events[0]?>" class="d-block w-100" alt="Flagship event 1">
+                        <img src="<?php echo $keys[0]?>" class="d-block w-100" alt="Flagship event 1">
                     </div>
+                                  
                     <?php // slides for second 2nd event onwards
-                        for ($i = 1, $size = count($org_flagship_events); $i < $size; ++$i) {
+                        for ($i = 1, $size = count($keys); $i < ($size); ++$i) {
+                            $finder = "..";
+                            $finder.= $keys[$i];
+                            if (!file_exists($finder)) {
+                                break;
+                            }
                             echo "<div class='carousel-item'>
-                                     <img src={$org_flagship_events[$i]} class='d-block w-100' alt='Flagship event {$i}'>
+                                     <img src={$keys[$i]} class='d-block w-100' alt='Flagship event {$i}'>
                                   </div>";
                         }
                     ?>
@@ -254,7 +284,7 @@
         <section id="section-5" class="container p-0 text-center">
             <div class="row gx-5 align-items-center">
                 <div class="col-md-6 col-sm-5 col-12 pe-lg-5 pb-lg-2">
-                    <img src="<?php echo $information['org_path_to_price_pub']?>" 
+                    <img src="<?php echo $information['org_path_to_banner']?>" 
                         class="<?php echo ($has_video ? "has-video" : "no-video") ?>"/>
                 </div>
                 <div class="col-md-6 col-sm-7 col-12 d-grid gap-3 p-0">
@@ -277,7 +307,13 @@
 
     <!-- ARW Footer -->
     <!-- To be inserted when it's available -->
+    <div style = "background-color: #d82d27; padding-bottom: 25px;">
+        <?php
+        require_once('footer.php');
+        ?>
 
+    </div>
+    
     <!-- Must include for nav-bar-collapse on mobile -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
