@@ -331,7 +331,96 @@
 
 /* For tablets (Bootstrap md breakpoint) */
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-	
+	.container_ww {
+        max-width: 1440px;
+    }
+    
+    .background {
+        height: 200vh;
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        overflow-x: hidden;
+    }
+    
+    #ul-frame {
+        width: 330px;
+        left: 70px;
+        top: 200px;
+    }
+    
+    #ul-carousel {
+        width: 260px;
+        max-height: 769.23px;
+        left: 100px;
+        top: 255.26px;
+    }
+    
+    #ur-frame {
+        width: 330px;
+        max-height: 769.15px;
+        left: 429px;
+        top: 198px;
+    }
+    
+    #ur-carousel {
+        width: 260px;
+        max-height: 769.15px;
+        left: 463px;
+        top: 253px;
+    }
+    
+    #ll-frame {
+        width: 330px;
+        left: 70px;
+        top: 770px;
+    }
+    
+    #ll-carousel {
+        width: 260px;
+        max-height: 769.23px;
+        left: 100px;
+        top: 634.26px;
+    }
+    
+    #lr-frame {
+        width: 330px;
+        left: 429px;
+        top:  770px;
+    }
+    
+    #lr-carousel {
+        width: 260px;
+        max-width: 650px;
+        max-height: 769.15px;
+        left: 463px;
+        top: 834.26px;;
+    }
+    
+    
+    #scroll-ww {
+        width: 583px;
+        max-height: 1440px;
+        left: 115px;
+        top: 233px;
+        z-index: 3;
+    }
+    
+    #scroll-map {
+        left: 82px;
+        width: 650px;
+        max-height: 1000px;
+        top: 1236px;
+        padding-bottom: 34px;
+    }
+    
+    #booth-time {
+        left: 350px;
+        width: 113px;
+        top: 830px;
+        padding: 10px;
+    }
 }
 
 /* For laptop/desktops, large and small (Bootstrap lg breakpoint) */
