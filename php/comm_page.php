@@ -30,7 +30,7 @@
     
     <!-- SECTION 2: WHO WE ARE -->
 
-    <section class = "d-block" style = "height: 100vh;">
+    <section class = "d-block sec">
         <img class = "headerPic" src="../assets/arw_cencomm/WhoWeAre.png" style="width:100%; z-index: 3;" alt="">
         <div class="container-fluid mx-auto rounded w-75 text-white text-xl-center mt-4" style = "max-width: 80vw; max-height: 70vh; background: rgba(216, 45, 39, 0.75);" >
             <!-- Desktop Version -->
@@ -41,10 +41,9 @@
     </section>
 
     <!-- SECTION 3: PROJECT HEADS -->
-    <section  class = "d-none d-lg-block" style = "height: 100vh;">
+    <section  class = "d-block" style = "height: 100vh;">
         <img class = "headerPic" src="../assets/arw_cencomm/phead.png" style="z-index: 3; margin: 0 0 0 0;" alt="">
-        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
-            
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
                 <img class = "commPic" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
                 <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
                 <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
@@ -53,10 +52,10 @@
     </section>
 
     <!-- SECTION 4: EXECUTIVES COMMITTEEE -->
-    <section  class = "d-none d-lg-block">
+    <section  class = "d-block">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/execcomm.png" style="z-index: 3; margin: 0 0 0 3.34%;" alt="">
         <h1 class = "pt-5 mt-5">Corporate Relations</h1>
-        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
             <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
             <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
             <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
@@ -79,13 +78,10 @@
     </section>
 
     <!-- SECTION 5: EXECUTIVES-->
-    <section  class = "d-none d-lg-block" style = "height: 175vh;">
+    <section  class = "d-block execsec">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/exec.png" style="z-index: 3; margin: 0 0 0 -8.34%;" alt="">
         
-
-
-
-        <div class="container mx-auto w-50 text-white text-xl-center mt-5" style = "max-width: 100vw; max-height: 70vh; background: rgba(216, 45, 39, 0.75); border-radius: 10px; width: 100vw; position: relative;">
+        <div class="container mx-auto w-75 text-white exec text-xl-center mt-5">
             <span class = "btn prev-arrow fa fa-arrow-left" ></span>
             <span class = "btn next-arrow fa fa-arrow-right"></span>
             <section class="fade-carousel slider">
