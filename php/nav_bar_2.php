@@ -55,7 +55,7 @@
 
                 <li class="nav-item">
 
-                <a href="../php/comingsoon.php">
+                <a href="../php/arw_elite.php">
                     <button type="button" class="btn btn-primary btn-lg text-start text-md-center"
                         style="min-width: 128px; margin-right: 32px" href="#">ARW Elite</button>
                     </a>
