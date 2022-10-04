@@ -27,14 +27,14 @@
     <section class = "d-none d-lg-block" style = "height: 100vh;">
         <img class = "headerPic" src="../assets/arw_cencomm/WhoWeAre.png" style="width:100%; z-index: 3;" alt="">
         <div class="container mx-auto rounded w-75 text-white text-xl-center mt-4" style = "height: 50vh; background: rgba(216, 45, 39, 0.75);" >
-            <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size:46px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size: 3vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </section>
 
     <!-- SECTION 3: PROJECT HEADS -->
     <section  class = "d-none d-lg-block" style = "height: 100vh;">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/phead.png" style="z-index: 3; margin: 0 0 0 -5.34%;" alt="">
-        <div class = "flex" style = "margin-left: 8%">
+        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
             <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
@@ -45,17 +45,19 @@
     <!-- SECTION 4: EXECUTIVES COMMITTEEE -->
     <section  class = "d-none d-lg-block">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/execcomm.png" style="z-index: 3; margin: 0 0 0 3.34%;" alt="">
-        <div class = "flex" style = "margin-left: 8%">
+        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            
+        </div>
+        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            
+        </div>
+        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;"> 
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
             <img class = "execommPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
@@ -67,7 +69,9 @@
     <!-- SECTION 5: EXECUTIVES-->
     <section  class = "d-none d-lg-block" style = "height: 100vh;">
         <img class = "headerPicLeft" src="../assets/arw_cencomm/exec.png" style="z-index: 3; margin: 0 0 0 -8.34%;" alt="">
-        <div style = "border-radius: 30px; background: rgba(216, 45, 39, 0.75);"> SDDAWDADW</div>
+        <div class="container mx-auto text-white text-xl-center mt-1" style = "height: 30vh; background: rgba(216, 45, 39, 0.75); border-radius: 1000px; width: 100vw; position: relative;">
+            <p class = "mx-5" style = "font-family: 'EB Garamond'; font-size: 2.5vw; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </section>
     <?php
         require_once('footer.php');
