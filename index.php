@@ -174,6 +174,7 @@
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/04 - Dormy (white) .png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/05 - Closeup White.png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/Dulcet Corporate Logo - Green.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/IDP Philippines Logo.png"></div>
                     </section>
                 </div>
             </div>
@@ -308,6 +309,7 @@
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/04 - Dormy (white) .png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/05 - Closeup White.png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/Dulcet Corporate Logo - Green.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/IDP Philippines Logo.png"></div>
                     </section>
                 </div>
             </div>
@@ -442,6 +444,7 @@
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/04 - Dormy (white) .png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/05 - Closeup White.png"></div>
                         <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/Dulcet Corporate Logo - Green.png"></div>
+                        <div class="slide"><img class = "slide-img"  src="./assets/sponsors/Logos/[2] Platinum Logos/IDP Philippines Logo.png"></div>
                     </section>
                 </div>
             </div>
