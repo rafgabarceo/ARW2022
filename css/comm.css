@@ -1,8 +1,15 @@
+h1{
+    text-align: center;
+    color: #FFD700;
+}
+
+
 .headerPic {
     /* position: absolute; */
     width: 100%;
     object-fit: cover;
-    height: 190px;
+    max-height: 190px;
+
 }
 
 .headerPicLeft {
@@ -14,21 +21,21 @@
 }
 
 .commPic {
-    margin: 0px 0 10 02px;
+    margin: 0px 0 10 22px;
     object-fit: cover;
-    width: 380px;
-    height: 454px;
+    width: 22.5vw;
+    height: 57vh;
     border-radius: 50%;
-    clip-path: ellipse(50% 50% at 50% 50%);
+    /* clip-path: ellipse(50% 50% at 50% 50%); */
 }
 
 .execommPic {
     margin: 0px 0 10 02px;
     object-fit: cover;
-    width: 350px;
-    height: 400px;
+    width: 17.5vw;
+    height: 45vh;
     border-radius: 50%;
-    clip-path: ellipse(50% 50% at 50% 50%);
+    /* clip-path: ellipse(50% 50% at 50% 50%); */
 }
 
 /* for moving background */
