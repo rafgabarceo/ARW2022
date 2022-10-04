@@ -92,6 +92,14 @@
     flex-wrap: wrap;
 }
 
+#dates-desktop{
+    position: relative !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #dates-tab{
     position: relative !important;
     top: 10rem !important;
@@ -127,7 +135,7 @@
     margin-top: 32px;
     background: rgba(248, 171, 178, 0.349);
     width: 100%;
-    height: 240vh;
+    height: 245vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,58 +1,46 @@
+h1{
+text-align: center;
+color: #FFD700;
+}
+
+
 .headerPic {
-    /* position: absolute; */
-    width: 100%;
-    object-fit: cover;
-    height: 190px;
+/* position: absolute; */
+width: 100%;
+object-fit: cover;
+max-height: 190px;
+
 }
 
-.headerPicLeft {
-    /* position: absolute; */
-    width: 70%;
-    object-fit: cover;
-    height: 190px;
-    overflow: hidden;
-}
 
-.commPic {
-    margin: 25px 0 0 0;
-    object-fit: cover;
-    width: 380px;
-    height: 454px;
-}
 
-.execommPic {
-    margin: 25px 0 0 0;
-    object-fit: cover;
-    width: 350px;
-    height: 350px;
-}
 
 /* for moving background */
 #videoBG {
-    position: fixed;
-    z-index: -1;
+position: fixed;
+z-index: -1;
 }
 /* @media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width: 100%;
-        height: auto;
-    }
+#videoBG {
+    width: 100%;
+    height: auto;
+}
 } */
 
 /* @media (max-aspect-ratio: 16/9) {
-    #videoBG { 
+#videoBG { 
 
-        width: 100%;
+    width: 100%;
 
-        overflow: visible;
-        position: absolute;
-        top: 100px;
-        left: -100%;
-        height: 100%;
-    }
+    overflow: visible;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    height: 100%;
+}
 } */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     #videoBG {
         display: none;
     }
@@ -60,4 +48,193 @@
         background: url('../assets/background/comm_bg.png');
         background-size: cover;
     }
+} */
+
+
+span.prev-arrow{
+    display: block;
+    position: absolute;
+    top:20.5rem;
+    left: -3rem;
+}
+
+span.next-arrow{
+    display: block;
+    position: absolute;
+    top:20.5rem;
+    right: -3rem;
+}
+/* For larger desktop screens (follows laptop styles unless overwritten) */
+@media only screen and (min-width: 1200px) {
+    .commPic {
+        margin: 0px 0 10 22px;
+        object-fit: cover;
+        width: 22.5vw;
+        height: 57vh;
+        border-radius: 50%;
+        /* clip-path: ellipse(50% 50% at 50% 50%); */
+    }
+
+	.sec{
+        height: 110vh;
+    }
+
+    .execsec{
+        height: 150vh;
+    }
+
+    .execommPic {
+        margin: 0px 0 10 02px;
+        object-fit: cover;
+        width: 17.5vw;
+        height: 45vh;
+        border-radius: 50%;
+        /* clip-path: ellipse(50% 50% at 50% 50%); */
+    }
+
+    .headerPicLeft {
+        /* position: absolute; */
+        width: 70%;
+        object-fit: cover;
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .ath{
+        font-family: 'EB Garamond'; 
+        font-size: 1.75vw;
+        text-align: center;
+    }
+
+    .exec{
+        max-width: 100vw; 
+        max-height: 80vh; 
+        background: rgba(216, 45, 39, 0.75); 
+        border-radius: 10px; 
+        width: 100vw; 
+        position: relative;
+    }
+}
+
+/* For laptop/desktops, large and small (Bootstrap lg breakpoint) */
+@media only screen and (min-width: 992px) {
+    .commPic {
+        margin: 0px 0 10 22px;
+        object-fit: cover;
+        width: 22.5vw;
+        height: 57vh;
+        border-radius: 50%;
+        /* clip-path: ellipse(50% 50% at 50% 50%); */
+    }
+
+    .sec{
+        height: 110vh;
+    }
+
+    .execsec{
+        height: 150vh;
+    }
+
+    .execommPic {
+        margin: 0px 0 10 02px;
+        object-fit: cover;
+        width: 17.5vw;
+        height: 45vh;
+        border-radius: 50%;
+        /* clip-path: ellipse(50% 50% at 50% 50%); */
+    }
+
+    .headerPicLeft {
+        /* position: absolute; */
+        width: 70%;
+        object-fit: cover;
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .ath{
+        font-family: 'EB Garamond'; 
+        font-size: 1.75vw;
+        text-align: center;
+    }
+
+    .exec{
+        max-width: 100vw; 
+        max-height: 80vh; 
+        background: rgba(216, 45, 39, 0.75); 
+        border-radius: 10px; 
+        width: 100vw; 
+        position: relative;
+    }
+}
+
+/****** DEVICE SPECIFIC STYLES ******/
+/* For smaller devices (phones) */
+@media only screen {
+	@media (max-width: 767.98px) {
+        h1{
+            font-size: large; 
+        }
+        .commPic {
+            margin: 0px 0 10 22px;
+            object-fit: cover;
+            width: 43vw;
+            height: 29vh;
+            border-radius: 50%;
+            /* clip-path: ellipse(50% 50% at 50% 50%); */
+        }
+
+        .execommPic {
+            margin: 0px 0 10 02px;
+            object-fit: cover;
+            width: 37vw;
+            height: 25vh;
+            border-radius: 50%;
+            /* clip-path: ellipse(50% 50% at 50% 50%); */
+            }
+
+        .sec{
+            height: 70vh;
+        }
+
+        .execsec{
+            height: 100vh;
+        }
+
+        .headerPicLeft {
+            /* position: absolute; */
+            width: 70%;
+            object-fit: cover;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        .ath{
+            font-family: 'EB Garamond'; 
+            font-size: 3vw;
+            text-align: center;
+        }
+        
+        .exec{
+            max-width: 100vw; 
+            max-height: 60vh; 
+            background: rgba(216, 45, 39, 0.75); 
+            border-radius: 10px; 
+            width: 100vw; 
+            position: relative;
+        }
+	}
+	/* other phone sizes */
+	@media (min-width: 360px) and (max-width: 575.98px) {
+        
+	}
+	/* smallest phone size */
+	@media (max-width: 359.98px) {
+		
+	}
+}
+
+/* For tablets (Bootstrap md breakpoint) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
 }

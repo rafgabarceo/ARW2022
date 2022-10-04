@@ -32,8 +32,8 @@ html, body {
 .clouds_mobile{
     width: 100%;
     height: auto;
-    overflow: visible;
-    position: absolute;
+    overflow: hidden;
+    position: relative;
     top: 100px;
     left: -100%;
     /* object-fit: none; */
