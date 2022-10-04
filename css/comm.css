@@ -14,17 +14,21 @@
 }
 
 .commPic {
-    margin: 25px 0 0 0;
+    margin: 0px 0 10 02px;
     object-fit: cover;
     width: 380px;
     height: 454px;
+    border-radius: 50%;
+    clip-path: ellipse(50% 50% at 50% 50%);
 }
 
 .execommPic {
-    margin: 25px 0 0 0;
+    margin: 0px 0 10 02px;
     object-fit: cover;
     width: 350px;
-    height: 350px;
+    height: 400px;
+    border-radius: 50%;
+    clip-path: ellipse(50% 50% at 50% 50%);
 }
 
 /* for moving background */
@@ -60,4 +64,24 @@
         background: url('../assets/background/comm_bg.png');
         background-size: cover;
     }
+}
+
+.ath{
+    font-family: 'EB Garamond'; 
+    font-size: 1.75vw;
+    text-align: center;
+}
+
+span.prev-arrow{
+    display: block;
+    position: absolute;
+    top:20.5rem;
+    left: -3rem;
+}
+
+span.next-arrow{
+    display: block;
+    position: absolute;
+    top:20.5rem;
+    right: -3rem;
 }
