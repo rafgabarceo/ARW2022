@@ -42,7 +42,11 @@
    
     <!-- Second Div -->
     <!-- Desktop Version -->
-    <section class="center-cropped d-none d-lg-block" style = "background-image: url('./assets/Important Dates.png'); height:1080px; width: 1920px; box-shadow: 0px -5px 25px; overflow: hidden;"></section>
+    <section class="center-cropped d-none d-lg-block" style = "background-color: #f8abb1; height: 120vh; box-shadow: 0px -5px 25px; overflow: hidden;">
+        <div class="p-3 align-self-center" id = "dates-desktop" >
+            <img src="./assets/Important Dates.png" alt="" style = "max-width: 100%; height:auto; border-radius: 8px;" id = "dates-desktop">
+        </div>
+    </section>
     <!-- Tablet Version -->
     <section class="center-cropped d-none d-md-block d-lg-none" style = "background-color: #f8abb1; height: calc(100vh - 50px); box-shadow: 0px -5px 25px; overflow: hidden;">
         <div class="p-3 align-self-center" id = "dates-tab" >
