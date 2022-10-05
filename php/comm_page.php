@@ -34,9 +34,12 @@
         <img class = "headerPic" src="../assets/arw_cencomm/WhoWeAre.png" style="width:100%; z-index: 3;" alt="">
         <div class="container-fluid mx-auto rounded w-75 text-white text-xl-center mt-4" style = "max-width: 80vw; max-height: 70vh; background: rgba(216, 45, 39, 0.75);" >
             <!-- Desktop Version -->
-            <p class = "d-none d-lg-block p-4 mx-5" style = "font-family: 'EB Garamond'; font-size: 3vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class = "d-none d-lg-block p-4 mx-5" style = "font-family: 'EB Garamond'; font-size: 2vw;">The Annual Recruitment Week Central Committee is the group of student-leaders that spearheads the preparations for the Annual Recruitment Week and ensures that the event will be both enjoyable and beneficial not only to the 49 accredited organizations of Council of the Student Organizations but also to the student body of the De La Salle University - Manila.</p>
+            <p class = "d-none d-lg-block p-4 mx-5" style = "font-family: 'EB Garamond'; font-size: 2vw;">We are led by 4 Project Heads; and divided into 10 Committees: Corporate Relations, Documentations, Finance, Events, Integrated Marketing Communications, Organizational Relations, Corporate Relations, Integrated Marketing Productions, Technical Logistics, and Website Development.</p>
             <!-- Mobile Version -->
-            <p class = "d-lg-none p-2 mx-2" style = "margin-top: -45px; font-family: 'EB Garamond'; font-size: 3.5vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class = "d-lg-none p-2 mx-2" style = "margin-top: -45px; font-family: 'EB Garamond'; font-size: 3.5vw;">The Annual Recruitment Week Central Committee is the group of student-leaders that spearheads the preparations for the Annual Recruitment Week and ensures that the event will be both enjoyable and beneficial not only to the 49 accredited organizations of Council of the Student Organizations but also to the student body of the De La Salle University - Manila.</p>
+            <p class = "d-lg-none p-2 mx-2" style = "margin-top: -45px; font-family: 'EB Garamond'; font-size: 3.5vw;">We are led by 4 Project Heads; and divided into 10 Committees: Corporate Relations, Documentations, Finance, Events, Integrated Marketing Communications, Organizational Relations, Corporate Relations, Integrated Marketing Productions, Technical Logistics, and Website Development.</p>
+        
         </div>
     </section>
 
@@ -44,10 +47,10 @@
     <section  class = "d-block" style = "height: 100vh;">
         <img class = "headerPic" src="../assets/arw_cencomm/phead.png" style="z-index: 3; margin: 0 0 0 0;" alt="">
         <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
-                <img class = "commPic" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
-                <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-                <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-                <img class = "commPic" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+                <img class = "commPic" src="../assets/arw_cencomm/th/Phead 1.png" style="z-index: 3;" alt="">
+                <img class = "commPic" src="../assets/arw_cencomm/th/Phead 2.png" style="z-index: 3;" alt="">
+                <img class = "commPic" src="../assets/arw_cencomm/th/Phead 3.png" style="z-index: 3;" alt="">
+                <img class = "commPic" src="../assets/arw_cencomm/th/Phead 4.png" style="z-index: 3;" alt="">
         </div>
     </section>
 
@@ -56,23 +59,65 @@
         <img class = "headerPicLeft" src="../assets/arw_cencomm/execcomm.png" style="z-index: 3; margin: 0 0 0 3.34%;" alt="">
         <h1 class = "pt-5 mt-5">Corporate Relations</h1>
         <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 2.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 4.png" style="z-index: 3;" alt="">
         </div>
         <h1 class = "pt-5 mt-5 ">IMC-Creatives</h1>
-        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/test.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Creatives 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Creatives 2.jpg" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Creatives 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Creatives 4.png" style="z-index: 3;" alt="">
         </div>
-        <div class = "d-flex justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
-            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/cencomm.png" style="z-index: 3;" alt="">
+        <h1 class = "pt-5 mt-5 ">IMC-Publicity</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Publicity 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Publicity 2.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Publicity 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/IMC Publicity 4.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Events</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Events 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Events 2.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Events 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Events 4.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Events 5.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Organizational Relations</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Org Rel 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Org Rel 2.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Corporation Relations</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 2.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Corp Rel 4.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Web Development</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Web Dev 2.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Web Dev 3.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Web Dev 4.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Technical Logistics</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Tech Log 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Tech Log 2.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Documentations</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Docu 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Docu 2.png" style="z-index: 3;" alt="">
+        </div>
+        <h1 class = "pt-5 mt-5 ">Finance</h1>
+        <div class = "d-flex flex-wrap justify-content-center mx-auto" style = "margin-left: 8%; position: relative; overflow: hidden;">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Fin 1.png" style="z-index: 3;" alt="">
+            <img class = "m-4 execommPic img-fluid" src="../assets/arw_cencomm/th/Fin 2.png" style="z-index: 3;" alt="">
         </div>
         <div style = "height:20vh"></div>
     </section>
@@ -175,6 +220,17 @@
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Organizational Relations</div>
                     </div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Team Head</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 ath">BERMUDEZ, Rhicki O.</div>
+                        <div class="col m-2 ath">GARCIA, Renee Elizabeth R.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Assistant Team Head</div>
+                    </div>
                     <?php
                         $orel = array("BARRIETA, Razel Fame A.", "BAYON, Jiannah Alyssa", "CHAN, Jaeyanne A.", "CODERES, Louie Jen M.", "CUCIO, Alyanna Francesca P.", "JANABON, Daniella Louise D.", "LAM, Sherry Ann S.", "MARQUEZ, Marc Anthony Adalson F.", "MATSUMURA, Michiyo P.", "PULUMBARIT, Moira Noelle E.", "REYES, Michaela Julia D. ", "SEBASTIAN, Jillian Dominique C.", "SIA, Chloe S. ", "TAN, Jasmine Eunice G.", "TAN, Krizzia Anne Marie N.", "TIO, Kathlyn L.");
                         for ($i = 0; $i < count($orel); $i = $i+2) {
@@ -187,11 +243,22 @@
                             echo "</div></div>"; 
                         }    
                     ?>
+                    </div>
                 </div>
                 <!-- Web Development -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Web Development</div>
+                    </div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Team Head</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 ath">ARCEO, Rafael Gabriel B.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Assistant Team Head</div>
                     </div>
                     <?php
                         $webd = array("ANDRES, Wray Nathan M.", "CAI, Joyce Yuenlam H.", "CHUA, Imee Nicole C.", "MALINIS, Migelle Jihro F.", "NGO, William Jefferson D.", "OCAMPO, John Dominic I.", "ONG, Phebe T.", "RASING, Kobi Angelo S.", "VAAY, Mhikaella Mae M.", "YANG, Jheorgia H.");
@@ -205,11 +272,23 @@
                             echo "</div></div>"; 
                         }    
                     ?>
+                    </div>
                 </div>
                 <!-- Technical Logisitcs -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Technical Logisitics</div>
+                    </div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Team Head</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 ath">ENRIQUEZ, Robert Joshua</div>
+                        <div class="col m-2 ath">LACA, Jean Lenard</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Assistant Team Head</div>
                     </div>
                     <?php
                         $techl = array("BALON, Maria Angelika B.", "BITANCOR, Cheyenne Ritz E.", "LIM, Stephanie Monica", "LOPEZ, Lawrence Adriel L.", "MAGNO, Carlos Joaquin V.", "MOLO, Carlos Sebastian V. ", "PAGUIRIGAN, Marie Joanna A.", "SOBONG, Christina Louise B.", "SY, Faustine Eileen T.", "TERROBIAS, Kyla Louisse F.");
@@ -227,11 +306,23 @@
                         echo "TORRES, Julienne Claire M.";
                         echo "</div></div>"; 
                     ?>
+                    </div>
                 </div>
                 <!-- Documentations -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Documentations</div>
+                    </div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Team Head</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 ath">ORTEGA, Christine</div>
+                        <div class="col m-2 ath">SANGALANG, Raven Marie</div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Assistant Team Head</div>
                     </div>
                     <?php
                         $docu = array("ANCAJAS, Elisha Nissi M.", "BUENDIA, Melvin Angelo N.", "CASTILLO, Pearl P.", "CHUA, Johnica C.", "CRIBE, Miguel Antonio", "DIONELA, Matthew Joseph C.", "LAMBINO, Rekiya T.", "SABANDAL, Raya Marie C.", "SO, Julianne Katrina", "SOLETA, Fiona", "SY, Beal Cynric C.", "TSANG, Denzel Kenshin");
@@ -245,6 +336,7 @@
                             echo "</div></div>"; 
                         }    
                     ?>
+                    </div>
                 </div>
                 <!-- Finance -->
                 <div class = "slide">
@@ -286,10 +378,5 @@
             });
         });
     </script>
-
-
-    <?php
-        require_once('footer.php');
-    ?>
     </body>
 </html>
