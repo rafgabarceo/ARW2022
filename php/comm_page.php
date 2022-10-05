@@ -86,41 +86,24 @@
             <span class = "btn next-arrow fa fa-arrow-right"></span>
             <section class="fade-carousel slider">
                 <!-- IMC-Creatives -->
-                <div class = "slide">
+                <div class = "slide" >
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">IMC-Creatives</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <?php
+                        $imcc = array("AGCOLICOL, Juan Miguel M.", "BENITEZ, Ma. Monica L.", "CLEOFAS, Hannah Beatrice V.", "DE VILLA, Bianca Mikaella B.", "DELA CRUZ, John Carlo Theo S.", "HOCCHUAN, Mia Katrinna L.", "LO, Kyle Je-Anne P.", "LOBREGAT, Kasey Alexandra B. ", "MENOR, Gabriel A.", "REYES, Sophia George A.", "TAN, Tijmie Anne T.", "TIU, Caryll Justine T.", "UMPAD, Kimberly Ross A.", "WANG, Charmaien Mae W. ");
+                        for ($i = 0; $i < count($imcc)-1; $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $imcc[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $imcc[$i+1];
+                            echo "</div></div>"; 
+                        }      
+                    ?>
+                        
                     </div>
                 </div>
                 <!-- IMC-Publicity -->
@@ -128,38 +111,19 @@
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">IMC-Publicity</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $imcp = array("ONG, Alvin Royce A.", "CRISPINO, Eulaine Y.", "LOPEZ, Francesca Gabrielle D.", "TAN, Jeanine Adelaide O.", "TENORIO, Alexandra Nicole L.", "TOLENTINO, Yda Maru G.", "TCHOI, Julianne Christine T.", "MORGAN, Jessica Mara L.", "TOPACIO, Paolo Lino B.", "GALVAN, Carlos Nikko I.", "QUIAMBAO, Ian Carl Bennydict S.", "TOLENTINO, Irish Kate M.");
+                        for ($i = 0; $i < count($imcp)-1; $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $imcp[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $imcp[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    
+                    ?>
                     
                 </div>
                 <!-- Corporate Relations -->
@@ -167,37 +131,23 @@
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Corporate Relations</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <?php
+                        $crel = array("ANG, Austin Wesley", "ANG, Madeleine", "ANG, Maxine Rei", "ARCAMO, Veronica Jill L.", "CAMARITE, Maersk Darielle", "CORTES, Jose Gabriel", "CUA, James Matthew", "DUI, Angela Rae", "ESPINOSA, Patricia Anne", "GOH TO KANG, Raphael Ivan", "GONZALEZ, Beatrix", "LAM, Janelle Claire", "MATIAS, Bernard", "PATRON, Ma. Beatriz", "ROJAS, Bianca Dionnaphel", "SALVADOR, Merylle Shayne", "SO, Alexandra Bernice", "TAN,Nicole Aubrey", "TOBIAS, Isaiah Julius", "TORRES, Cassandra Raine", "TRIBUNAL, Kyla Patricia");
+                        for ($i = 0; $i < count($crel)-1; $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $crel[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $crel[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                        echo "<div class=\"row\">";
+                        echo "<div class=\"col m-2 ath\">";
+                        echo "TRIBUNAL, Kyla Patricia";
+                        echo "</div></div>"; 
+                    ?>
                     </div>
                 </div>
                 <!-- Events -->
@@ -205,37 +155,19 @@
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Events</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
+                    <div style = "overflow-y: scroll; overflow-x: hidden; max-height: 50vh;">
+                    <?php
+                        $events = array("ANTIPORDA, Bea Claire W.", "APLACADOR, Joellyn P.", "BASILA, Mary Jenwil S.", "CO, Andee Beyonce M.", "DAVID, Elle Joanne", "DAVID, Rafaella T.", "DAYU, Ayahnna Rykah B.", "DY, Winnie F.", "ENCARNACION, Keanna Nicolei R.", "LEE, Caitlin Breanna N.", "MAYOR, Zailley Chanel S.", "ORENCIA, Asti Alfonso B.", "PALLORINA, Chelsea Caxandra S.", "SANTOS, Samantha Rose", "SI, McNeil Jason G.", "SISON, Nicole Andrea C.", "TAN, Kaye Sydney Y.", "TAN, Megan Allison S.", "TORIBIO, Hannah Jane DC", "YU, Alyana Olivia I.");
+                        for ($i = 0; $i < count($events); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $events[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $events[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    ?>
                     </div>
                 </div>
                 <!-- Organizational Relations -->
@@ -243,190 +175,94 @@
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Organizational Relations</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $orel = array("BARRIETA, Razel Fame A.", "BAYON, Jiannah Alyssa", "CHAN, Jaeyanne A.", "CODERES, Louie Jen M.", "CUCIO, Alyanna Francesca P.", "JANABON, Daniella Louise D.", "LAM, Sherry Ann S.", "MARQUEZ, Marc Anthony Adalson F.", "MATSUMURA, Michiyo P.", "PULUMBARIT, Moira Noelle E.", "REYES, Michaela Julia D. ", "SEBASTIAN, Jillian Dominique C.", "SIA, Chloe S. ", "TAN, Jasmine Eunice G.", "TAN, Krizzia Anne Marie N.", "TIO, Kathlyn L.");
+                        for ($i = 0; $i < count($orel); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $orel[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $orel[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    ?>
                 </div>
                 <!-- Web Development -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Web Development</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $webd = array("ANDRES, Wray Nathan M.", "CAI, Joyce Yuenlam H.", "CHUA, Imee Nicole C.", "MALINIS, Migelle Jihro F.", "NGO, William Jefferson D.", "OCAMPO, John Dominic I.", "ONG, Phebe T.", "RASING, Kobi Angelo S.", "VAAY, Mhikaella Mae M.", "YANG, Jheorgia H.");
+                        for ($i = 0; $i < count($webd); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $webd[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $webd[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    ?>
                 </div>
                 <!-- Technical Logisitcs -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Technical Logisitics</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $techl = array("BALON, Maria Angelika B.", "BITANCOR, Cheyenne Ritz E.", "LIM, Stephanie Monica", "LOPEZ, Lawrence Adriel L.", "MAGNO, Carlos Joaquin V.", "MOLO, Carlos Sebastian V. ", "PAGUIRIGAN, Marie Joanna A.", "SOBONG, Christina Louise B.", "SY, Faustine Eileen T.", "TERROBIAS, Kyla Louisse F.");
+                        for ($i = 0; $i < count($techl); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $techl[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $techl[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                        echo "<div class=\"row\">";
+                        echo "<div class=\"col m-2 ath\">";
+                        echo "TORRES, Julienne Claire M.";
+                        echo "</div></div>"; 
+                    ?>
                 </div>
                 <!-- Documentations -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Documentations</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $docu = array("ANCAJAS, Elisha Nissi M.", "BUENDIA, Melvin Angelo N.", "CASTILLO, Pearl P.", "CHUA, Johnica C.", "CRIBE, Miguel Antonio", "DIONELA, Matthew Joseph C.", "LAMBINO, Rekiya T.", "SABANDAL, Raya Marie C.", "SO, Julianne Katrina", "SOLETA, Fiona", "SY, Beal Cynric C.", "TSANG, Denzel Kenshin");
+                        for ($i = 0; $i < count($docu); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $docu[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $docu[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    ?>
                 </div>
                 <!-- Finance -->
                 <div class = "slide">
                     <div class="row">
                         <div class="col m-2 mb-5" style = "font-size: 2.5vw; text-align: center;">Finance</div>
                     </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
-                    <div class="row">
-                        <div class="col m-2 ath">ATH Name</div>
-                        <div class="col m-2 ath">ATH Name</div>
-                    </div>
+                    <?php
+                        $fin = array("ALANO, Allyana Aubrey", "ALCASID, Brian Philip", "BEJOSANO, Misha Kathleen", "FENIS, J Dean Taufik", "LAM, Cherwin Rayman", "LIM, Matthew Andrew Kung", "NAVARRO, Dominic", "RUIZ, Ma. Hannah Isabella");
+                        for ($i = 0; $i < count($fin); $i = $i+2) {
+                            echo "<div class=\"row\">";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $fin[$i];
+                            echo "</div>";
+                            echo "<div class=\"col m-2 ath\">";
+                            echo $fin[$i+1];
+                            echo "</div></div>"; 
+                        }    
+                    ?>
                 </div>
             </section>
         </div>
